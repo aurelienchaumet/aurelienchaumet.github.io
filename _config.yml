@@ -15,18 +15,18 @@ remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Aurelien Chaumet"
+locale                   : "fr-FR"
+title                    : "Aurélien Chaumet"
 title_separator          : "-"
 subtitle                 : "Cartes, données et géomatique en tout genre"
-name                     : "Aurelien Chaumet"
-description              : "An amazing website."
+name                     : "Aurélien Chaumet"
+description              : "Site parlant de cartes, de données, de géodonnées, de cartographie, de statistiques et de géomatique en général"
 url                      : "https://aurelienchaumet.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "aurelienchaumet/aurelienchaumet.github.io"
 teaser                   : "/assets/images/source.png"
 logo                     : "/assets/images/logo.png"
-masthead_title           : "Aurelien Chaumet"
+masthead_title           : "Aurélien Chaumet"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 250
 comments:
@@ -70,7 +70,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               :aurelienchaumet
 facebook:
   username               :
   app_id                 :
@@ -93,27 +93,29 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Aurélien Chaumet"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Cartographe 🗺️ et observateur territorial insulaire 👀 /
+                      Travaille sur #FME #QGIS #Tableau et un peu de #python /
+                      Intéressé par #dataviz #sig #etl #opendata"
+  location         : "Saint-Georges-d'Oléron"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:aurelienchaumet17@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -123,7 +125,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
