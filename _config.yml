@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Aurélien Chaumet"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Cartographe 🗺️ et observateur territorial insulaire 👀
+  bio              : "Cartographe 🗺️ et observateur territorial insulaire <br />
                      Travaille sur #FME #QGIS #Tableau et un peu de #Python
                      Intéressé par #dataviz #sig #etl #opendata"
   location         : "Saint-Georges-d'Oléron"
