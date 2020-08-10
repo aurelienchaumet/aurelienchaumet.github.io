@@ -1,9 +1,8 @@
 ---
 layout: single
-permalink: /about     
+permalink: /about  
+title : "A propos de moi et de ce project"   
 ---
-
-# A propos de moi et de ce project
 
 <p>Mon métier est d’accompagner des collectivités locales à exprimer leurs besoins thématiques (foncier, urbanisme, déchets, espaces naturels…) et tenter de trouver une manière d’y répondre grâce à l’utilisation de données.
 
