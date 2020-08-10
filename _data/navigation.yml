@@ -2,8 +2,8 @@
 main:
   - title: "A propos"
     url: https://aurelienchaumet.github.io/about
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Posts"
+    url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
