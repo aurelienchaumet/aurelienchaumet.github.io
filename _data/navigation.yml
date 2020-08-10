@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "A propos"
-    url: https://aurelienchaumet.github.io/about
   - title: "Posts"
     url: /year-archive/
+  - title: "A propos"
+    url: https://aurelienchaumet.github.io/about
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
