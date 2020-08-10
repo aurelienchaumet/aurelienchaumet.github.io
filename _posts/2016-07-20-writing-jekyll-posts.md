@@ -1,1 +1,4 @@
+---
+layout: archive
+---
 Post test
