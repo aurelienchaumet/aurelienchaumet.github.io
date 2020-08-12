@@ -16,7 +16,7 @@ feature_row:
     alt: "Test de réalisation"
     title: "Test de réalisation"
     excerpt: "Ma première réalisation"
-    url: "/realisations/test1"
+    url: "/realisations/test1/"
     btn_class: "btn--primary"
     btn_label: "Tellement envie de le lire"
   - image_path: /assets/images/logo.png
