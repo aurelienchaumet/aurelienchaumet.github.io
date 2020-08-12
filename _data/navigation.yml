@@ -2,8 +2,8 @@
 main:
   - title: "Réalisations"
     url: /realisations/
-    - title: "Tutoriels"
-      url: /tutos/
+  - title: "Tutoriels"
+      url: /tutoriels/
   - title: "Blog"
     url: /year-archive/
   - title: "A propos"
