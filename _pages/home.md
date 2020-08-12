@@ -24,7 +24,35 @@ feature_row:
     excerpt: "Quelques informations sur le pourquoi de ce site"
     url: "/about/"
     btn_class: "btn--primary"
-    btn_label: "A propos"     
+    btn_label: "A propos"  
+  - image_path: /assets/images/source.png
+    alt: "Blog"
+    title: "Blog"
+    excerpt: "Des réflexions autour de la cartographie"
+    url: "/year-archive"
+    btn_class: "btn--primary"
+    btn_label: "Blog"
+  - image_path: /assets/images/logo.png
+    alt: "A propos"
+    title: "A propos"
+    excerpt: "Quelques informations sur le pourquoi de ce site"
+    url: "/about/"
+    btn_class: "btn--primary"
+    btn_label: "A propos"  
+  - image_path: /assets/images/source.png
+    alt: "Blog"
+    title: "Blog"
+    excerpt: "Des réflexions autour de la cartographie"
+    url: "/year-archive"
+    btn_class: "btn--primary"
+    btn_label: "Blog"
+  - image_path: /assets/images/logo.png
+    alt: "A propos"
+    title: "A propos"
+    excerpt: "Quelques informations sur le pourquoi de ce site"
+    url: "/about/"
+    btn_class: "btn--primary"
+    btn_label: "A propos"  
 ---
 
 {% include feature_row %}
