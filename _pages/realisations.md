@@ -18,7 +18,7 @@ feature_row:
     excerpt: "Ma première réalisation"
     url: "/realisations/test1"
     btn_class: "btn--primary"
-    btn_label: "Blog"
+    btn_label: "Tellement envie de le lire"
   - image_path: /assets/images/logo.png
     alt: "A propos"
     title: "A propos"
