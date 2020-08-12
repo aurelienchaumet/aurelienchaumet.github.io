@@ -1,7 +1,7 @@
 ---
 layout: single
-permalink: /realisations/  
-title : "Réalisations   
+permalink: /
+title : "Réalisations"   
 ---
 
 Site en construction
