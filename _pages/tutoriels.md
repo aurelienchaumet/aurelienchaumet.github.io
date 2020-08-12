@@ -3,7 +3,7 @@ layout: single
 permalink: /tutoriels/
 title : "Tutoriels"  
 header:
-  teaser: /assets/images/test.png 
+  image: /assets/images/test.png 
 ---
 
 Site en construction
