@@ -10,13 +10,13 @@ header:
   #  - label: "<i class='fas fa-download'></i> Install now"
   #    url: "/docs/quick-start-guide/"
 excerpt: >
-  Site parlant de cartes, de données, de cartographie, de statistiques et de géomatique en général
+  Quelques rendus cartographiques ou sur le travail de données
 feature_row:
   - image_path: /assets/images/source.png
-    alt: "Blog"
-    title: "Blog"
-    excerpt: "Des réflexions autour de la cartographie"
-    url: "/year-archive"
+    alt: "Test de réalisation"
+    title: "Test de réalisation"
+    excerpt: "Ma première réalisation"
+    url: "/realisations/test1"
     btn_class: "btn--primary"
     btn_label: "Blog"
   - image_path: /assets/images/logo.png
