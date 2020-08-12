@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Réalisations"
-      url: https://aurelienchaumet.github.io/realisations
+    url: https://aurelienchaumet.github.io/realisations
   - title: "Tutoriels"
-        url: https://aurelienchaumet.github.io/tutoriels
+    url: https://aurelienchaumet.github.io/tutoriels
   - title: "Blog"
     url: /year-archive/
   - title: "A propos"
