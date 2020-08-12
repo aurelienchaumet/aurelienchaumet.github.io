@@ -87,7 +87,7 @@ social:
 analytics:
   provider               : google # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : UA-167500993-1 
+    tracking_id          : UA-167500993-1
     anonymize_ip         : # true, false (default)
 
 
@@ -96,8 +96,8 @@ author:
   name             : "Aurélien Chaumet"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Cartographe 🗺️ et observateur territorial insulaire <br />
-                     Travaille sur #FME #QGIS #Tableau et un peu de #python <br />
-                     Intéressé par #dataviz #sig #etl #opendata"
+                     Travaille sur FME, QGIS, Tableau et un peu de Python <br />
+                     Intéressé par les SIG, les ETL, la Dataviz et l'Opendata"
   location         : "Saint-Georges-d'Oléron"
   email            :
   links:
