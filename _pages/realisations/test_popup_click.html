@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="js-focus-visible">
+<head>
+<meta charset=utf-8 />
+<title>1 point = 1 personne</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+<style>
+  body { margin:0; padding:0; }
+
+/* définit les dimensions de la carte */
+#map {
+        width: 700px;
+        height: 820px;
+        border: 1px solid grey;
+        z-index: 0;
+      }
+
+/* css pour personnaliser l'infobulle  */
+.custom .leaflet-popup-content-wrapper {
+  background:rgba(255, 255, 255, 0);
+  color:rgba(255,254,254, 0.93);
+  text-shadow: black 0 0 2px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: none;
+  text-shadow: 0 0 10px black
+};
+
+
+</style>
+
+
+
+</head>
+<body>
+<div id='map'></div>
+
+<script>
+
+var url = 'https://aurelienchaumet.github.io/data/communes_pop.geojson';  // pointe vers le fichier contenant les limites communales et la population
+
+// Crée l'objet map et définit le zoom min et max, les limites max pour bouger la carte et la vue de départ
+let map = L.map('map',{
+    minZoom: 9,
+    maxZoom: 15,
+    maxBounds: [[45, -2.45],[46.5, 0.5]],
+}).setView([45.7, -0.75], 9);
+
+
+// Add tiles from the Mapbox Static Tiles API
+// (https://docs.mapbox.com/api/maps/#static-tiles)
+// Tiles are 512x512 pixels and are offset by 1 zoom level
+let	commune =	L.tileLayer('https://api.mapbox.com/styles/v1/{id2}/tiles/{z}/{x}/{y}?access_token={accessToken2}', {
+attribution: 'Made by <a href="https://twitter.com/AurelienChaumet">Aurélien Chaumet</a> Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+				    id2: 'aurelienchaumet/ckac7im1q0gbj1ip76uhid2xe',
+				    tileSize: 512,
+				    zoomOffset: -1,
+				    accessToken2: 'pk.eyJ1IjoiYXVyZWxpZW5jaGF1bWV0IiwiYSI6ImNrMXcxMjA3eDBrZWgzbW82MDhqOG81dHAifQ.COwgFumeImEoUPAGJED1sg'}).addTo(map);
+
+let carroyage =	L.tileLayer('https://api.mapbox.com/styles/v1/{id1}/tiles/{z}/{x}/{y}?access_token={accessToken1}', {
+				    attribution: 'Made by <a href="https://twitter.com/AurelienChaumet">Aurélien Chaumet</a> Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+				    id1: 'aurelienchaumet/ckacj2tdk4ag61inwspcf0mnw',
+				    tileSize: 512,
+				    zoomOffset: -1,
+				    accessToken1: 'pk.eyJ1IjoiYXVyZWxpZW5jaGF1bWV0IiwiYSI6ImNrMXcxMjA3eDBrZWgzbW82MDhqOG81dHAifQ.COwgFumeImEoUPAGJED1sg'}).addTo(map);
+
+let	bati =	L.tileLayer('https://api.mapbox.com/styles/v1/{id2}/tiles/{z}/{x}/{y}?access_token={accessToken2}', {
+attribution: 'Made by <a href="https://twitter.com/AurelienChaumet">Aurélien Chaumet</a> Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+				    id2: 'aurelienchaumet/ckacf5zbw09mv1iljw0b8wfjg',
+				    tileSize: 512,
+				    zoomOffset: -1,
+				    accessToken2: 'pk.eyJ1IjoiYXVyZWxpZW5jaGF1bWV0IiwiYSI6ImNrMXcxMjA3eDBrZWgzbW82MDhqOG81dHAifQ.COwgFumeImEoUPAGJED1sg'}).addTo(map);
+
+// Définit le style de la couche limitesCommunales
+function style(feature) {
+    return {
+        fillOpacity: 0,
+        weight: 0.15,
+        opacity: 0.6,
+        color: "white"
+    };
+}
+	var highlight = {
+		'color': 'white',
+		'weight': 1,
+		'opacity': 1
+	};
+
+  let styleMouseout = {
+    'opacity': 0
+  }
+
+  // specify popup options
+  var customOptions =
+      {
+      'maxWidth': '400',
+      'className' : 'custom'
+      }
+
+		function forEachFeature(feature, layer) {
+
+            var popupContent = feature.properties.libelle +
+            					"</br>"+feature.properties.population +" habitants" ;
+
+            layer.bindPopup(popupContent,customOptions);
+
+            layer.on("click", function (e) {
+                limitesCommunales.setStyle(style); //resets layer colors
+                layer.setStyle(highlight);  //highlights selected.
+            });
+		  }
+
+// Crée la couche vide limitesCommunales
+var limitesCommunales = L.geoJson(null, {onEachFeature: forEachFeature, style: style});
+
+//Peuple la couche limitesCommunales avec le fichier pointé sur url
+	$.getJSON(url, function(data) {
+        limitesCommunales.addData(data);
+    });
+
+ limitesCommunales.addTo(map);
+
+// Paramètre les couches de fonds (basemapControl - non superposables) et celles sur lesquelles une interaction est possible (overlayMaps - superposables)
+let basemapControl = {
+  "Par commune": commune,
+  "Par carreau de 200m": carroyage,
+  "Par bati": bati
+};
+
+
+// Ajoute le bouton d'affichage des couches
+L.control.layers( basemapControl).addTo( map )
+
+</script>
+</body>
+</html>
