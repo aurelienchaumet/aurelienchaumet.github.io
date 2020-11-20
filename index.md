@@ -7,7 +7,7 @@ header:
   caption: "Données DVF sur Kepler.gl"
 
 feature_row:
-  - image_path: /assets/images/realisations.jpg
+  - image_path: /assets/images/realisations_puzzle.png
     alt: "applications geographiques"
     title: "Réalisations"
     excerpt: "Diverses réalisations de cartes ou d'applications cartographiques web"
