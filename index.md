@@ -14,7 +14,7 @@ feature_row:
     url: "https://aurelienchaumet.github.io/realisations/"
     btn_label: "Accéder"
     btn_class: "btn--inverse"
-  - image_path: /assets/images/tutoriel.jpg
+  - image_path: /assets/images/articles.png
     alt: "articles"
     title: "Articles"
     excerpt: "Un partage de connaissances via la rédaction d'articles"

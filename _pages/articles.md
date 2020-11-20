@@ -3,7 +3,7 @@ layout: splash
 permalink: /articles/
 title : "Articles"  
 header:
-  overlay_image: /assets/images/tutoriel.jpg
+  overlay_image: /assets/images/articles.png
   overlay_filter: 0.3
 excerpt:
   Partage de connaissance sur des outils et des données
