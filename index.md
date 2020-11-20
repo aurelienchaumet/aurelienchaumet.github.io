@@ -13,20 +13,20 @@ feature_row:
     excerpt: "Diverses réalisations de cartes ou d'applications cartographiques web"
     url: "https://aurelienchaumet.github.io/realisations/"
     btn_label: "Accéder"
-    btn_class: "btn--inverse"
+    btn_class: "btn--primary"
   - image_path: /assets/images/articles.png
     alt: "articles"
     title: "Articles"
     excerpt: "Un partage de connaissances via la rédaction d'articles"
     url: "https://aurelienchaumet.github.io/articles/"
     btn_label: "Accéder"
-    btn_class: "btn--inverse"
+    btn_class: "btn--primary"
   - image_path: /assets/images/inspiration.png
     title: "Inspiration"
     excerpt: "Un recueil de réalisations extérieures sur des sujets autour de la cartographie, des données et de visualisations diverses et variées"
     url: "https://aurelienchaumet.github.io/inspiration/"
     btn_label: "Accéder"
-    btn_class: "btn--inverse"
+    btn_class: "btn--primary"
 ---
 
 {% include feature_row %}

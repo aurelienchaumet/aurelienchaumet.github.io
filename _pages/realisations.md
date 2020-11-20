@@ -9,13 +9,13 @@ excerpt:
   Rendus cartographiques et dataviz en tout genre
 
 feature_row:
-  - image_path: /assets/images/source.png
-    alt: "Test de réalisation"
-    title: "Test de réalisation"
-    excerpt: "Ma première réalisation"
-    url: "/realisations/test1/"
+  - image_path: /assets/images/30daymapchallenge/map_challenge_themes_2020_ac.jpg
+    alt: "30DayMapChallenge"
+    title: "30DayMapChallenge"
+    excerpt: "Les cartes que j'ai publié pour le 30DayMapChallenge"
+    url: "/realisations/30daymapchallenge/"
     btn_class: "btn--primary"
-    btn_label: "Tellement envie de le lire"
+    btn_label: "Accéder"
 ---
 
 {% include feature_row %}
