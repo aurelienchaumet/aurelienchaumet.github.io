@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "default", "dark", "dirt"
 locale                   : "fr-FR"
 title                    : "Aurélien Chaumet"
 title_separator          : "-"
-subtitle                 : "Cartes, données et géomatique en tout genre"
+subtitle                 : "Des cartes, des données et des outils"
 name                     : "Aurélien Chaumet"
 description              : "Site parlant de cartes, de données, de géodonnées, de cartographie, de statistiques et de géomatique en général"
 url                      : "https://aurelienchaumet.github.io/"
@@ -118,7 +118,7 @@ author:
       url: "https://github.com/aurelienchaumet"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/aurelienchaumet"
 
 # Site Footer
 footer:
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/aurelienchaumet"
 
 
 # Reading Files
@@ -221,6 +221,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
 whitelist:

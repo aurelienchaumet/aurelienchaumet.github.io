@@ -10,7 +10,7 @@ header:
   #  - label: "<i class='fas fa-download'></i> Install now"
   #    url: "/docs/quick-start-guide/"
 excerpt: >
-  Quelques rendus cartographiques ou sur le travail de données
+  Rendus cartographiques et dataviz en tout genre
 feature_row:
   - image_path: /assets/images/source.png
     alt: "Test de réalisation"
