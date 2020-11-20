@@ -1,7 +1,7 @@
 ---
 layout: splash
-permalink: /tutoriels/
-title : "Tutoriels"  
+permalink: /articles/
+title : "Articles"  
 header:
   overlay_image: /assets/images/tutoriel.jpg
 
