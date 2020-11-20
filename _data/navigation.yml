@@ -1,5 +1,5 @@
 # main links
-#main:
+main:
   - title: "Réalisations"
     url: https://aurelienchaumet.github.io/realisations
   - title: "Tutoriels"
@@ -8,7 +8,3 @@
     url: /year-archive/
   - title: "A propos"
     url: https://aurelienchaumet.github.io/about
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
