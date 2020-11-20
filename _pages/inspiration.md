@@ -2,10 +2,8 @@
 layout: splash
 permalink: /inspiration/
 title : "Inspiration"   
-hidden: true
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/source.png
+  overlay_image: /assets/images/inspiration.png
   overlay_filter: 0.3
 excerpt:
   Un recueil de personnes, de sites ou d'applications qui donnent envie de visualiser des données
