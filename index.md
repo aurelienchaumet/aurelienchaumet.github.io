@@ -14,10 +14,10 @@ feature_row:
     btn_label: "Accéder"
     btn_class: "btn--inverse"
   - image_path: /assets/images/tutoriel.jpg
-    alt: "tutoriels"
-    title: "Tutoriels"
-    excerpt: "Un partage de connaissances via la rédaction de tutoriels"
-    url: "https://aurelienchaumet.github.io/tutoriels/"
+    alt: "articles"
+    title: "Articles"
+    excerpt: "Un partage de connaissances via la rédaction d'articles"
+    url: "https://aurelienchaumet.github.io/articles/"
     btn_label: "Accéder"
     btn_class: "btn--inverse"
   - image_path: /assets/images/inspiration.png
