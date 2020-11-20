@@ -1,6 +1,7 @@
 ---
 layout: single
 permalink: /about/  
+classes: wide
 title : "A propos"   
 ---
 

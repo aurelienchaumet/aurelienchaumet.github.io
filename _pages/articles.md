@@ -4,12 +4,15 @@ permalink: /articles/
 title : "Articles"  
 header:
   overlay_image: /assets/images/tutoriel.jpg
+  overlay_filter: 0.3
+excerpt:
+  Partage de connaissance sur des outils et des données
 
 feature_row:
   - image_path: "https://cdn.geotribu.fr/img/tuto/aerialod/bora_bora.png"
     alt: "tutoriel aerialod"
     title: "Tutoriel Aerialod"
-    excerpt: "Tutoriel de prise en main du logiciel de rendu 3D Aerialod - _Publié à l'origine sur le site de [Geotribu](https://static.geotribu.fr)_"
+    excerpt: "Tutoriel de prise en main du logiciel de rendu 3D Aerialod <br />**_Publié à l'origine sur le site de [Geotribu](https://static.geotribu.fr)_**"
     url: "https://static.geotribu.fr/articles/2020/2020-09-20_tutorial_aerialod/"
     btn_label: "Accéder"
     btn_class: "btn--inverse"
