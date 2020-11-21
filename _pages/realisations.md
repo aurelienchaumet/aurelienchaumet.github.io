@@ -11,8 +11,8 @@ excerpt:
 feature_row:
   - image_path: /assets/images/30daymapchallenge/map_challenge_themes_2020_ac.jpg
     alt: "30DayMapChallenge"
-    title: "30DayMapChallenge"
-    excerpt: "Les cartes que j'ai publié pour le 30DayMapChallenge"
+    title: "30DayMapChallenge 2020"
+    excerpt: "Cartes réalisées pour le 30DayMapChallenge 2020"
     url: "/realisations/30daymapchallenge/"
     btn_class: "btn--primary"
     btn_label: "Accéder"
