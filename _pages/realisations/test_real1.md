@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /realisations/30daymapchallenge/  
-title : "30 DayMapChallenge"   
+title : "30 DayMapChallenge 2020"   
 header:
   overlay_image: /assets/images/30daymapchallenge/map_challenge_themes_2020_ac.jpg
   overlay_filter: 0.3
@@ -10,7 +10,7 @@ excerpt:
 
 toc: true
 toc_label: "Participations"
-toc_icon: "map"
+toc_icon: "globe"
 
 gallery:
   - url: https://pbs.twimg.com/media/EluFBKtWkAAsLlh?format=jpg&name=large
