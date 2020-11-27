@@ -93,6 +93,16 @@ gallery9:
     image_path: "/assets/images/30daymapchallenge/day9_corse5.jpg"
     alt: "relief corse"
     title: "Relief Corse Sud-Ouest"
+
+gallery10:
+  - url: "/assets/images/30daymapchallenge/day10_malta_pop_cube.png"
+    image_path: "/assets/images/30daymapchallenge/day10_malta_pop_cube.png"
+    alt: "population malte cube"
+    title: "Population maltaise cubique"
+  - url: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.png"
+    image_path: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.png"
+    alt: "population maltaise pics"
+    title: "Population maltaise en pics"
 ---
 
 ## Jour 1 - Points
@@ -163,10 +173,18 @@ Le jeu de données vient cette fois-ci de l'incroyable site de [WorldPop](https:
 
 ## Jour 9 - Monochrome
 
-{% include gallery id="gallery9" class="full" caption="Relief Corse" %}
+{% include gallery id="gallery9" class="full" caption="Reliefs Corse" %}
 
 Encore une fois, Aerialod est le logiciel utilisé pour ces 5 cartes. (je vous ai déjà dit que j'expérimente ce logiciel ? :smirk:)
 
 Ici, ce n'est pas la population qui est représentée, mais plus classiquement le relief, grâce à [la BD Alti 75m de l'IGN.](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#bd-alti)
 
 Différents points de vue vous sont ici proposés !
+
+## Jour 10 - Grille
+
+{% include gallery id="gallery10" class="full" caption="Population maltaise" %}
+
+Retour à une carte de population, et après avoir opéré sur un continent, j'ai voulu tenté de voir ce que ça pouvait donner à l'échelle d'un plus "petit" territoire, en l'occurrence Malte. La première carte est modélisée dans un style cubique type voxel et la deuxième a été lissée façon pics.
+
+Evidemment le résultat n'est pas tout à fait le même visuellement à cette échelle.
