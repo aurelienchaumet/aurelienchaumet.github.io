@@ -61,6 +61,16 @@ gallery6:
     image_path: "/assets/images/30daymapchallenge/day6_espana_poblacion_SE.png"
     alt: "population espagnole vue du sud est"
     title: "Population espagnloe vue du Sud-Est"
+
+gallery7:
+  - url: "/assets/images/30daymapchallenge/day7_african_pop_hd.png"
+    image_path: "/assets/images/30daymapchallenge/day7_african_pop_hd.png"
+    alt: "population africaine pics"
+    title: "Population africaine en pics sans frontière"
+  - url: "/assets/images/30daymapchallenge/day7_african_pop_border_hd.png"
+    image_path: "/assets/images/30daymapchallenge/day7_african_pop_border_hd.png"
+    alt: "population africaine pics avec frontiere"
+    title: "Population africaine en pics avec frontière"
 ---
 
 ## Jour 1 - Points
@@ -116,3 +126,15 @@ Vous retrouverez d'autres réalisations que j'ai pu effectuer avec cet outil plu
 L'objectif de ce type de cartes est de représenter par des pics, la densité de population. J'essaye de m'appuyer sur des données les plus fines que je peux trouver, et je passe ensuite par QGIS (encore et toujours :thumbs_up:) et Aerialod pour créer la représentation.
 
 Le jeu de données utilisé ici provient de [l'INE](https://www.ine.es/index.htm), l'équivalent espagnol de l'INSEE.
+
+## Jour 7 - Vert
+
+{% include gallery id="gallery7" class="full" caption="Population africaine en pics" %}
+
+Même type de données, même outils utilisés, mais changement d'échelle !
+
+Cette fois, c'est le continent africain qui passe à la géo-moulinette ! La première sans frontière, et la deuxième avec les frontières extérieures du continent.
+
+J'ai mis ici des images "HD" et vous pourrez donc zoomer sur les photos, après avoir effectué un clic droit sur l'image puis "Ouvrir l'image dans un nouvel onglet" :fireworks:.
+
+Le jeu de données vient cette fois-ci de l'incroyable site de [WorldPop](https://www.worldpop.org/geodata/summary?id=139), qui contient moults données de population sur la quasi-totalité du monde !
