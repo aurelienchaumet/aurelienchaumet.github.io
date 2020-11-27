@@ -131,7 +131,7 @@ gallery17:
 
 ## Jour 1 - Points
 
-{% include gallery class="full" caption="Données de population de la Charente-Maritime réparties selon différentes échelles" %}
+{% include gallery caption="Données de population de la Charente-Maritime réparties selon différentes échelles" %}
 
 Les données viennent du jeu de données de 2015 [Données carroyées - Carreau de 200m](https://www.insee.fr/fr/statistiques/4176290?sommaire=4176305), issu du recensement de la population de l'INSEE.
 
