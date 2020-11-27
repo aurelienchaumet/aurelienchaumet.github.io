@@ -115,6 +115,12 @@ gallery13:
     image_path: "/assets/images/30daymapchallenge/day13_oleron_raster.jpg"
     alt: "oleron raster sentinel"
     title: "Vue Sentinel de l'Île d'Oléron"
+
+gallery16:
+  - url: "/assets/images/30daymapchallenge/day16_oleron_relief.png"
+    image_path: "/assets/images/30daymapchallenge/day16_oleron_relief.png"
+    alt: "oleron relief"
+    title: "Relief de l'Île d'Oléron"
 ---
 
 ## Jour 1 - Points
@@ -220,3 +226,12 @@ La première raison est qu'Oléron est l'endroit où je suis né, où j'ai grand
 Et la deuxième, plus professionnelle, est que cette représentation est une des premières "complexes" que j'ai réalisée depuis que j'ai commencé à travailler dans le secteur de la géomatique.
 
 Réalisée avec QGIS et le [plug-in Semi-Automatic Classification Plugin.](https://plugins.qgis.org/plugins/SemiAutomaticClassificationPlugin/)
+
+## Jour 16 - Îles
+
+{% include gallery id="gallery16" caption="Relief de l'Île d'Oléron" %}
+
+Je suis assez fier de cette carte, même si c'est une des premières que j'ai faite avec Aerialod.
+
+On peut voir pas mal de détails grâce à elle, comme les marais, l'estran ou bien une écluse à poisson au Nord (si vous arrivez à la trouver :tongue:), et je trouve que les couleurs sont plutot cool.
+
