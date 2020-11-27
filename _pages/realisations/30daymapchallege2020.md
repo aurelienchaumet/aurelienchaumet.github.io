@@ -109,6 +109,12 @@ gallery11:
     image_path: "cartes_3D/Reunion-360.gif"
     alt: "tour 360 relief ile reunion"
     title: "Tour à 360° de l'île de la Réunion"
+
+gallery13:
+  - url: "/assets/images/30daymapchallenge/day13_oleron_raster.jpg"
+    image_path: "/assets/images/30daymapchallenge/day13_oleron_raster.jpg"
+    alt: "oleron raster sentinel"
+    title: "Vue Sentinel de l'Île d'Oléron"
 ---
 
 ## Jour 1 - Points
@@ -202,3 +208,15 @@ Evidemment le résultat n'est pas tout à fait le même visuellement à cette é
 J'ai eu envie de ne pas m'arrêter qu'à des représentations statiques, et étant donné qu'Aerialod propose une fonction d'export de frames suivant un angle de rotation défini, je trouvais plutôt agréable l'idée de pouvoir faire le tour de l'île de la Réunion. D'autant plus en cette confi-période...
 
 Le relief se base une nouvelle fois sur la BD Alti de l'IGN.
+
+## Jour 13 - Raster
+
+{% include gallery id="gallery13" caption="Vue Sentinel de l'Île d'Oléron" %}
+
+Cette image est assez symbolique pour moi, et ce pour plusieurs raisons #DéballeTaVie.
+
+La première raison est qu'Oléron est l'endroit où je suis né, où j'ai grandi et où je continue de vivre.
+
+Et la deuxième, plus professionnelle, est que cette représentation est une des premières "complexes" que j'ai réalisée depuis que j'ai commencé à travailler dans le secteur de la géomatique.
+
+Réalisée avec QGIS et le [plug-in Semi-Automatic Classification Plugin.](https://plugins.qgis.org/plugins/SemiAutomaticClassificationPlugin/)
