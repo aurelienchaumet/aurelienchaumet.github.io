@@ -97,12 +97,18 @@ gallery9:
 gallery10:
   - url: "/assets/images/30daymapchallenge/day10_malta_pop_cube.png"
     image_path: "/assets/images/30daymapchallenge/day10_malta_pop_cube.png"
-    alt: "population malte cube"
-    title: "Population maltaise cubique"
+    alt: "malte population cube"
+    title: "Population cubique de Malte"
   - url: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.png"
     image_path: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.png"
-    alt: "population maltaise pics"
-    title: "Population maltaise en pics"
+    alt: "malte population pics"
+    title: "Population en pics de Malte"
+  
+gallery11:
+  - url: "cartes_3D/Reunion-360.gif"
+    image_path: "cartes_3D/Reunion-360.gif"
+    alt: "tour 360 relief ile reunion"
+    title: "Tour à 360° de l'île de la Réunion"
 ---
 
 ## Jour 1 - Points
@@ -188,3 +194,11 @@ Différents points de vue vous sont ici proposés !
 Retour à une carte de population, et après avoir opéré sur un continent, j'ai voulu tenté de voir ce que ça pouvait donner à l'échelle d'un plus "petit" territoire, en l'occurrence Malte. La première carte est modélisée dans un style cubique type voxel et la deuxième a été lissée façon pics.
 
 Evidemment le résultat n'est pas tout à fait le même visuellement à cette échelle.
+
+## Jour 11 - 3D
+
+{% include gallery id="gallery11" class="full" caption="Tour 360° de l'île de la Réunion" %}
+
+J'ai eu envie de ne pas m'arrêter qu'à des représentations statiques, et étant donné qu'Aerialod propose une fonction d'export de frames suivant un angle de rotation défini, je trouvais plutôt agréable l'idée de pouvoir faire le tour de l'île de la Réunion. D'autant plus en cette confi-période...
+
+Le relief se base une nouvelle fois sur la BD Alti de l'IGN.
