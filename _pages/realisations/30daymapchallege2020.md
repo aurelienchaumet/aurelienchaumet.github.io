@@ -121,6 +121,12 @@ gallery16:
     image_path: "/assets/images/30daymapchallenge/day16_oleron_relief.png"
     alt: "oleron relief"
     title: "Relief de l'Île d'Oléron"
+
+gallery17:
+  - url: "/assets/images/30daymapchallenge/day17_historic.png"
+    image_path: "/assets/images/30daymapchallenge/day17_historic.png"
+    alt: "oleron historique"
+    title: "Quelques éléments historiques du Pays Marennes Oléron"
 ---
 
 ## Jour 1 - Points
@@ -235,3 +241,18 @@ Je suis assez fier de cette carte, même si c'est une des premières que j'ai fa
 
 On peut voir pas mal de détails grâce à elle, comme les marais, l'estran ou bien une écluse à poisson au Nord (si vous arrivez à la trouver :tongue:), et je trouve que les couleurs sont plutot cool.
 
+Le relief se base ici sur la donnée Litto3D acquise par l'IGN, grâce à la technologie LIDAR.
+
+## Jour 17 - Historique
+
+{% include gallery id="gallery17" caption="Quelques éléments historiques du Pays Marennes Oléron" %}
+
+J'ai voulu, avec ce poster, mettre en avant 3 éléments historiques du Pays Marennes Oléron, et potentiellement intéressants à visualiser en 3D :
+
+- la citadelle du Château d'Oléron
+- la citadelle de Brouage
+- les écluses à poisson de la Brée les Bains
+
+Tous sont des élémens très particuliers de mon territoire.
+
+Comme pour le jour précédent, la donnée utilisée est Litto3D de l'IGN.
