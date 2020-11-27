@@ -71,6 +71,28 @@ gallery7:
     image_path: "/assets/images/30daymapchallenge/day7_african_pop_border_hd.png"
     alt: "population africaine pics avec frontiere"
     title: "Population africaine en pics avec frontière"
+
+gallery9:
+  - url: "/assets/images/30daymapchallenge/day9_corse1.jpg"
+    image_path: "/assets/images/30daymapchallenge/day9_corse1.jpg"
+    alt: "relief corse"
+    title: "Relief corse Sud"
+  - url: "/assets/images/30daymapchallenge/day9_corse2.jpg"
+    image_path: "/assets/images/30daymapchallenge/day9_corse2.jpg"
+    alt: "relief corse piana"
+    title: "Relief Piana"
+  - url: "/assets/images/30daymapchallenge/day9_corse3.jpg"
+    image_path: "/assets/images/30daymapchallenge/day9_corse3.jpg"
+    alt: "relief corse"
+    title: "Relief Corse Sud-Est"
+  - url: "/assets/images/30daymapchallenge/day9_corse4.jpg"
+    image_path: "/assets/images/30daymapchallenge/day9_corse4.jpg"
+    alt: "relief corse"
+    title: "Relief Corse Nord"
+  - url: "/assets/images/30daymapchallenge/day9_corse5.jpg"
+    image_path: "/assets/images/30daymapchallenge/day9_corse5.jpg"
+    alt: "relief corse"
+    title: "Relief Corse Sud-Ouest"
 ---
 
 ## Jour 1 - Points
@@ -113,7 +135,7 @@ Les données proviennent de ce [jeu de données](https://www.data.gouv.fr/fr/dat
 
 Le gif a été réalisé sur QGIS 3.14 grâce au Temporal Controller, petit nouveau présent nativement dans la boîte à outils QGIS ! (auparavant il fallait passer par un plug-in pour réaliser des animations temporelles.) J'ai suivi [ce très bon tuto de M. Tjukanov himself](https://www.gispo.fi/en/open-software/geogiffery-in-2020-with-qgis-temporal-controller/), qui est bien détaillé et parfaitement clair.
 
-## Jour 6 - Rouge
+## Jour 6 et 8 - Rouge et Jaune
 
 {% include gallery id="gallery6" class="full" caption="Population espagnole en pics" %}
 
@@ -138,3 +160,13 @@ Cette fois, c'est le continent africain qui passe à la géo-moulinette ! La pre
 J'ai mis ici des images "HD" et vous pourrez donc zoomer sur les photos, après avoir effectué un clic droit sur l'image puis "Ouvrir l'image dans un nouvel onglet" :fireworks:.
 
 Le jeu de données vient cette fois-ci de l'incroyable site de [WorldPop](https://www.worldpop.org/geodata/summary?id=139), qui contient moults données de population sur la quasi-totalité du monde !
+
+## Jour 9 - Monochrome
+
+{% include gallery id="gallery9" class="full" caption="Relief Corse" %}
+
+Encore une fois, Aerialod est le logiciel utilisé pour ces 5 cartes. (je vous ai déjà dit que j'expérimente ce logiciel ? :smirk:)
+
+Ici, ce n'est pas la population qui est représentée, mais plus classiquement le relief, grâce à [la BD Alti 75m de l'IGN.](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#bd-alti)
+
+Différents points de vue vous sont ici proposés !
