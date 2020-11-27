@@ -127,6 +127,16 @@ gallery17:
     image_path: "/assets/images/30daymapchallenge/day17_historic.png"
     alt: "oleron historique"
     title: "Quelques éléments historiques du Pays Marennes Oléron"
+
+gallery18:
+  - url: "/assets/images/30daymapchallenge/day18_artif_oleron.gif"
+    image_path: "/assets/images/30daymapchallenge/day18_artif_oleron.gif"
+    alt: "oleron artificialisation"
+    title: "Evolution de l'emprise bâtie sur l'Île d'Oléron"
+  - url: "/assets/images/30daymapchallenge/day18_artif_st_denis.gif"
+    image_path: "/assets/images/30daymapchallenge/day18_artif_st_denis.gif"
+    alt: "saint denis d'oléron artificialisation"
+    title: "Evolution de l'emprise bâtie à Saint Denis d'Oléron"
 ---
 
 ## Jour 1 - Points
@@ -256,3 +266,15 @@ J'ai voulu, avec ce poster, mettre en avant 3 éléments historiques du Pays Mar
 Tous sont des élémens très particuliers de mon territoire.
 
 Comme pour le jour précédent, la donnée utilisée est Litto3D de l'IGN.
+
+## Jour 18 - Usage du sol
+
+{% include gallery id="gallery18" caption="Evolution de l'emprise bâtie de l'île d'Oléron" %}
+
+L'artificialisation est un vrai sujet préoccupant de nos jours.
+
+J'ai donc voulu représenter l'évolution des unités foncières bâties dans le temps sur Oléron.
+
+Le deuxième gif correspond à un zoom sur la commune de Saint Denis d'Oléron.
+
+Ces gif sont issus d'un traitement des matrices cadastrales et du PCI Vecteur, grâce à FME et QGIS, et ont été réalisés dans le cadre d'un atelier de concertation pour l'Agenda 21 de l'Île d'Oléron.
