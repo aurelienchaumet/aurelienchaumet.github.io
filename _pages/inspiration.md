@@ -17,4 +17,4 @@ feature_row:
     btn_label: "Tellement envie de le lire"
 ---
 
-{% include feature_row %}
+En cours de construction !
