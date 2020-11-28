@@ -47,8 +47,8 @@ gallery2:
     title: "15 îles du Ponant"
     
 gallery3:
-  - url: "/assets/images/30daymapchallenge/day3_disparitions_communes.gif"
-    image_path: "/assets/images/30daymapchallenge/day3_disparitions_communes.gif"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day3_disparitions_communes.gif"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day3_disparitions_communes.gif"
     alt: "disparition communes"
     title: "Evolution des communes françaises de 2015 à 2019"
 
@@ -105,8 +105,8 @@ gallery10:
     title: "Population en pics de Malte"
   
 gallery11:
-  - url: "cartes_3D/Reunion-360.gif"
-    image_path: "cartes_3D/Reunion-360.gif"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/Reunion-360.gif"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/Reunion-360.gif"
     alt: "tour 360 relief ile reunion"
     title: "Tour à 360° de l'île de la Réunion"
 
@@ -129,12 +129,12 @@ gallery17:
     title: "Quelques éléments historiques du Pays Marennes Oléron"
 
 gallery18:
-  - url: "/assets/images/30daymapchallenge/day18_artif_oleron.gif"
-    image_path: "/assets/images/30daymapchallenge/day18_artif_oleron.gif"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day18_artif_oleron.gif"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day18_artif_oleron.gif"
     alt: "oleron artificialisation"
     title: "Evolution de l'emprise bâtie sur l'Île d'Oléron"
-  - url: "/assets/images/30daymapchallenge/day18_artif_st_denis.gif"
-    image_path: "/assets/images/30daymapchallenge/day18_artif_st_denis.gif"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day18_artif_st_denis.gif"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day18_artif_st_denis.gif"
     alt: "saint denis d'oléron artificialisation"
     title: "Evolution de l'emprise bâtie à Saint Denis d'Oléron"
 
@@ -305,8 +305,8 @@ J'ai récupéré (avec son accord) une des créations de [Justine Vignat](https:
 
 Puis j'ai passé ça sur Aerialod pour donner un peu de hauteur à cette nouvelle île du Tigre !
 
-[Cliquer ici pour voir le tigre s'élever !](https://aurelienchaumet.github.io/assets/images/30daymapchallenge/day28_tiger_island_elevation.mp4)
+[Cliquer ici pour voir le tigre s'élever !](https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day28_tiger_island_elevation.mp4)
 
 La deuxième vidéo vous permettra sans doute de trouver sur quel MNT je me suis appuyé :wink:.
 
-[Cliquer ici pour voir l'ïle du Tigre en 360° !](https://aurelienchaumet.github.io/assets/images/30daymapchallenge/day28_tiger_island_360.mp4)
+[Cliquer ici pour voir l'ïle du Tigre en 360° !](https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day28_tiger_island_360.mp4)
