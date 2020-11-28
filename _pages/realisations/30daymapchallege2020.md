@@ -3,7 +3,7 @@ layout: single
 permalink: /realisations/30daymapchallenge/  
 title : "30 DayMapChallenge 2020"   
 header:
-  overlay_image: /assets/images/30daymapchallenge/map_challenge_themes_2020_ac.jpg
+  overlay_image: /assets/images/30daymapchallenge/map_challenge_themes_2020_ac.webp
   overlay_filter: 0.3
 excerpt:
   Cartes réalisées pour le 30DayMapChallenge 2020
@@ -13,36 +13,36 @@ toc_label: "Participations"
 toc_icon: "globe"
 
 gallery:
-  - url: "/assets/images/30daymapchallenge/day1_pop_city_17.png"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_city_17.png"
+  - url: "/assets/images/30daymapchallenge/day1_pop_city_17.webp"
+    image_path: "/assets/images/30daymapchallenge/day1_pop_city_17.webp"
     alt: "points charente maritime commune"
     title: "Population de la Charente-Maritime répartie à la commune"
-  - url: "/assets/images/30daymapchallenge/day1_pop_square_17.png"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_square_17.png"
+  - url: "/assets/images/30daymapchallenge/day1_pop_square_17.webp"
+    image_path: "/assets/images/30daymapchallenge/day1_pop_square_17.webp"
     alt: "points charente maritime grid"
     title: "Population de la Charente-Maritime répartie sur une grille de 200m de coté"
-  - url: "/assets/images/30daymapchallenge/day1_pop_building_17.png"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_building_17.png"
+  - url: "/assets/images/30daymapchallenge/day1_pop_building_17.webp"
+    image_path: "/assets/images/30daymapchallenge/day1_pop_building_17.webp"
     alt: "points charente maritime bati"
     title: "Population de la Charente-Maritime répartie aléatoirement dans les bâtiments"
 
 gallery1bis:
-  - url: "/assets/images/30daymapchallenge/day1_pop_city_lr.png"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_city_lr.png"
+  - url: "/assets/images/30daymapchallenge/day1_pop_city_lr.webp"
+    image_path: "/assets/images/30daymapchallenge/day1_pop_city_lr.webp"
     alt: "points la rochelle commune"
     title: "Population de la Rochelle répartie à la commune"
-  - url: "/assets/images/30daymapchallenge/day1_pop_square_lr.png"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_square_lr.png"
+  - url: "/assets/images/30daymapchallenge/day1_pop_square_lr.webp"
+    image_path: "/assets/images/30daymapchallenge/day1_pop_square_lr.webp"
     alt: "points la rochelle grid"
     title: "Population de la Rochelle répartie sur une grille de 200m de coté"
-  - url: "/assets/images/30daymapchallenge/day1_pop_building_lr.png"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_building_lr.png"
+  - url: "/assets/images/30daymapchallenge/day1_pop_building_lr.webp"
+    image_path: "/assets/images/30daymapchallenge/day1_pop_building_lr.webp"
     alt: "points la rochelle bati"
     title: "Population de la Rochelle répartie aléatoirement dans les bâtiments"
 
 gallery2:
-  - url: "/assets/images/30daymapchallenge/day2_poster_ponant_sd.png"
-    image_path: "/assets/images/30daymapchallenge/day2_poster_ponant_sd.png"
+  - url: "/assets/images/30daymapchallenge/day2_poster_ponant_sd.webp"
+    image_path: "/assets/images/30daymapchallenge/day2_poster_ponant_sd.webp"
     alt: "poster iles ponant"
     title: "15 îles du Ponant"
     
@@ -53,54 +53,54 @@ gallery3:
     title: "Evolution des communes françaises de 2015 à 2019"
 
 gallery6:
-  - url: "/assets/images/30daymapchallenge/day6_espana_poblacion.png"
-    image_path: "/assets/images/30daymapchallenge/day6_espana_poblacion.png"
+  - url: "/assets/images/30daymapchallenge/day6_espana_poblacion.webp"
+    image_path: "/assets/images/30daymapchallenge/day6_espana_poblacion.webp"
     alt: "population espagnole vue du sud"
     title: "Population espagnloe vue du Sud"
-  - url: "/assets/images/30daymapchallenge/day6_espana_poblacion_SE.png"
-    image_path: "/assets/images/30daymapchallenge/day6_espana_poblacion_SE.png"
+  - url: "/assets/images/30daymapchallenge/day6_espana_poblacion_SE.webp"
+    image_path: "/assets/images/30daymapchallenge/day6_espana_poblacion_SE.webp"
     alt: "population espagnole vue du sud est"
     title: "Population espagnloe vue du Sud-Est"
 
 gallery7:
-  - url: "/assets/images/30daymapchallenge/day7_african_pop_hd.png"
-    image_path: "/assets/images/30daymapchallenge/day7_african_pop_hd.png"
+  - url: "/assets/images/30daymapchallenge/day7_african_pop_hd.webp"
+    image_path: "/assets/images/30daymapchallenge/day7_african_pop_hd.webp"
     alt: "population africaine pics"
     title: "Population africaine en pics sans frontière"
-  - url: "/assets/images/30daymapchallenge/day7_african_pop_border_hd.png"
-    image_path: "/assets/images/30daymapchallenge/day7_african_pop_border_hd.png"
+  - url: "/assets/images/30daymapchallenge/day7_african_pop_border_hd.webp"
+    image_path: "/assets/images/30daymapchallenge/day7_african_pop_border_hd.webp"
     alt: "population africaine pics avec frontiere"
     title: "Population africaine en pics avec frontière"
 
 gallery9:
-  - url: "/assets/images/30daymapchallenge/day9_corse1.jpg"
-    image_path: "/assets/images/30daymapchallenge/day9_corse1.jpg"
+  - url: "/assets/images/30daymapchallenge/day9_corse1.webp"
+    image_path: "/assets/images/30daymapchallenge/day9_corse1.webp"
     alt: "relief corse"
     title: "Relief corse Sud"
-  - url: "/assets/images/30daymapchallenge/day9_corse2.jpg"
-    image_path: "/assets/images/30daymapchallenge/day9_corse2.jpg"
+  - url: "/assets/images/30daymapchallenge/day9_corse2.webp"
+    image_path: "/assets/images/30daymapchallenge/day9_corse2.webp"
     alt: "relief corse piana"
     title: "Relief Piana"
-  - url: "/assets/images/30daymapchallenge/day9_corse3.jpg"
-    image_path: "/assets/images/30daymapchallenge/day9_corse3.jpg"
+  - url: "/assets/images/30daymapchallenge/day9_corse3.webp"
+    image_path: "/assets/images/30daymapchallenge/day9_corse3.webp"
     alt: "relief corse"
     title: "Relief Corse Sud-Est"
-  - url: "/assets/images/30daymapchallenge/day9_corse4.jpg"
-    image_path: "/assets/images/30daymapchallenge/day9_corse4.jpg"
+  - url: "/assets/images/30daymapchallenge/day9_corse4.webp"
+    image_path: "/assets/images/30daymapchallenge/day9_corse4.webp"
     alt: "relief corse"
     title: "Relief Corse Nord"
-  - url: "/assets/images/30daymapchallenge/day9_corse5.jpg"
-    image_path: "/assets/images/30daymapchallenge/day9_corse5.jpg"
+  - url: "/assets/images/30daymapchallenge/day9_corse5.webp"
+    image_path: "/assets/images/30daymapchallenge/day9_corse5.webp"
     alt: "relief corse"
     title: "Relief Corse Sud-Ouest"
 
 gallery10:
-  - url: "/assets/images/30daymapchallenge/day10_malta_pop_cube.png"
-    image_path: "/assets/images/30daymapchallenge/day10_malta_pop_cube.png"
+  - url: "/assets/images/30daymapchallenge/day10_malta_pop_cube.webp"
+    image_path: "/assets/images/30daymapchallenge/day10_malta_pop_cube.webp"
     alt: "malte population cube"
     title: "Population cubique de Malte"
-  - url: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.png"
-    image_path: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.png"
+  - url: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.webp"
+    image_path: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.webp"
     alt: "malte population pics"
     title: "Population en pics de Malte"
   
@@ -111,20 +111,20 @@ gallery11:
     title: "Tour à 360° de l'île de la Réunion"
 
 gallery13:
-  - url: "/assets/images/30daymapchallenge/day13_oleron_raster.jpg"
-    image_path: "/assets/images/30daymapchallenge/day13_oleron_raster.jpg"
+  - url: "/assets/images/30daymapchallenge/day13_oleron_raster.webp"
+    image_path: "/assets/images/30daymapchallenge/day13_oleron_raster.webp"
     alt: "oleron raster sentinel"
     title: "Vue Sentinel de l'Île d'Oléron"
 
 gallery16:
-  - url: "/assets/images/30daymapchallenge/day16_oleron_relief.png"
-    image_path: "/assets/images/30daymapchallenge/day16_oleron_relief.png"
+  - url: "/assets/images/30daymapchallenge/day16_oleron_relief.webp"
+    image_path: "/assets/images/30daymapchallenge/day16_oleron_relief.webp"
     alt: "oleron relief"
     title: "Relief de l'Île d'Oléron"
 
 gallery17:
-  - url: "/assets/images/30daymapchallenge/day17_historic.png"
-    image_path: "/assets/images/30daymapchallenge/day17_historic.png"
+  - url: "/assets/images/30daymapchallenge/day17_historic.webp"
+    image_path: "/assets/images/30daymapchallenge/day17_historic.webp"
     alt: "oleron historique"
     title: "Quelques éléments historiques du Pays Marennes Oléron"
 
@@ -139,15 +139,15 @@ gallery18:
     title: "Evolution de l'emprise bâtie à Saint Denis d'Oléron"
 
 gallery28:
-  - url: "/assets/images/30daymapchallenge/day28_tiger_island.png"
-    image_path: "/assets/images/30daymapchallenge/day28_tiger_island.png"
+  - url: "/assets/images/30daymapchallenge/day28_tiger_island.webp"
+    image_path: "/assets/images/30daymapchallenge/day28_tiger_island.webp"
     alt: "ile tigre"
     title: "Elévation de l'Île du Tigre"
 ---
 
 Initié en octobre 2019 par Topi Tjukanov, ce challenge, totalement amical et sans aucune contrepartie, consiste à publier une carte réalisée personnellement par jour sur Twitter, suivant un thème défini quotidiennement.
 
-![image30dmc](/assets/images/30daymapchallenge/map_challenge_themes_2020.jpg){: .align-center}
+![image30dmc](/assets/images/30daymapchallenge/map_challenge_themes_2020.webp){: .align-center}
 
 Cette année, le challenge se déroule en novembre et ce sont donc 30 thèmes différents auxquels les participants tentent de faire face cartographiquement.
 
