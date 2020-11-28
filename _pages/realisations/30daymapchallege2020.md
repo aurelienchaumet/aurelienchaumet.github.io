@@ -138,6 +138,16 @@ gallery18:
     alt: "saint denis d'oléron artificialisation"
     title: "Evolution de l'emprise bâtie à Saint Denis d'Oléron"
 
+gallery20:
+  - url: "/assets/images/30daymapchallenge/day20_french_population_v2_hd.webp"
+    image_path: "/assets/images/30daymapchallenge/day20_french_population_v2_hd.webp"
+    alt: "population france"
+    title: "Population française en pics"
+  - url: "/assets/images/30daymapchallenge/day20_french_population_100_v2_hd.webp"
+    image_path: "/assets/images/30daymapchallenge/day20_french_population_100_v2_hd.webp"
+    alt: "population france moins de 100 habitants"
+    title: "Population française en pics, avec plus de 100 habitants dans un carré de 200m de côté"
+
 gallery28:
   - url: "/assets/images/30daymapchallenge/day28_tiger_island.webp"
     image_path: "/assets/images/30daymapchallenge/day28_tiger_island.webp"
@@ -294,6 +304,16 @@ J'ai donc voulu représenter l'évolution des unités foncières bâties dans le
 Le deuxième gif correspond à un zoom sur la commune de Saint Denis d'Oléron.
 
 Ces gif sont issus d'un traitement des matrices cadastrales et du PCI Vecteur, grâce à FME et QGIS, et ont été réalisés dans le cadre d'un atelier de concertation pour l'Agenda 21 de l'Île d'Oléron.
+
+## Jour 20 - Population
+
+{% include gallery id="gallery20" caption="Population française en pics" %}
+
+Cette carte fait partie de la série des cartes de populations en pics, via Aerialod.
+
+La première est la plus complète possible et présente l'ensemble du jeu de données de la population carroyée de l'INSEE.
+
+La deuxième ne tient compte que des carreaux de 200m de côté avec plus de 100 habitants, pour un aspect visuel plus "clair".
 
 ## Jour 28 - Carte non géographique
 
