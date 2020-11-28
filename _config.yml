@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Aurélien Chaumet"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile_twitter.jpg"
   bio              : "Cartographe 🗺️ et observateur territorial insulaire <br />
                      Travaille sur FME, QGIS, Tableau et un peu de Python <br />
                      Intéressé par les SIG, les ETL, la Dataviz et l'Opendata"
@@ -123,12 +123,15 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:aurelienchaumet17@gmail.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/aurelienchaumet"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      # url: 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/aurelienchaumet"
@@ -141,7 +144,6 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/aurelienchaumet"
-
 
 # Reading Files
 include:
@@ -209,8 +211,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -222,6 +224,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
+  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -230,6 +233,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jemoji
 
 
 # Archives
@@ -283,3 +287,5 @@ defaults:
       comments: # true
       share: true
       related: true
+
+github: [metadata]

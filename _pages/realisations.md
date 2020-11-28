@@ -2,23 +2,20 @@
 layout: splash
 permalink: /realisations/
 title : "Réalisations"   
-hidden: true
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/source.png
-  # actions:
-  #  - label: "<i class='fas fa-download'></i> Install now"
-  #    url: "/docs/quick-start-guide/"
-excerpt: >
+  overlay_image: /assets/images/realisations_puzzle.png
+  overlay_filter: 0.3
+excerpt:
   Rendus cartographiques et dataviz en tout genre
+
 feature_row:
-  - image_path: /assets/images/source.png
-    alt: "Test de réalisation"
-    title: "Test de réalisation"
-    excerpt: "Ma première réalisation"
-    url: "/realisations/test1/"
+  - image_path: /assets/images/30daymapchallenge/map_challenge_themes_2020_ac.jpg
+    alt: "30DayMapChallenge"
+    title: "30DayMapChallenge 2020"
+    excerpt: "Cartes réalisées pour le 30DayMapChallenge 2020"
+    url: "/realisations/30daymapchallenge/"
     btn_class: "btn--primary"
-    btn_label: "Tellement envie de le lire"
+    btn_label: "Accéder"
 ---
 
 {% include feature_row %}

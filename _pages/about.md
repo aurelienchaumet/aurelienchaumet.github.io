@@ -1,7 +1,9 @@
 ---
 layout: single
 permalink: /about/  
+classes: wide
 title : "A propos"   
+author_profile: true
 ---
 
 Mon métier est d’accompagner des collectivités locales à exprimer leurs besoins thématiques (foncier, urbanisme, déchets, espaces naturels…) et tenter de trouver une manière d’y répondre grâce à l’utilisation de données.

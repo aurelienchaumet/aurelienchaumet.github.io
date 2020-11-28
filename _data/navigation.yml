@@ -1,14 +1,10 @@
 # main links
-#main:
+main:
   - title: "Réalisations"
     url: https://aurelienchaumet.github.io/realisations
-  - title: "Tutoriels"
-    url: https://aurelienchaumet.github.io/tutoriels
-  - title: "Blog"
-    url: /year-archive/
+  - title: "Articles"
+    url: https://aurelienchaumet.github.io/articles
+  - title: "Inspiration"
+    url: https://aurelienchaumet.github.io/inspiration
   - title: "A propos"
     url: https://aurelienchaumet.github.io/about
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
