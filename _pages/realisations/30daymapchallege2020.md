@@ -145,6 +145,16 @@ gallery28:
     title: "Elévation de l'Île du Tigre"
 ---
 
+Initié en octobre 2019 par Topi Tjukanov, ce challenge, totalement amical et sans aucune contrepartie, consiste à publier une carte réalisée personnellement par jour sur Twitter, suivant un thème défini quotidiennement.
+
+![image30dmc](/assets/images/30daymapchallenge/map_challenge_themes_2020.jpg){: .align-center}
+
+Cette année, le challenge se déroule en novembre et ce sont donc 30 thèmes différents auxquels les participants tentent de faire face cartographiquement.
+
+Vous trouverez ici ma participation au challenge.
+
+Bonne lecture et n'hésitez pas à me faire [des retours notamment via Twitter!](https://twitter.com/AurelienChaumet)
+
 ## Jour 1 - Points
 
 {% include gallery caption="Données de population de la Charente-Maritime réparties selon différentes échelles" %}
