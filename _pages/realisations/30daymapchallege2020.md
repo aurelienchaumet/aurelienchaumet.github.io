@@ -139,12 +139,12 @@ gallery18:
     title: "Evolution de l'emprise bâtie à Saint Denis d'Oléron"
 
 gallery28:
-  - url: "/assets/images/30daymapchallenge/day28_tiger_island_elevation.gif"
-    image_path: "/assets/images/30daymapchallenge/day28_tiger_island_elevation.gif"
+  - url: "/assets/images/30daymapchallenge/day28_tiger_island_elevation.mp4"
+    image_path: "/assets/images/30daymapchallenge/day28_tiger_island_elevation.mp4"
     alt: "ile tigre"
     title: "Elévation de l'Île du Tigre"
-  - url: "/assets/images/30daymapchallenge/day28_tiger_island_360.gif"
-    image_path: "/assets/images/30daymapchallenge/day28_tiger_island_360.gif"
+  - url: "/assets/images/30daymapchallenge/day28_tiger_island_360.mp4"
+    image_path: "/assets/images/30daymapchallenge/day28_tiger_island_360.mp4"
     alt: "tour 360 ile tigre"
     title: "Tour 360° de l'Île du Tigre"
 ---
