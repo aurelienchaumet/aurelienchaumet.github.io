@@ -139,14 +139,10 @@ gallery18:
     title: "Evolution de l'emprise bâtie à Saint Denis d'Oléron"
 
 gallery28:
-  - url: "/assets/images/30daymapchallenge/day28_tiger_island_elevation.mp4"
-    image_path: "/assets/images/30daymapchallenge/day28_tiger_island_elevation.mp4"
+  - url: "/assets/images/30daymapchallenge/day28_tiger_island.png"
+    image_path: "/assets/images/30daymapchallenge/day28_tiger_island.png"
     alt: "ile tigre"
     title: "Elévation de l'Île du Tigre"
-  - url: "/assets/images/30daymapchallenge/day28_tiger_island_360.mp4"
-    image_path: "/assets/images/30daymapchallenge/day28_tiger_island_360.mp4"
-    alt: "tour 360 ile tigre"
-    title: "Tour 360° de l'Île du Tigre"
 ---
 
 ## Jour 1 - Points
@@ -299,4 +295,8 @@ J'ai récupéré (avec son accord) une des créations de [Justine Vignat](https:
 
 Puis j'ai passé ça sur Aerialod pour donner un peu de hauteur à cette nouvelle île du Tigre !
 
+[Cliquer ici pour voir le tigre s'élever !](https://aurelienchaumet.github.io/assets/images/30daymapchallenge/day28_tiger_island_elevation.mp4)
+
 La deuxième vidéo vous permettra sans doute de trouver sur quel MNT je me suis appuyé :wink:.
+
+[Cliquer ici pour voir l'ïle du Tigre en 360° !](https://aurelienchaumet.github.io/assets/images/30daymapchallenge/day28_tiger_island_360.mp4)
