@@ -2,6 +2,7 @@
 layout: splash
 title: "Des cartes, des données et des outils"
 excerpt: "Ressources en tout genre autour de la géomatique et des données"
+image: /assets/images/favicon.png
 header:
   overlay_image: /assets/images/test_splash.png
   caption: "Données DVF sur Kepler.gl"
