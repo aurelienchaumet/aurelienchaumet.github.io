@@ -137,6 +137,16 @@ gallery18:
     image_path: "/assets/images/30daymapchallenge/day18_artif_st_denis.gif"
     alt: "saint denis d'oléron artificialisation"
     title: "Evolution de l'emprise bâtie à Saint Denis d'Oléron"
+
+gallery28:
+  - url: "/assets/images/30daymapchallenge/day28_tiger_island_elevation.gif"
+    image_path: "/assets/images/30daymapchallenge/day28_tiger_island_elevation.gif"
+    alt: "ile tigre"
+    title: "Elévation de l'Île du Tigre"
+  - url: "/assets/images/30daymapchallenge/day28_tiger_island_360.gif"
+    image_path: "/assets/images/30daymapchallenge/day28_tiger_island_360.gif"
+    alt: "tour 360 ile tigre"
+    title: "Tour 360° de l'Île du Tigre"
 ---
 
 ## Jour 1 - Points
@@ -278,3 +288,15 @@ J'ai donc voulu représenter l'évolution des unités foncières bâties dans le
 Le deuxième gif correspond à un zoom sur la commune de Saint Denis d'Oléron.
 
 Ces gif sont issus d'un traitement des matrices cadastrales et du PCI Vecteur, grâce à FME et QGIS, et ont été réalisés dans le cadre d'un atelier de concertation pour l'Agenda 21 de l'Île d'Oléron.
+
+## Jour 28 - Carte non géographique
+
+{% include gallery id="gallery28" caption="Île du Tigre" %}
+
+J'ai voulu m'amuser un peu pour ce qui sera sans doute ma dernière participation à ce 30DayMapChallenge.
+
+J'ai récupéré (avec son accord) une des créations de [Justine Vignat](https://www.stinarto.com/urbanimal), et je l'ai mixée avec un Modèle Numérique de Terrain sous Gimp.
+
+Puis j'ai passé ça sur Aerialod pour donner un peu de hauteur à cette nouvelle île du Tigre !
+
+La deuxième vidéo vous permettra sans doute de trouver sur quel MNT je me suis appuyé :wink:.
