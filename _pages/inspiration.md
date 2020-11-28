@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.3
 excerpt:
   Un recueil de personnes, de sites ou d'applications qui donnent envie de visualiser des données
-feature_row:
+#feature_row:
   - image_path: /assets/images/source.png
     alt: "Test de réalisation"
     title: "Test de réalisation"
