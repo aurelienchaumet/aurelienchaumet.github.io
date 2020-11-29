@@ -24,8 +24,8 @@ description              : "Site parlant de cartes, de données, de géodonnées
 url                      : "https://aurelienchaumet.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "aurelienchaumet/aurelienchaumet.github.io"
-teaser                   : "/assets/images/source.png"
-logo                     : "/assets/images/logo.webp"
+teaser                   : "https://dl01fbzxdpfby.cloudfront.net/images/source.png"
+logo                     : "https://dl01fbzxdpfby.cloudfront.net/images/logo.webp"
 masthead_title           : "Aurélien Chaumet"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 250
@@ -75,7 +75,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : /assets/images/favicon.png
+og_image                 : https://dl01fbzxdpfby.cloudfront.net/images/favicon.png
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Aurélien Chaumet"
-  avatar           : "/assets/images/profile_twitter.jpg"
+  avatar           : "https://dl01fbzxdpfby.cloudfront.net/images/profile_twitter.jpg"
   bio              : "Cartographe 🗺️ et observateur territorial insulaire <br />
                      Travaille sur FME, QGIS, Tableau et un peu de Python <br />
                      Intéressé par les SIG, les ETL, la Dataviz et l'Opendata"

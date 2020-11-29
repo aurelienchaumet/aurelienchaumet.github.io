@@ -3,12 +3,12 @@ layout: splash
 permalink: /inspiration/
 title : "Inspiration"   
 header:
-  overlay_image: /assets/images/inspiration.webp
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/inspiration.webp
   overlay_filter: 0.3
 excerpt:
   Un recueil de personnes, de sites ou d'applications qui donnent envie de visualiser des données
 #feature_row:
-  - image_path: /assets/images/source.webp
+  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/source.webp
     alt: "Test de réalisation"
     title: "Test de réalisation"
     excerpt: "Ma première réalisation"
