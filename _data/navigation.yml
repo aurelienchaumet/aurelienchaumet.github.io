@@ -4,7 +4,7 @@ main:
     url: https://aurelienchaumet.github.io/realisations
   - title: "Articles"
     url: https://aurelienchaumet.github.io/articles
-  - title: "Inspiration"
-    url: https://aurelienchaumet.github.io/inspiration
+  #- title: "Inspiration"
+  #  url: https://aurelienchaumet.github.io/inspiration
   - title: "A propos"
     url: https://aurelienchaumet.github.io/about
