@@ -191,7 +191,7 @@ Ces cartes ont été réalisées grâce à [Leaflet](https://leafletjs.com/) et 
 
 Ce poster vient d'une série que j'ai réalisée récemment sur les 15 îles du Ponant.
 
-J'ai, pour cela, utilisé des données [OpenStreetMap](https://www.openstreetmap.org/about) et j'ai emprunté un style à [Klas Karlsson](https://twitter.com/klaskarlsson) disponible [à cette adresses.](http://qgis-hub.fast-page.org/styles.php)
+J'ai, pour cela, utilisé des données [OpenStreetMap](https://www.openstreetmap.org/about) et j'ai emprunté un style à [Klas Karlsson](https://twitter.com/klaskarlsson) disponible [à cette adresse.](http://qgis-hub.fast-page.org/styles.php)
 
 QGIS et Gimp sont les deux outils m'ayant permis de réaliser ce poster.
 
