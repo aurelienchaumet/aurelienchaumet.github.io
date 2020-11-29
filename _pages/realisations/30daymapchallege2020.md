@@ -3,7 +3,7 @@ layout: single
 permalink: /realisations/30daymapchallenge/  
 title : "30 DayMapChallenge 2020"   
 header:
-  overlay_image: /assets/images/30daymapchallenge/map_challenge_themes_2020_ac.webp
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/map_challenge_themes_2020_ac.webp
   overlay_filter: 0.3
 excerpt:
   Cartes réalisées pour le 30DayMapChallenge 2020
@@ -13,151 +13,151 @@ toc_label: "Participations"
 toc_icon: "globe"
 
 gallery:
-  - url: "/assets/images/30daymapchallenge/day1_pop_city_17.webp"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_city_17.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_city_17.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_city_17.webp"
     alt: "points charente maritime commune"
     title: "Population de la Charente-Maritime répartie à la commune"
-  - url: "/assets/images/30daymapchallenge/day1_pop_square_17.webp"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_square_17.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_square_17.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_square_17.webp"
     alt: "points charente maritime grid"
     title: "Population de la Charente-Maritime répartie sur une grille de 200m de coté"
-  - url: "/assets/images/30daymapchallenge/day1_pop_building_17.webp"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_building_17.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_building_17.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_building_17.webp"
     alt: "points charente maritime bati"
     title: "Population de la Charente-Maritime répartie aléatoirement dans les bâtiments"
 
 gallery1bis:
-  - url: "/assets/images/30daymapchallenge/day1_pop_city_lr.webp"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_city_lr.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_city_lr.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_city_lr.webp"
     alt: "points la rochelle commune"
     title: "Population de la Rochelle répartie à la commune"
-  - url: "/assets/images/30daymapchallenge/day1_pop_square_lr.webp"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_square_lr.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_square_lr.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_square_lr.webp"
     alt: "points la rochelle grid"
     title: "Population de la Rochelle répartie sur une grille de 200m de coté"
-  - url: "/assets/images/30daymapchallenge/day1_pop_building_lr.webp"
-    image_path: "/assets/images/30daymapchallenge/day1_pop_building_lr.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_building_lr.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_building_lr.webp"
     alt: "points la rochelle bati"
     title: "Population de la Rochelle répartie aléatoirement dans les bâtiments"
 
 gallery2:
-  - url: "/assets/images/30daymapchallenge/day2_poster_ponant_sd.webp"
-    image_path: "/assets/images/30daymapchallenge/day2_poster_ponant_sd.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day2_poster_ponant_sd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day2_poster_ponant_sd.webp"
     alt: "poster iles ponant"
     title: "15 îles du Ponant"
     
 gallery3:
-  - url: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day3_disparitions_communes.gif"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day3_disparitions_communes.gif"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day3_disparitions_communes.gif"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day3_disparitions_communes.gif"
     alt: "disparition communes"
     title: "Evolution des communes françaises de 2015 à 2019"
 
 gallery6:
-  - url: "/assets/images/30daymapchallenge/day6_espana_poblacion.webp"
-    image_path: "/assets/images/30daymapchallenge/day6_espana_poblacion.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day6_espana_poblacion.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day6_espana_poblacion.webp"
     alt: "population espagnole vue du sud"
     title: "Population espagnloe vue du Sud"
-  - url: "/assets/images/30daymapchallenge/day6_espana_poblacion_SE.webp"
-    image_path: "/assets/images/30daymapchallenge/day6_espana_poblacion_SE.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day6_espana_poblacion_SE.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day6_espana_poblacion_SE.webp"
     alt: "population espagnole vue du sud est"
     title: "Population espagnloe vue du Sud-Est"
 
 gallery7:
-  - url: "/assets/images/30daymapchallenge/day7_african_pop_hd.webp"
-    image_path: "/assets/images/30daymapchallenge/day7_african_pop_hd.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day7_african_pop_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day7_african_pop_hd.webp"
     alt: "population africaine pics"
     title: "Population africaine en pics sans frontière"
-  - url: "/assets/images/30daymapchallenge/day7_african_pop_border_hd.webp"
-    image_path: "/assets/images/30daymapchallenge/day7_african_pop_border_hd.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day7_african_pop_border_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day7_african_pop_border_hd.webp"
     alt: "population africaine pics avec frontiere"
     title: "Population africaine en pics avec frontière"
 
 gallery9:
-  - url: "/assets/images/30daymapchallenge/day9_corse1.webp"
-    image_path: "/assets/images/30daymapchallenge/day9_corse1.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse1.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse1.webp"
     alt: "relief corse"
     title: "Relief corse Sud"
-  - url: "/assets/images/30daymapchallenge/day9_corse2.webp"
-    image_path: "/assets/images/30daymapchallenge/day9_corse2.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse2.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse2.webp"
     alt: "relief corse piana"
     title: "Relief Piana"
-  - url: "/assets/images/30daymapchallenge/day9_corse3.webp"
-    image_path: "/assets/images/30daymapchallenge/day9_corse3.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse3.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse3.webp"
     alt: "relief corse"
     title: "Relief Corse Sud-Est"
-  - url: "/assets/images/30daymapchallenge/day9_corse4.webp"
-    image_path: "/assets/images/30daymapchallenge/day9_corse4.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse4.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse4.webp"
     alt: "relief corse"
     title: "Relief Corse Nord"
-  - url: "/assets/images/30daymapchallenge/day9_corse5.webp"
-    image_path: "/assets/images/30daymapchallenge/day9_corse5.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse5.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day9_corse5.webp"
     alt: "relief corse"
     title: "Relief Corse Sud-Ouest"
 
 gallery10:
-  - url: "/assets/images/30daymapchallenge/day10_malta_pop_cube.webp"
-    image_path: "/assets/images/30daymapchallenge/day10_malta_pop_cube.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day10_malta_pop_cube.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day10_malta_pop_cube.webp"
     alt: "malte population cube"
     title: "Population cubique de Malte"
-  - url: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.webp"
-    image_path: "/assets/images/30daymapchallenge/day10_malta_pop_spikes.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day10_malta_pop_spikes.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day10_malta_pop_spikes.webp"
     alt: "malte population pics"
     title: "Population en pics de Malte"
   
 gallery11:
-  - url: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/Reunion-360.gif"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/Reunion-360.gif"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day13_Reunion-360.gif"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day13_Reunion-360.gif"
     alt: "tour 360 relief ile reunion"
     title: "Tour à 360° de l'île de la Réunion"
 
 gallery13:
-  - url: "/assets/images/30daymapchallenge/day13_oleron_raster.webp"
-    image_path: "/assets/images/30daymapchallenge/day13_oleron_raster.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day13_oleron_raster.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day13_oleron_raster.webp"
     alt: "oleron raster sentinel"
     title: "Vue Sentinel de l'Île d'Oléron"
 
 gallery16:
-  - url: "/assets/images/30daymapchallenge/day16_oleron_relief.webp"
-    image_path: "/assets/images/30daymapchallenge/day16_oleron_relief.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day16_oleron_relief.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day16_oleron_relief.webp"
     alt: "oleron relief"
     title: "Relief de l'Île d'Oléron"
 
 gallery17:
-  - url: "/assets/images/30daymapchallenge/day17_historic.webp"
-    image_path: "/assets/images/30daymapchallenge/day17_historic.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day17_historic.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day17_historic.webp"
     alt: "oleron historique"
     title: "Quelques éléments historiques du Pays Marennes Oléron"
 
 gallery18:
-  - url: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day18_artif_oleron.gif"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day18_artif_oleron.gif"
     image_path: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day18_artif_oleron.gif"
     alt: "oleron artificialisation"
     title: "Evolution de l'emprise bâtie sur l'Île d'Oléron"
-  - url: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day18_artif_st_denis.gif"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day18_artif_st_denis.gif"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day18_artif_st_denis.gif"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day18_artif_st_denis.gif"
     alt: "saint denis d'oléron artificialisation"
     title: "Evolution de l'emprise bâtie à Saint Denis d'Oléron"
 
 gallery20:
-  - url: "/assets/images/30daymapchallenge/day20_french_population_v2_hd.webp"
-    image_path: "/assets/images/30daymapchallenge/day20_french_population_v2_hd.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day20_french_population_v2_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day20_french_population_v2_hd.webp"
     alt: "population france"
     title: "Population française en pics"
-  - url: "/assets/images/30daymapchallenge/day20_french_population_100_v2_hd.webp"
-    image_path: "/assets/images/30daymapchallenge/day20_french_population_100_v2_hd.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day20_french_population_100_v2_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day20_french_population_100_v2_hd.webp"
     alt: "population france moins de 100 habitants"
     title: "Population française en pics, avec plus de 100 habitants dans un carré de 200m de côté"
 
 gallery28:
-  - url: "/assets/images/30daymapchallenge/day28_tiger_island.webp"
-    image_path: "/assets/images/30daymapchallenge/day28_tiger_island.webp"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day28_tiger_island.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day28_tiger_island.webp"
     alt: "ile tigre"
     title: "Elévation de l'Île du Tigre"
 ---
 
 Initié en octobre 2019 par Topi Tjukanov, ce challenge, totalement amical et sans aucune contrepartie, consiste à publier une carte réalisée personnellement par jour sur Twitter, suivant un thème défini quotidiennement.
 
-![image30dmc](/assets/images/30daymapchallenge/map_challenge_themes_2020.webp){: .align-center}
+![image30dmc](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/map_challenge_themes_2020.webp){: .align-center}
 
 Cette année, le challenge se déroule en novembre et ce sont donc 30 thèmes différents auxquels les participants tentent de faire face cartographiquement.
 
@@ -329,4 +329,4 @@ Puis j'ai passé ça sur Aerialod pour donner un peu de hauteur à cette nouvell
 
 La deuxième vidéo vous permettra sans doute de trouver sur quel MNT je me suis appuyé :wink:.
 
-[Cliquer ici pour voir l'ïle du Tigre en 360° !](https://dl01fbzxdpfby.cloudfront.net/images/images/30daymapchallenge/day28_tiger_island_360.mp4)
+[Cliquer ici pour voir l'ïle du Tigre en 360° !](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day28_tiger_island_360.mp4)
