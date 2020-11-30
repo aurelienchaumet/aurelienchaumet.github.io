@@ -8,6 +8,7 @@ header:
 excerpt:
   Cartes réalisées pour le 30DayMapChallenge 2020
 
+comments: true
 toc: true
 toc_label: "Participations"
 toc_icon: "globe"
@@ -148,16 +149,28 @@ gallery20:
     alt: "population france moins de 100 habitants"
     title: "Population française en pics, avec plus de 100 habitants dans un carré de 200m de côté"
 
+gallery26:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day_26_belle_ile_hd_sans_bordure.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day_26_belle_ile_hd_sans_bordure.webp"
+    alt: "belle ile relief"
+    title: "Vue réelle en relief de Belle-Île-en-Mer"
+
 gallery28:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day28_tiger_island.webp"
     image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day28_tiger_island.webp"
     alt: "ile tigre"
     title: "Elévation de l'Île du Tigre"
+
+gallery29:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day29_lune_tour.gif"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day29_lune_tour.gif"
+    alt: "lune tour"
+    title: "Tourne Lune, tourne !"
 ---
 
 Initié en octobre 2019 par Topi Tjukanov, ce challenge, totalement amical et sans aucune contrepartie, consiste à publier une carte réalisée personnellement par jour sur Twitter, suivant un thème défini quotidiennement.
 
-![image30dmc](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/map_challenge_themes_2020.webp){: .align-center}
+![image30dmc](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/map_challenge_themes_2020.webp "Thèmes du 30DayMapChallenge 2020 !"){: .align-center}
 
 Cette année, le challenge se déroule en novembre et ce sont donc 30 thèmes différents auxquels les participants tentent de faire face cartographiquement.
 
@@ -315,6 +328,26 @@ La première est la plus complète possible et présente l'ensemble du jeu de do
 
 La deuxième ne tient compte que des carreaux de 200m de côté avec plus de 100 habitants, pour un aspect visuel plus "clair".
 
+## Jour 24 - Elévation
+
+[![tour 360 belle ile](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day24_belle_ile_capture.webp "Un petit tour autour de Belle-île ?")](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day24_belle_ile_360.mp4){: .align-center}
+
+Après le gif du tour de l'Île de la Réunion à 360°, j'ai voulu tester un autre style et une autre île. Oui j'aime les îles !
+
+J'ai donc récupéré un [MNT LIDAR provenant du SHOM](https://diffusion.shom.fr/pro/risques/litto3dr-finistere-2014.html), que j'ai traité via Aerialod.
+
+J'ai capturé 360 images de l'île en demandant (toujours gentiment) au logiciel d'en faire le tour entier lui-même. Puis j'ai passé ces différentes images dans Blender, qui, grâce à l'outil de Vidéo Editing, m'a permis de réaliser l'incrustation du texte et du logo, ainsi que l'export vidéo que vous trouverez en cliquant sur l'image de Belle-Île ci-dessus :point_up: !
+
+## Jour 26 - Carte avec un nouvel outil
+
+{% include gallery id="gallery26" caption="Vue réelle en relief de Belle-Île-en-Mer" %}
+
+Cela fait quelques mois que je lorgne sur l'apprentissage de Blender. J'ai le sentiment que cet outil, quoi que développé à l'origine pour le monde du graphisme peut servir à de la cartographie. Il n'y a qu'à faire un tour [du côté des créations de Sean Conway](https://twitter.com/geo_spatialist) par exemple pour en saisir l'idée !
+
+J'ai donc récupéré les données utilisées pour la carte précédente, ainsi qu'une [orthophoto Sentinel grâce à l'application de téléchargement](https://scihub.copernicus.eu/dhus/#/home), et j'ai mixé les deux, pour créer une carte en relief de Belle-Île.
+
+Ce qui est sûr, c'est que Blender va être le prochain outil dans lequel je vais me lancer plus en profondeur !
+
 ## Jour 28 - Carte non géographique
 
 {% include gallery id="gallery28" caption="Île du Tigre" %}
@@ -330,3 +363,21 @@ Puis j'ai passé ça sur Aerialod pour donner un peu de hauteur à cette nouvell
 La deuxième vidéo vous permettra sans doute de trouver sur quel MNT je me suis appuyé :wink:.
 
 [Cliquer ici pour voir l'ïle du Tigre en 360° !](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day28_tiger_island_360.mp4)
+
+## Jour 29 - Globe
+
+[![tour lune](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day29_lune_tour.gif "Tourne petite Lune, tourne !!")](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day29_lune_tour.mp4){: .align-center}
+
+Dernière participation (pour ma part), je recycle un de mes premiers tests effectués sous Blender, avec le tour de la Lune.
+
+Rien de bien exceptionnem, mais j'étais très fier de moi lorsque j'en suis arrivé là :smile: !
+
+Vous pouvez accéder à une version plus sympa en cliquant sur le gif ci-dessus :point_up:
+
+Avec des [données de la NASA](https://astrogeology.usgs.gov/search/map/Moon/Apollo/Traverse/Apollo17/Taurus-Littrow%20Valley%20Apollo%2017%20DEM%20150cm). Trop classe, presque l'impression de bosser pour eux !!
+
+---
+
+J'espère que ce tour d'horizon de mes participations au 30DayMapChallenge de cette année vous aura plus.
+
+N'hésitez pas à commenter directement en dessous, ou à m'envoyer un message sur Twitter, je vous répondrai avec plaisir :pray: !
