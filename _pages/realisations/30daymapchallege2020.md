@@ -148,6 +148,12 @@ gallery20:
     alt: "population france moins de 100 habitants"
     title: "Population française en pics, avec plus de 100 habitants dans un carré de 200m de côté"
 
+gallery24:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day24_belle_ile_capture.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day24_belle_ile_capture.webp"
+    alt: "belle ile tour 360"
+    title: "Tour 360° de Belle-Île-en-Mer"
+
 gallery28:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day28_tiger_island.webp"
     image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day28_tiger_island.webp"
@@ -314,6 +320,16 @@ Cette carte fait partie de la série des cartes de populations en pics, via Aeri
 La première est la plus complète possible et présente l'ensemble du jeu de données de la population carroyée de l'INSEE.
 
 La deuxième ne tient compte que des carreaux de 200m de côté avec plus de 100 habitants, pour un aspect visuel plus "clair".
+
+## Jour 24 - Elevation
+
+{% include gallery id="gallery24" caption="Tour 360° de Belle-Île-en-Mer" %}
+
+Après le gif du tour de l'Île de la Réunion à 360°, j'ai voulu tester un autre style et une autre île. Oui j'aime les îles ! 
+
+J'ai donc récupéré un [MNT LIDAR provenant du SHOM](https://diffusion.shom.fr/pro/risques/litto3dr-finistere-2014.html), que j'ai traité via Aerialod.
+
+J'ai capturé 360 images de l'île en demandant (toujours gentiment) au logiciel d'en faire le tour entier lui-même. Puis j'ai passé ces différentes images dans Blender, qui, grâce à l'outil de Vidéo Editing, m'a permis de réaliser l'incrustation du texte et du logo, ainsi que l'export en mp4.
 
 ## Jour 28 - Carte non géographique
 
