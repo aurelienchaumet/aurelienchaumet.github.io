@@ -157,7 +157,7 @@ gallery28:
 
 Initié en octobre 2019 par Topi Tjukanov, ce challenge, totalement amical et sans aucune contrepartie, consiste à publier une carte réalisée personnellement par jour sur Twitter, suivant un thème défini quotidiennement.
 
-![image30dmc](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/map_challenge_themes_2020.webp){: .align-center}
+![image30dmc](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/map_challenge_themes_2020.webp "Thèmes du 30DayMapChallenge 2020 !"){: .align-center}
 
 Cette année, le challenge se déroule en novembre et ce sont donc 30 thèmes différents auxquels les participants tentent de faire face cartographiquement.
 
