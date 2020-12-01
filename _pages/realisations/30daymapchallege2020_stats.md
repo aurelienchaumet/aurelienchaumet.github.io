@@ -19,5 +19,5 @@ First test on some statistics about the challenge.
     title="Inline Frame Example"
     width="800"
     height="500"
-    src="C:/Users/Aurelien/Documents/GitHub/aurelienchaumet.github.io/_pages/realisations/export1.html">
+    src="data\30daymapchallenge_stats\export1.html">
 </iframe>
