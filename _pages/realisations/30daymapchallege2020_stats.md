@@ -12,20 +12,6 @@ comments: true
 toc: true
 toc_label: "Statistics"
 #toc_icon: "globe"
-
-gallery:
-  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_city_17.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_city_17.webp"
-    alt: "points charente maritime commune"
-    title: "Population de la Charente-Maritime répartie à la commune"
-  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_square_17.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_square_17.webp"
-    alt: "points charente maritime grid"
-    title: "Population de la Charente-Maritime répartie sur une grille de 200m de coté"
-  - url: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_building_17.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/day1_pop_building_17.webp"
-    alt: "points charente maritime bati"
-    title: "Population de la Charente-Maritime répartie aléatoirement dans les bâtiments"
 ---
 First test on some statistics about the challenge.
 
