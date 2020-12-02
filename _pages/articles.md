@@ -39,7 +39,18 @@ feature_row_2:
     url: "https://medium.com/@aurelienchaumet/geo-data-science-avec-python-le-parcours-du-d%C3%A9butant-partie-3-ressources-df4988dc7e45"
     btn_label: "Accéder"
     btn_class: "btn--primary"
+
+feature_row_3:
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30dmc_stats_header.webp"
+    alt: "statistiques 30daymapchallenge 2020"
+    title: "30 DayMapChallenge 2020 Statistics"
+    excerpt: "Some statistics about the 30DayMapChallenge 2020 with Python <br /> <br />**_Une version française de l'article arrive très vite :smirk:_**"
+    url: "/articles/30daymapchallenge_stats_en/"
+    btn_label: "Go read this wonderful article now !"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="feature_row_3" type="right" %}
 
 {% include feature_row id="feature_row_1" type="left" %}
 
