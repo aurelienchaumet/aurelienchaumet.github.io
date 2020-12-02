@@ -15,9 +15,6 @@ toc_label: "Statistics"
 ---
 First test on some statistics about the challenge.
 
-<iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="800"
-    height="500"
-    src="data\30daymapchallenge_stats\export1.html">
+<iframe width="100%" height="500"
+    src="https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html">
 </iframe>
