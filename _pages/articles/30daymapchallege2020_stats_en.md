@@ -50,6 +50,8 @@ In summary, it represents :
 
 I'll develop this kind of social statistics later, with all submissions, for sure !
 
+On the next viz, you'll find every finisher, with the number of tweets, and social statistics by hovering each bar.
+
 > If you're on mobile device, I would advise you to put it on landscape mode.  
 > You can [click here](https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html) too, to visualize it in full screen
 
