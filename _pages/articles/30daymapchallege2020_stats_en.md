@@ -9,7 +9,11 @@ header:
 excerpt:
   Some statistics about the 30DayMapChallenge 2020 with Python
 
+og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30dmc_stats_header.webp
+
 comments: true
+share: true
+show_date: true
 toc: true
 toc_label: "Statistics"
 toc_icon: "chart-line"
