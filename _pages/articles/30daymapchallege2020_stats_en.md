@@ -13,7 +13,6 @@ og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30
 
 comments: true
 share: true
-show_date: true
 toc: true
 toc_label: "Statistics"
 toc_icon: "chart-line"
