@@ -44,11 +44,22 @@ feature_row_3:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30dmc_stats_header.webp"
     alt: "statistiques 30daymapchallenge 2020"
     title: "30 DayMapChallenge 2020 Statistics"
-    excerpt: "Some statistics about the 30DayMapChallenge 2020 with Python <br /> <br />**_Une version française de l'article arrive très vite :smirk:_**"
+    excerpt: "Some statistics about the 30DayMapChallenge 2020 with Python"
     url: "/articles/30daymapchallenge_stats_en/"
     btn_label: "Go read this wonderful article now !"
     btn_class: "btn--primary"
+
+feature_row_4:
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30dmc_stats_header.webp"
+    alt: "statistiques 30daymapchallenge 2020"
+    title: "Statistiques 30 DayMapChallenge 2020"
+    excerpt: "Quelques statistiques sur le 30DayMapChallenge 2020 avec Python"
+    url: "/articles/30daymapchallenge_stats_fr/"
+    btn_label: "Allez lire ce magnifique article en français !"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="feature_row_4" type="left" %}
 
 {% include feature_row id="feature_row_3" type="right" %}
 
