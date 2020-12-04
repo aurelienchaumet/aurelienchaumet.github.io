@@ -49,9 +49,9 @@ I did it with [Plotly](https://plotly.com/), and I'm gonna put the code on some 
 In summary, it represents :
 
 - **2 310 tweets** :bird:
-- **2 366 replies** :raising_hand: - _the submission with the largest number of replies has 29_
-- **9 243 retweets** :incoming_envelope: - _the submission with the largest number of retweets has 235_
-- **53 056 likes** :heart: - _the submission with the largest number of likes has 941_
+- **2 366 replies** :raising_hand: -_the submission with the largest number of replies has 29_
+- **9 243 retweets** :incoming_envelope: -_the submission with the largest number of retweets has 235_
+- **53 056 likes** :heart: -_the submission with the largest number of likes has 941_
 
 I'll develop this kind of social statistics later, with all submissions, for sure !
 
