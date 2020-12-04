@@ -24,7 +24,7 @@ One of my personal interests is to represent data, geographical or not, and I be
 
 So, I decided to use all the material which was produced during the challenge to train myself, and in the same time, produce some dataviz and looks for insights :smile:
 
-Vous trouverez ici, au fur et à mesure de sa rédaction, l'ensemble des dataviz et les chiffres qui en ressortiront.
+You will find here, as it is written, all the dataviz and the figures that will come out of it.
 
 ## Dataset
 
@@ -64,6 +64,6 @@ On the next viz, you'll find every finisher, with the number of tweets, and soci
     src="https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html">
 </iframe>
 
---
+---
 
 To be continued...
