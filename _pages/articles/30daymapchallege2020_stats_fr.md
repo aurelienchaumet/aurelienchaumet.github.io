@@ -59,3 +59,7 @@ Sur la visualisation suivante, vous trouverez chaque finisher, avec le nombre de
 <iframe width="100%" height="820"
     src="https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html">
 </iframe>
+
+---
+
+A suivre...
