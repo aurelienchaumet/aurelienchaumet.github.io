@@ -22,7 +22,9 @@ Ok then ! Now the 30DayMapChallenge 2020 is over, we just have to go back to our
 
 One of my personal interests is to represent data, geographical or not, and I began to learn Python this year, to complete my skilss.
 
-So, I decided to use all the material which was produced during the challenge to train myself, and in the same time, produce some dataviz and looks for insisghts :smile:
+So, I decided to use all the material which was produced during the challenge to train myself, and in the same time, produce some dataviz and looks for insights :smile:
+
+You will find here, as it is written, all the dataviz and the figures that will come out of it.
 
 ## Dataset
 
@@ -47,9 +49,9 @@ I did it with [Plotly](https://plotly.com/), and I'm gonna put the code on some 
 In summary, it represents :
 
 - **2 310 tweets** :bird:
-- **2 366 replies** :raising_hand: - _the submission with the largest number of replies has 29_
-- **9 243 retweets** :incoming_envelope: - _the submission with the largest number of retweets has 235_
-- **53 056 likes** :heart: - _the submission with the largest number of likes has 941_
+- **2 366 replies** :raising_hand: -_the submission with the largest number of replies has 29_
+- **9 243 retweets** :incoming_envelope: -_the submission with the largest number of retweets has 235_
+- **53 056 likes** :heart: -_the submission with the largest number of likes has 941_
 
 I'll develop this kind of social statistics later, with all submissions, for sure !
 
@@ -61,3 +63,7 @@ On the next viz, you'll find every finisher, with the number of tweets, and soci
 <iframe width="100%" height="820"
     src="https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html">
 </iframe>
+
+---
+
+To be continued...
