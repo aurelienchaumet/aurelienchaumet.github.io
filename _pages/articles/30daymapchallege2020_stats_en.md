@@ -22,7 +22,9 @@ Ok then ! Now the 30DayMapChallenge 2020 is over, we just have to go back to our
 
 One of my personal interests is to represent data, geographical or not, and I began to learn Python this year, to complete my skilss.
 
-So, I decided to use all the material which was produced during the challenge to train myself, and in the same time, produce some dataviz and looks for insisghts :smile:
+So, I decided to use all the material which was produced during the challenge to train myself, and in the same time, produce some dataviz and looks for insights :smile:
+
+Vous trouverez ici, au fur et à mesure de sa rédaction, l'ensemble des dataviz et les chiffres qui en ressortiront.
 
 ## Dataset
 
@@ -61,3 +63,7 @@ On the next viz, you'll find every finisher, with the number of tweets, and soci
 <iframe width="100%" height="820"
     src="https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html">
 </iframe>
+
+--
+
+To be continued...
