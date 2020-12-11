@@ -2,6 +2,7 @@
 layout: single
 permalink: /articles/30daymapchallenge_stats_fr/  
 title : "Statistiques 30 DayMapChallenge 2020"   
+classes: wide
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30dmc_stats_header.webp
   overlay_filter: 0.3
@@ -60,6 +61,41 @@ Sur la visualisation suivante, vous trouverez chaque finisher, avec le nombre de
     src="https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats_fr.html">
 </iframe>
 
+## Statistiques générales
+
+Concernant l'ensemble des participations, je compte :
+
+- **833 participants**
+- **7 184 cartes**, soit une moyenne de 240 cartes par jour...
+- **136 266 likes**
+- **24 740 retweets**
+
+Ça commence à faire un paquet de cartes, et de personnes likant et retweetant !
+
+Afin d'explorer ces données plus visuellement, j'ai conçu un dashboard via [Bokeh](https://docs.bokeh.org/en/latest/), histoire de continuer à me former à de noubeaux outils et pour changer un peu de Plotly.
+
+> L'affichage au démarrage visualise les données par jour, aggrégées pour l'ensemble des participations.  
+> Vous pouvez sélectionner un participant en particulier, via la barre de sélection en bas de l'application.
+
+[_Vous pouvez cliquer ici pour l'afficher dans une nouvelle page._](http://stats-30daymapchallenge.herokuapp.com/bokeh_basics)  
+_Malheureusement, je n'ai pas encore réussi à trouver un moyen, pour les appareils mobiles, d'afficher les données qui sont disponibles en passant la souris sur chaque bar..._
+
+<iframe width="100%" height="820"
+    src="http://stats-30daymapchallenge.herokuapp.com/bokeh_basics">
+</iframe>
+
+Côté technique, je l'ai hébergé sur [Heroku](https://www.heroku.com/).  
+J'imagine par la suite rédiger un tuto à la fois sur le cheminement purement pythonesque de tout ça (côté Twint, Plotly et Bokeh), ainsi que sur la manière de déployer une application sur Heroku. Tout ça n'est pas très complexe, mais ça peut mériter de garder en mémoire quelques astuces et pièges dans lesquels ne pas tomber.
+
+Quelques observations sur ces données :
+
+- Enorme succès pour le démarrage du challenge, **le jour 1 (Points) est celui qui a connu le plus de likes (12 336) et de retweets (2 365).**  
+On peut noter une sorte de **plateau médian autour de 4 500 likes** sur le reste des jours, avec tout de même 3 pics pour les jour 2 (Lignes), 11 (3D) et 12 (Cartes réalisées sans un logiciel SIG). Fort à parier que ces 2 derniers thèmes sont plus aptes à produire de l'engagement plus générique.  
+**Le jour 25 (COVID-19) est celui ayant connu le moins de likes (1 982)**, sans doute du à 2 facteurs : le trop plein des gens pour cette thématique et l'approche de Thanksgiving aux Etats-Unis (comme noté par [Nicolas Lambert sur ses propres statistiques](https://neocarto.hypotheses.org/12028))
+- Les finishers sont d'énormes pourvoyeurs de contenus (évidemment) mais également de likes et retweets.  
+-- Ils représentent **9% des participants** avec 2 310 cartes (soit 32% de l'ensemble des soumissions)  
+-- Leurs cartes représentent **37% des likes et retweets totaux**  
+
 ---
 
-A suivre...
+_**À suivre...**_
