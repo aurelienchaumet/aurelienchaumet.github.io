@@ -81,7 +81,7 @@ Afin d'explorer ces données plus visuellement, j'ai conçu un dashboard via [Bo
 _Malheureusement, je n'ai pas encore réussi à trouver un moyen, pour les appareils mobiles, d'afficher les données qui sont disponibles en passant la souris sur chaque bar..._
 
 <iframe width="100%" height="820"
-    src="http://stats-30daymapchallenge.herokuapp.com/bokeh_basics">
+    src="https://stats-30daymapchallenge.herokuapp.com/bokeh_basics">
 </iframe>
 
 Côté technique, je l'ai hébergé sur [Heroku](https://www.heroku.com/).  
@@ -98,4 +98,4 @@ On peut noter une sorte de **plateau médian autour de 4 500 likes** sur le rest
 
 ---
 
-_**À suivre...**_
+_**A suivre...**_
