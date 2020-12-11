@@ -85,7 +85,7 @@ To explore this data more visually, I designed a dashboard via [Bokeh](https://d
 _Unfortunately, I have not yet managed to find a way to display, for mobile devices, the data that is available by hovering the mouse over each bar..._
 
 <iframe width="100%" height="820"
-    src="http://stats-30daymapchallenge.herokuapp.com/bokeh_basics">
+    src="https://stats-30daymapchallenge.herokuapp.com/bokeh_basics">
 </iframe>
 
 On the technical side, I hosted it on [Heroku](https:/www.heroku.com/).  
