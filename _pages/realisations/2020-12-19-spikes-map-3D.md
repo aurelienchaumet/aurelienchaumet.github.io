@@ -211,11 +211,15 @@ tajikistan:
     title: "Population du Tajikistan"
 ---
 
->REDIGER
+Lorsque j'ai découvert le logiciel [Aerialod](http://ephtracy.github.io/index.html?page=aerialod), principalement grâce [au travail réalisé par Alastair Rae](http://www.statsmapsnpix.com/2020/03/making-3d-landscape-and-city-models.html?m=1), je me suis pris de passion par les représentations cartographiques en 3D.
+
+Ce logiciel permet de réaliser des rendus 3D très rapidement. Vous trouverez d'ailleurs [sur le site de GeoTribu un tutoriel](https://static.geotribu.fr/articles/2020/2020-09-20_tutorial_aerialod/) que j'ai rédigé sur Aerialod, pour une première prise en main :wink: .
+
+Lorsqu'on parle de rendu cartographique 3D, on pense tout de suite au modèle numérique de terrain. Mais en réalité Aerialod peut prendre en entrée toute sorte de données, dès l'instant qu'elles soient sous un format approprié : PNG, JPG, TIF.
+
+A partir de ce moment, j'ai fait une série de rendus "test" afin de tenter de représenter des densités de population.
 
 N'hésitez pas à me faire [des retours notamment via Twitter!](https://twitter.com/AurelienChaumet)
-
->Si vous souhaitez voir les cartes dans leur taille maximale, vous pouvez faire un clic droit :point_right: "Ouvrir l'image dans un nouvel onglet"
 
 ## Amériques
 
@@ -264,9 +268,3 @@ N'hésitez pas à me faire [des retours notamment via Twitter!](https://twitter.
 ## Océanie
 
 {% include gallery id="australia" class="full" caption="Population de l'Australie" %}
-
----
-
-J'espère que ce tour d'horizon de mes participations au 30DayMapChallenge de cette année vous aura plus.
-
-N'hésitez pas à commenter directement en dessous, ou à m'envoyer un message sur Twitter, je vous répondrai avec plaisir :pray: !
