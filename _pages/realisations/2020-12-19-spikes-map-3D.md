@@ -7,13 +7,12 @@ header:
   overlay_filter: 0.3
 excerpt: "Rendu de la notion de densité de population en pics"
   
-classes: wide
 comments: true
 toc: true
-toc_label: "Cartes de population en pics"
-toc_icon: "pike"
+toc_label: "Par continent"
+toc_icon: "globe"
 
-bolivie:
+bolivia:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/bolivia_population_sd.webp"
     image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/bolivia_population_sd.webp"
     alt: "bolivie population"
@@ -110,6 +109,106 @@ malta:
     image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/malta_pop_spikes_hd.webp"
     alt: "malte population pics"
     title: "Population de Malte en pics"
+
+netherlands:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/netherlands_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/netherlands_population.webp"
+    alt: "pays bas population"
+    title: "Population des Pays-Bas"
+
+turkey:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/turkey_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/turkey_population.webp"
+    alt: "turquie population"
+    title: "Population de la Turquie"
+
+uk:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_border_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_border_hd.webp"
+    alt: "royaume uni population frontiere"
+    title: "Population du Royaume Uni avec frontières"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_hd.webp"
+    alt: "royaume uni population"
+    title: "Population du Royaume Uni sans frontière"
+
+africa:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp"
+    alt: "afrique population frontiere"
+    title: "Population de l'Afrique avec frontières"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_hd.webp"
+    alt: "africa population"
+    title: "Population de l'Afrique sans frontière"
+
+australia:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_contour.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_contour.webp"
+    alt: "australie population frontières"
+    title: "Population de l'Australie avec frontières"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population.webp"
+    alt: "australie population sans frontière"
+    title: "Population de l'Australie sans frontières"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O_contour.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O_contour.webp"
+    alt: "australie population frontières vue ouest"
+    title: "Population de l'Australie avec frontière - Vue Ouest"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O.webp"
+    alt: "australie population vue ouest"
+    title: "Population de l'Australie sans frontière - Vue Ouest"
+
+india:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/india_pop.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/india_pop.webp"
+    alt: "inde population"
+    title: "Population de l'Inde"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/mumbai_aerialod.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/mumbai_aerialod.webp"
+    alt: "inde population vue mumbai"
+    title: "Population de l'Inde - Vue Mumbai"
+
+iran:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population_border.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population_border.webp"
+    alt: "iran population frontieres"
+    title: "Population de l'Iran avec frontières"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population.webp"
+    alt: "iran population"
+    title: "Population de l'Iran sans frontière"
+
+japan:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_contour_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_contour_hd.webp"
+    alt: "japan population frontieres"
+    title: "Population du Japon avec frontières"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_hd.webp"
+    alt: "japan population"
+    title: "Population du Japon sans frontière"
+
+pakistan:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population.webp"
+    alt: "pakistan population"
+    title: "Population du Pakistan"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_ne.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_ne.webp"
+    alt: "pakistan population vue nord est"
+    title: "Population du Pakistan - Vue Nord Est"
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_so.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_so.webp"
+    alt: "pakistan population vue sud ouest"
+    title: "Population du Pakistan - Vue Sud Ouest"
+
+tajikistan:
+  - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/tajikistan_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/tajikistan_population.webp"
+    alt: "tajikistan population"
+    title: "Population du Tajikistan"
 ---
 
 >REDIGER
@@ -140,13 +239,31 @@ N'hésitez pas à me faire [des retours notamment via Twitter!](https://twitter.
 
 {% include gallery id="malta" class="full" caption="Population de Malte" %}
 
+{% include gallery id="netherlands" class="full" caption="Population des Pays-Bas" %}
+
+{% include gallery id="turkey" class="full" caption="Population de la Turquie" %}
+
+{% include gallery id="uk" class="full" caption="Population du Royaume Uni" %}
+
+## Afrique
+
+{% include gallery id="africa" class="full" caption="Population de l'Afrique" %}
+
 ## Asie
 
-{% include gallery caption="Données de population de la Charente-Maritime réparties selon différentes échelles" %}
+{% include gallery id="india" class="full" caption="Population de l'Inde" %}
+
+{% include gallery id="iran" class="full" caption="Population de l'Iran" %}
+
+{% include gallery id="japan" class="full" caption="Population du Japon" %}
+
+{% include gallery id="pakistan" class="full" caption="Population du Pakistan" %}
+
+{% include gallery id="tajikistan" class="full" caption="Population du Tajikistan" %}
 
 ## Océanie
 
-{% include gallery caption="Données de population de la Charente-Maritime réparties selon différentes échelles" %}
+{% include gallery id="australia" class="full" caption="Population de l'Australie" %}
 
 ---
 
