@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /realisations/spikes-map/  
+permalink: /realisations/spikes_map_fr/  
 title : "Cartes de population en pics"   
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp
@@ -258,7 +258,7 @@ Après rien de très particulier, niveau réglages je passe systématiquement su
   - Diffuse à 3
 - Dans le panneau du bas
   - "Perspective Camera"
-  - En général, j'utilise un angle compris entre -45 et 60
+  - En général, j'utilise un angle compris entre -45 et -60
 - Dans le panneau de droite
   - Bilinear Surface Mode
 
