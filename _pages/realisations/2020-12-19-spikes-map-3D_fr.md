@@ -9,7 +9,7 @@ excerpt: "Rendu de la notion de densité de population en pics"
   
 comments: true
 toc: true
-toc_label: "Par continent"
+toc_label: "Sommaire"
 toc_icon: "globe"
 
 bolivia:

@@ -9,7 +9,7 @@ excerpt: "Rendering of the concept of peak population density"
   
 comments: true
 toc: true
-toc_label: "Per continent"
+toc_label: "Contents"
 toc_icon: "globe"
 
 bolivia:
