@@ -211,19 +211,82 @@ tajikistan:
     title: "Population du Tajikistan"
 ---
 
-Lorsque j'ai découvert le logiciel [Aerialod](http://ephtracy.github.io/index.html?page=aerialod), principalement grâce [au travail réalisé par Alastair Rae](http://www.statsmapsnpix.com/2020/03/making-3d-landscape-and-city-models.html?m=1), je me suis pris de passion par les représentations cartographiques en 3D.
+Lorsque j'ai découvert le logiciel [Aerialod](http://ephtracy.github.io/index.html?page=aerialod), principalement grâce [au travail réalisé par Alastair Rae](http://www.statsmapsnpix.com/2020/03/making-3d-landscape-and-city-models.html?m=1), je me suis pris de passion pour les représentations cartographiques en 3D.
+
+{% include figure image_path="https://1.bp.blogspot.com/-lkvr1tHH-Rs/XoHEiS2mcXI/AAAAAAAAFV0/bEYn8tz1M3Ivw1QtXAwgQ_s8JZTmgz7wQCLcBGAsYHQ/s1600/st_kilda_foggy_2xHD_title_inset_without_globe.png" alt="aerialod alasdair rae" caption="Exemple de réalisation provenant du blog d'Alasdair Rae" %}
 
 Ce logiciel permet de réaliser des rendus 3D très rapidement. Vous trouverez d'ailleurs [sur le site de GeoTribu un tutoriel](https://static.geotribu.fr/articles/2020/2020-09-20_tutorial_aerialod/) que j'ai rédigé sur Aerialod, pour une première prise en main :wink: .
 
 Lorsqu'on parle de rendu cartographique 3D, on pense tout de suite au modèle numérique de terrain. Mais en réalité Aerialod peut prendre en entrée toute sorte de données, dès l'instant qu'elles soient sous un format approprié : PNG, JPG, TIF.
 
-A partir de ce moment, j'ai fait une série de rendus "test" afin de tenter de représenter des densités de population.
+J'ai donc fait une série de rendus "test", afin de de représenter des densités de population.
 
-N'hésitez pas à me faire [des retours notamment via Twitter!](https://twitter.com/AurelienChaumet)
+## Densement peuplé or not ?
+
+La densité de population est généralement représentée par un aplat de couleurs, aussi appelé techniquement carte choropl7te.
+
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/densite_choroplet.webp" alt="densite carte choroplete" caption="Carte choroplète de la densité de population française, via [le GéoClip de l'INSEE](https://statistiques-locales.insee.fr/#c=indicator&i=pop_depuis_1876.dens&s=2017&view=map1)" %}
+
+Loin de moi l'idée de remettre en cause cette représentation, bien au contraire ! L'information y est justement présentée et si la symbologie est bien définie, le message qui doit être dispensé passe clairement.
+
+Cependant, le fait de donner de la hauteur à ce type de carte permet d'avoir un nouvel aspect visuel, esthétiquement différent, tout en laissant de côté le choix des seuils dans la symbologie, ce qui reste des choix subjectifs.
+
+La première carte que j'ai réalisée est la densité de population française.
+
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_pikes.webp" alt="densite france version1" caption="Première carte de population que j'ai réalisée avec Aerialod" %}
+
+>Vous retrouverez dans la liste en fin d'article qui contient l'ensemble de mes réalisations sur ce thème ci-dessous, une autre version de cette carte.
+
+Assez rapidement je me suis imposé quelques règles (que cette première carte ne respecte pas) :
+
+- Les couleurs utilisées doivent provenir du drapeau du pays, état ou ville représenté
+- L'intégralité de la population doit être représentée, et non une partie seulement. Sur cette première carte de la France des critiques m'avaient été faites, notamment sur Reddit et Instagram, car beaucoup de vides existaient. Et pour cause, je n'avais gardé que les carreaux de 200m de côté de plus de 500 habitants. Je trouvais ça plus esthétique :smile:. Mais il est certain qu'une carte qui est diffusée se doit d'être complète et juste !
+- Le rendu doit avoir un aspect professionnel avec un titre et une source (et par la suite mon logo)
+
+Cette première carte à été réalisée avec les données de la population carroyée 2015 de l'INSEE. Le principe est assez simple, étant donné qu'Aerialod mange du TIF, il suffit de rasteriser des données vectorielles de population.
+
+J'utilise pour cela QGIS et la [fonction Rasterize](https://docs.qgis.org/3.16/en/docs/user_manual/processing_algs/gdal/vectorconversion.html#rasterize-vector-to-raster).
+
+Il n'y a ensuite plus qu'à exporter le résultat en geotiff image (et non en brut afin qu'Aerialod le lise).
+
+Et c'est parti pour Aerialod !
+
+Après rien de très particulier, niveau réglages je passe systématiquement sur :
+
+- Dans le panneau de gauche
+  - Dans Sky -> "Atmospheric Scattering"
+  - Diffuse à 3
+- Dans le panneau du bas
+  - "Perspective Camera"
+  - En général, j'utilise un angle compris entre -45 et 60
+- Dans le panneau de droite
+  - Bilinear Surface Mode
+
+>Si cela ne vous parle pas, mais que vous avez envie de jouer avec Aerialod, n'hésitez pas à [le télécharger](http://ephtracy.github.io/index.html?page=aerialod) en vous appuyant sur [le tutoriel de prise en main](https://static.geotribu.fr/articles/2020/2020-09-20_tutorial_aerialod/) :+1:
+
+Il ne reste plus qu'à jouer sur les couleurs de terrain et de base, et parfois avec l'exposition et les angles du soleil.
+
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/classic_parameters.webp" alt="parametres classiques aerialod" caption="Mes paramètres classiques sur Aerialod pour produire les cartes de population en pics" %}
+
+Un export en png et c'est parti mon kiki :rocket: !
+
+## Ce que j'en retiens
+
+Au-delà de la pratique d'Aerialod que ces cartes ont pu m'apporter, je retiendrai principalement à quel point (encore une fois, ce n'est pas une surprise) la donnée de base est le nerf de la guerre.  
+Cependant, chaque pays ne dispose pas forcément d'instituts statistiques comme l'INSEE en France en capacité de produire des données de population carroyée.
+
+Et c'est la qu'intervient [WorldPop](https://www.worldpop.org/) :gift: !  
+Ils ont généré des données de population estimées sur les 10 dernières années, principalement grâce à des images satellitaires, sur les parties du globe qui sont, en général, les moins pourvues de ce point de vue là.
+
+---
+
+Comme dit plus haut, vous trouverez ci-dessous l'ensemble des cartes de population en pics que j'ai pu réalisées jusque là.
+
+N'hésitez pas à me faire [des retours via Twitter](https://twitter.com/AurelienChaumet) ou directement dans les commentaires au bas de cette page !
 
 ## Amériques
 
-{% include gallery id="bolivie" class="full" caption="Population de la Bolivie" %}
+{% include gallery id="bolivia" class="full" caption="Population de la Bolivie" %}
 
 {% include gallery id="canada" class="full" caption="Population du Canada" %}
 
