@@ -7,9 +7,6 @@ header:
   overlay_filter: 0.3
 excerpt: "Rendu de la notion de densité de population en pics"
 
-header.image: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp
-
-
 comments: true
 toc: true
 toc_label: "Sommaire"
