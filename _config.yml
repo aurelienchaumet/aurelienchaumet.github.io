@@ -75,7 +75,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : https://dl01fbzxdpfby.cloudfront.net/images/favicon.png
+og_image                 : /assets/image/site-logo.png
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
