@@ -8,6 +8,15 @@ header:
 excerpt:
   Rendus cartographiques et dataviz en tout genre
 
+geo_noel_2020:
+  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.webp
+    alt: "Géo Noël"
+    title: "Géo Noël"
+    excerpt: "Passez de bonnes fêtes de fin d'année"
+    url: "/realisations/geo_noel_2020/"
+    btn_class: "btn--primary"
+    btn_label: ":gift: Deux cadeaux ici :gift:"
+
 spikes_map_fr:
   - image_path: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp
     alt: "Cartes de population en pics"
@@ -35,6 +44,7 @@ spikes_map_en:
     btn_class: "btn--primary"
     btn_label: "Accéder"
 ---
+{% include feature_row id="geo_noel_2020" type="right" %}
 
 {% include feature_row id="spikes_map_fr" type="left" %}
 

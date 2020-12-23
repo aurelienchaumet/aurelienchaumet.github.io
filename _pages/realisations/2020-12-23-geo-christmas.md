@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /realisations/christmas_2020/  
+permalink: /realisations/geo_noel_2020/  
 title : "Géo Noël 2020"   
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.webp
@@ -14,11 +14,11 @@ J'imagine que vous n'en aviez pas rêvé, mais je l'ai quand même fait :smile: 
 
 :gift: Ce n'est pas une mais deux magnifiques cartes festives de Noël que je vous offre ici :gift:
 
-[![geo noel blender 2020](https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_blender.webp "Géo Noël Blender 2020"){: loading=lazy .img-center }](https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_blender.webp)
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_blender.webp" alt="geo noel blender 2020" caption="Géo Noël Blender 2020" %}
 
-[![geo noel aerialod 2020](https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.webp "Géo Noël Aerialod 2020"){: loading=lazy .img-center }](https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.webp)
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.webp" alt="geo noel aerialod 2020" caption="Géo Noël Aerialod 2020" %}
 
-Vous pouvez cliquer dessus, pour les voir en plus grande résolution, si jamais la kitch attitude ne vous effraie pas plus :sweat_smile:
+>Vous pouvez réaliser un clic droit-> "Ouvrez le lien dans un nouvel onglet" sur chacune des cartes, pour les voir en plus grande résolution, si jamais la kitch attitude ne vous effraie pas plus :sweat_smile:
 
 L'île représentée est Christmas Island (grosse blague !). Elle est située au Nord-Est de l'océan Indien, au sud ouest de Java. C'est un territoire australien de 21km de long sur 18km de large. Elle compte 2 205 habitants.
 
