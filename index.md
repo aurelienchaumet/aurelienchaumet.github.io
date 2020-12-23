@@ -25,9 +25,9 @@ feature_row:
   - image_path: https://dl01fbzxdpfby.cloudfront.net/images/inspiration.webp
     title: "Inspiration - En cours de construction"
     excerpt: "Un recueil de réalisations extérieures sur des sujets autour de la cartographie, des données et de visualisations diverses et variées"
-    #url: "https://aurelienchaumet.github.io/inspiration/"
-    #btn_label: "Accéder"
-    #btn_class: "btn--primary"
+    url: "https://aurelienchaumet.github.io/inspiration/"
+    btn_label: "Accéder"
+    btn_class: "btn--primary"
 ---
 
 {% include feature_row %}
