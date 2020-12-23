@@ -27,11 +27,12 @@ Cette section me permet d'avoir un espace pour garder en mémoire les différent
 
 >N'hésitez pas à cliquer sur leur nom, cela vous renverra vers leur compte Twitter, Instagram ou autre !
 
-- [Sean Conway](https://twitter.com/geo_spatialist)
+## [Sean Conway](https://twitter.com/geo_spatialist)
 
-{% include gallery id="sean_conway" class="full" caption="Le maître de la carte ancienne mise en relief ! Grosse technique permettant de mettre en relief des cartes anciennes, mais pas que ! Sa carte géologique française est assez dingue !" %}
+{% include gallery id="sean_conway" caption="Le maître de la carte ancienne mise en relief ! Grosse technique permettant de mettre en relief des cartes anciennes, mais pas que !  
+Sa carte géologique française est assez dingue !" %}
 
-- [Alasdair Rae](https://twitter.com/undertheraedar)
+## [Alasdair Rae](https://twitter.com/undertheraedar)
 
 Alasdair Rae est celui qui m'a fait connaître Aerialod (sans doute un des plus gros contributeurs à son utilisation dans le monde d'ailleurs !)
 
