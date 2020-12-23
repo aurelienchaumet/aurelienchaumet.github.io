@@ -7,17 +7,31 @@ header:
   overlay_filter: 0.3
 excerpt:
   Un recueil de personnes, de sites ou d'applications qui donnent envie de visualiser des données
+
+sean_conway:
+  - url: "https://twitter.com/geo_spatialist/status/1257352618705387526"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_france_sd.webp"
+    alt: "sean conway france"
+    title: "Sean Conway France"
+  - url: "https://twitter.com/geo_spatialist/status/1332020570720972802/photo/1"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_arcbuckle_mountains.webp"
+    alt: "sean conway arcbuckle mountains"
+    title: "Sean Conway - Arbuckle Mountains"
+  - url: "https://twitter.com/geo_spatialist/status/1336183850997870594/photo/1"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_lidar.webp"
+    alt: "sean conway lidar"
+    title: "Sean Conway - LIDAR"
 ---
 
 Cette section me permet d'avoir un espace pour garder en mémoire les différentes personnes qui m'inspirent, souvent par leur design mais aussi par leur technique.
 
+>N'hésitez pas à cliquer sur leur nom, cela vous renverra vers leur compte Twitter, Instagram ou autre !
+
 - [Sean Conway](https://twitter.com/geo_spatialist)
 
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="fr" dir="ltr">Carte Géologique de la France, à l&#39;échelle du millionième, Exécutée en utilisant les documents publiés par le Service de la Carte géologique détaillée de la France - Ministère des Travaux Publics - 1905<a href="https://twitter.com/hashtag/arcgispro?src=hash&amp;ref_src=twsrc%5Etfw">#arcgispro</a> <a href="https://twitter.com/hashtag/blender?src=hash&amp;ref_src=twsrc%5Etfw">#blender</a> <a href="https://twitter.com/hashtag/gis?src=hash&amp;ref_src=twsrc%5Etfw">#gis</a> <a href="https://twitter.com/hashtag/maps?src=hash&amp;ref_src=twsrc%5Etfw">#maps</a> <a href="https://twitter.com/hashtag/map?src=hash&amp;ref_src=twsrc%5Etfw">#map</a> <a href="https://twitter.com/hashtag/copernicus?src=hash&amp;ref_src=twsrc%5Etfw">#copernicus</a> <a href="https://twitter.com/hashtag/france?src=hash&amp;ref_src=twsrc%5Etfw">#france</a> <a href="https://twitter.com/hashtag/geological?src=hash&amp;ref_src=twsrc%5Etfw">#geological</a> <a href="https://t.co/2Qymhv5VpV">pic.twitter.com/2Qymhv5VpV</a></p>&mdash; Sean Conway (@geo_spatialist) <a href="https://twitter.com/geo_spatialist/status/1257352618705387526?ref_src=twsrc%5Etfw">May 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% include gallery id="sean_conway" class="full" caption="Le maître de la carte ancienne mise en relief ! Grosse technique permettant de mettre en relief des cartes anciennes, mais pas que ! Sa carte géologique française est assez dingue !" %}
 
-Le maître de la carte ancienne mise en relief ! Grosse technique permettant de mettre en relief des cartes anciennes, mais que ! Sa carte géologique française est assez dingue
-
-- https://twitter.com/undertheraedar?s=09
+- [Alasdair Rae](https://twitter.com/undertheraedar)
 
 Alasdair Rae est celui qui m'a fait connaître Aerialod (sans doute un des plus gros contributeurs à son utilisation dans le monde d'ailleurs !)
 
