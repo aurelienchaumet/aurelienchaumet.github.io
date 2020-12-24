@@ -225,6 +225,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
   - jemoji
+  - jekyll-loading-lazy
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -234,6 +235,7 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
   - jemoji
+  - jekyll-loading-lazy
 
 
 # Archives
