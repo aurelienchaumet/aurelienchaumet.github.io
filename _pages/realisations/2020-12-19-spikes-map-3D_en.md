@@ -28,7 +28,7 @@ canada:
     alt: "canada population borders"
     title: "Canada population with borders"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/canada_pop_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/canada_pop__sd.png"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/canada_pop_sd.png"
     alt: "canada population without border"
     title: "Canada population without border"
 
