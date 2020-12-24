@@ -3,7 +3,7 @@ layout: single
 permalink: /realisations/spikes_map_fr/  
 title : "Cartes de population en pics"   
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_sd.png
   overlay_filter: 0.3
 excerpt: "Rendu de la notion de densité de population en pics"
 
@@ -14,199 +14,199 @@ toc_icon: "globe"
 
 bolivia:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/bolivia_population_sd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/bolivia_population_sd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/bolivia_population_sd.png"
     alt: "bolivie population"
     title: "Population de la Bolivie"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/bolivia_population_border_cities.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/bolivia_population_border_cities.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/bolivia_population_border_cities_sd.png"
     alt: "bolivie population sud est"
     title: "Population de la Bolivie avec villes"
 
 canada:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/canada_pop_border_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/canada_pop_border_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/canada_pop_border_sd.png"
     alt: "canada population frontieres"
     title: "Population du Canada avec frontières"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/canada_pop_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/canada_pop_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/canada_pop_sd.png"
     alt: "canada population sans frontière"
     title: "Population du Canada sans frontière"
 
 indiana:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_blue_border_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_blue_border_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_blue_border_sd.png"
     alt: "indiana population frontières bleu"
     title: "Population de l'Indiana avec frontières en bleu"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_blue_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_blue_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_blue_sd.png"
     alt: "indiana population sans frontière bleu"
     title: "Population de l'Indiana sans frontières en bleu"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_white_border_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_white_border_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_white_border_sd.png"
     alt: "indiana population frontières blanc"
     title: "Population de l'Indiana avec frontières en blanc"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_white_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_white_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indiana_population_white_sd.png"
     alt: "indiana population sans frontière blanc"
     title: "Population de l'Indiana sans frontière en blanc"
 
 indianapolis:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indianapolis_pop_red_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indianapolis_pop_red_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indianapolis_pop_red_sd.png"
     alt: "indianapolis population rouge"
     title: "Population d'Indianapolis en rouge"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indianapolis_pop_white_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indianapolis_pop_white_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/indianapolis_pop_white_sd.png"
     alt: "indianapolis population blanc"
     title: "Population d'Indianapolis en blanc"
 
 usa:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/usa_population_contour_sd_v2.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/usa_population_contour_sd_v2.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/usa_population_contour_sd.png"
     alt: "usa population frontieres"
     title: "Population des Etats Unis d'Amérique avec frontières"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/usa_population_sd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/usa_population_sd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/usa_population_sd.png"
     alt: "usa population sans frontière"
     title: "Population des Etats Unis d'Amérique sans frontière"
 
 espana:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/espana_poblacion.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/espana_poblacion.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/espana_poblacion_sd.png"
     alt: "espagne population"
     title: "Population de l'Espagne"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/espana_poblacion_SE.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/espana_poblacion_SE.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/espana_poblacion_SE_sd.png"
     alt: "espagne population vue sud est"
     title: "Population de l'Espsagne - Vue Sud Est"
 
 france:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_v2_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_v2_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_v2_sd.png"
     alt: "france population"
     title: "Population de la France"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_100_v2_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_100_v2_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_100_v2_sd.png"
     alt: "france population plus de 100 habitants"
     title: "Population de la France - Plus de 100 habitants par carreau de 100m de côté"
 
 italia:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/italia_population_border_sd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/italia_population_border_sd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/italia_population_border_sd.png"
     alt: "italie population frontieres"
     title: "Population de l'Italie avec frontières"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/italia_population_sd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/italia_population_sd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/italia_population_sd.png"
     alt: "italie population"
     title: "Population de l'Italie sans frontière"
 
 malta:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/malta_pop_cube_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/malta_pop_cube_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/malta_pop_cube_sd.png"
     alt: "malte population cube"
     title: "Population de Malte cubique"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/malta_pop_spkies_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/malta_pop_spikes_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/malta_pop_spikes_sd.png"
     alt: "malte population pics"
     title: "Population de Malte en pics"
 
 netherlands:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/netherlands_population.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/netherlands_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/netherlands_population_sd.png"
     alt: "pays bas population"
     title: "Population des Pays-Bas"
 
 turkey:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/turkey_population.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/turkey_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/turkey_population_sd.png"
     alt: "turquie population"
     title: "Population de la Turquie"
 
 uk:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_border_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_border_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_border_sd.png"
     alt: "royaume uni population frontiere"
     title: "Population du Royaume Uni avec frontières"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/uk_pop_sd.png"
     alt: "royaume uni population"
     title: "Population du Royaume Uni sans frontière"
 
 africa:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_sd.png"
     alt: "afrique population frontiere"
     title: "Population de l'Afrique avec frontières"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_sd.png"
     alt: "africa population"
     title: "Population de l'Afrique sans frontière"
 
 australia:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_contour.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_contour.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_contour_sd.png"
     alt: "australie population frontières"
     title: "Population de l'Australie avec frontières"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_sd.png"
     alt: "australie population sans frontière"
     title: "Population de l'Australie sans frontières"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O_contour.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O_contour.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O_contour_sd.png"
     alt: "australie population frontières vue ouest"
     title: "Population de l'Australie avec frontière - Vue Ouest"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/australia_population_O_sd.png"
     alt: "australie population vue ouest"
     title: "Population de l'Australie sans frontière - Vue Ouest"
 
 india:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/india_pop.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/india_pop.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/india_pop_sd.png"
     alt: "inde population"
     title: "Population de l'Inde"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/mumbai_aerialod.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/mumbai_aerialod.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/mumbai_aerialod_sd.png"
     alt: "inde population vue mumbai"
     title: "Population de l'Inde - Vue Mumbai"
 
 iran:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population_border.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population_border.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population_border_sd.png"
     alt: "iran population frontieres"
     title: "Population de l'Iran avec frontières"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/iran_population_sd.png"
     alt: "iran population"
     title: "Population de l'Iran sans frontière"
 
 japan:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_contour_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_contour_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_contour_sd.png"
     alt: "japan population frontieres"
     title: "Population du Japon avec frontières"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_hd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/japan_pop_sd.png"
     alt: "japan population"
     title: "Population du Japon sans frontière"
 
 pakistan:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_sd.png"
     alt: "pakistan population"
     title: "Population du Pakistan"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_ne.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_ne.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_ne_sd.png"
     alt: "pakistan population vue nord est"
     title: "Population du Pakistan - Vue Nord Est"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_so.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_so.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/pakistan_population_so_sd.png"
     alt: "pakistan population vue sud ouest"
     title: "Population du Pakistan - Vue Sud Ouest"
 
 tajikistan:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/tajikistan_population.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/tajikistan_population.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/tajikistan_population_sd.png"
     alt: "tajikistan population"
     title: "Population du Tajikistan"
 ---
@@ -225,7 +225,7 @@ J'ai donc fait une série de rendus "test", afin de de représenter des densité
 
 La densité de population est généralement représentée par un aplat de couleurs, aussi appelé techniquement carte choropl7te.
 
-{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/densite_choroplet.webp" alt="densite carte choroplete" caption="Carte choroplète de la densité de population française, via [le GéoClip de l'INSEE](https://statistiques-locales.insee.fr/#c=indicator&i=pop_depuis_1876.dens&s=2017&view=map1)" %}
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/densite_choroplet_sd.png" alt="densite carte choroplete" caption="Carte choroplète de la densité de population française, via [le GéoClip de l'INSEE](https://statistiques-locales.insee.fr/#c=indicator&i=pop_depuis_1876.dens&s=2017&view=map1)" %}
 
 Loin de moi l'idée de remettre en cause cette représentation, bien au contraire ! L'information y est justement présentée et si la symbologie est bien définie, le message qui doit être dispensé passe clairement.
 
@@ -233,7 +233,7 @@ Cependant, le fait de donner de la hauteur à ce type de carte permet d'avoir un
 
 La première carte que j'ai réalisée est la densité de population française.
 
-{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_pikes.webp" alt="densite france version1" caption="Première carte de population que j'ai réalisée avec Aerialod" %}
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_pikes_sd.png" alt="densite france version1" caption="Première carte de population que j'ai réalisée avec Aerialod" %}
 
 >Vous retrouverez dans la liste en fin d'article qui contient l'ensemble de mes réalisations sur ce thème ci-dessous, une autre version de cette carte.
 
@@ -266,7 +266,7 @@ Après rien de très particulier, niveau réglages je passe systématiquement su
 
 Il ne reste plus qu'à jouer sur les couleurs de terrain et de base, et parfois avec l'exposition et les angles du soleil.
 
-{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/classic_parameters.webp" alt="parametres classiques aerialod" caption="Mes paramètres classiques sur Aerialod pour produire les cartes de population en pics" %}
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/classic_parameters_sd.png" alt="parametres classiques aerialod" caption="Mes paramètres classiques sur Aerialod pour produire les cartes de population en pics" %}
 
 Un export en png et c'est parti mon kiki :rocket: !
 

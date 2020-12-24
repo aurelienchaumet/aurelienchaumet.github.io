@@ -3,13 +3,13 @@ layout: splash
 permalink: /realisations/
 title : "Réalisations"   
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/realisations_puzzle.webp
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/realisations_puzzle_sd.png
   overlay_filter: 0.3
 excerpt:
   Rendus cartographiques et dataviz en tout genre
 
 geo_noel_2020:
-  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.webp
+  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod_sd.png
     alt: "Géo Noël"
     title: "Géo Noël"
     excerpt: "Passez de bonnes fêtes de fin d'année"
@@ -18,7 +18,7 @@ geo_noel_2020:
     btn_label: ":gift: Deux cadeaux ici :gift:"
 
 spikes_map_fr:
-  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp
+  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_sd.png
     alt: "Cartes de population en pics"
     title: "Cartes de population en pics"
     excerpt: "Rendu de la notion de densité de population en pics"
@@ -27,7 +27,7 @@ spikes_map_fr:
     btn_label: "Accéder"
 
 spikes_map_en:
-  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_hd.webp
+  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_sd.png
     alt: "Spikes population maps"
     title: "Spikes population maps"
     excerpt: "Rendering of the concept of peak population density"
@@ -36,7 +36,7 @@ spikes_map_en:
     btn_label: "Go for it"
 
 30daymapchallenge:
-  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/map_challenge_themes_2020_ac.webp
+  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/map_challenge_themes_2020_ac_sd.png
     alt: "30DayMapChallenge"
     title: "30DayMapChallenge 2020"
     excerpt: "Cartes réalisées pour le 30DayMapChallenge 2020"
@@ -44,10 +44,10 @@ spikes_map_en:
     btn_class: "btn--primary"
     btn_label: "Accéder"
 ---
-{% include feature_row id="geo_noel_2020" type="right" %}
+{% include feature_row id="geo_noel_2020" loading="lazy" type="right" %}
 
-{% include feature_row id="spikes_map_fr" type="left" %}
+{% include feature_row id="spikes_map_fr" loading="lazy" type="left" %}
 
-{% include feature_row id="spikes_map_en" type="right" %}
+{% include feature_row id="spikes_map_en" loading="lazy" type="right" %}
 
-{% include feature_row id="30daymapchallenge" type="left" %}
+{% include feature_row id="30daymapchallenge" loading="lazy" type="left" %}
