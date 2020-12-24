@@ -4,7 +4,7 @@ permalink: /articles/30daymapchallenge_stats_en/
 title : "30 DayMapChallenge 2020 Statistics" 
 classes: wide
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30dmc_stats_header.webp
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png
   overlay_filter: 0.3
   caption: "Poster created by [Haifeng Niu](https://twitter.com/niu_haifeng)"
 excerpt:
