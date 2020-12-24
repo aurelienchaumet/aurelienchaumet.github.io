@@ -3,7 +3,7 @@ layout: single
 permalink: /realisations/geo_noel_2020/  
 title : "Géo Noël 2020"   
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.webp
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod_sd.png
   overlay_filter: 0.3
 
 classes: wide
@@ -14,9 +14,9 @@ J'imagine que vous n'en aviez pas rêvé, mais je l'ai quand même fait :smile: 
 
 :gift: Ce n'est pas une mais deux magnifiques cartes festives de Noël que je vous offre ici :gift:
 
-{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_blender.webp" alt="geo noel blender 2020" caption="Géo Noël Blender 2020" %}
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_blender.png" alt="geo noel blender 2020" caption="Géo Noël Blender 2020" %}
 
-{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.webp" alt="geo noel aerialod 2020" caption="Géo Noël Aerialod 2020" %}
+{% include figure image_path="https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.png" alt="geo noel aerialod 2020" caption="Géo Noël Aerialod 2020" %}
 
 >Vous pouvez réaliser un clic droit-> "Ouvrez le lien dans un nouvel onglet" sur chacune des cartes, pour les voir en plus grande résolution, si jamais la kitch attitude ne vous effraie pas plus :sweat_smile:
 
