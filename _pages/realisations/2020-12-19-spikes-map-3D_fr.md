@@ -82,7 +82,7 @@ espana:
 
 france:
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_v2_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_100_v2_sd.png"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_pikes_sd.png"
     alt: "france population"
     title: "Population de la France"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_100_v2_hd.webp"
