@@ -3,13 +3,13 @@ layout: splash
 permalink: /realisations/
 title : "Réalisations"   
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/realisations_puzzle.webp
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/realisations_puzzle_sd.png
   overlay_filter: 0.3
 excerpt:
   Rendus cartographiques et dataviz en tout genre
 
 geo_noel_2020:
-  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod.webp
+  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod_sd.png
     alt: "Géo Noël"
     title: "Géo Noël"
     excerpt: "Passez de bonnes fêtes de fin d'année"
@@ -36,7 +36,7 @@ spikes_map_en:
     btn_label: "Go for it"
 
 30daymapchallenge:
-  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge/map_challenge_themes_2020_ac.webp
+  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/map_challenge_themes_2020_ac_sd.png
     alt: "30DayMapChallenge"
     title: "30DayMapChallenge 2020"
     excerpt: "Cartes réalisées pour le 30DayMapChallenge 2020"
