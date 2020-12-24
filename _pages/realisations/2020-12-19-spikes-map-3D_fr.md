@@ -86,7 +86,7 @@ france:
     alt: "france population"
     title: "Population de la France"
   - url: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_100_v2_hd.webp"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_100_sd.png"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/french_population_100_v2_sd.png"
     alt: "france population plus de 100 habitants"
     title: "Population de la France - Plus de 100 habitants par carreau de 100m de côté"
 
