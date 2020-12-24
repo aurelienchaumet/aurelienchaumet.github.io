@@ -4,4 +4,4 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'jemoji'
-gem 'jekyll-loading-lazy'
+gem 'jekyll-loading-lazy', group: :jekyll_plugins
