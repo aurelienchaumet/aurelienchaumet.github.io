@@ -3,29 +3,58 @@ layout: splash
 permalink: /inspirations/
 title : "Inspirations"   
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/inspiration.webp
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/inspiration.png
   overlay_filter: 0.3
 excerpt:
   Un recueil de personnes, de sites ou d'applications qui donnent envie de visualiser des données
 
 sean_conway:
   - url: "https://twitter.com/geo_spatialist/status/1257352618705387526"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_france_sd.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_france_sd.png"
     alt: "sean conway france"
     title: "Sean Conway France"
   - url: "https://twitter.com/geo_spatialist/status/1332020570720972802/photo/1"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_arcbuckle_mountains.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_arcbuckle_mountains_sd.png"
     alt: "sean conway arcbuckle mountains"
     title: "Sean Conway - Arbuckle Mountains"
   - url: "https://twitter.com/geo_spatialist/status/1336183850997870594/photo/1"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_lidar.webp"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_lidar_sd.png"
     alt: "sean conway lidar"
     title: "Sean Conway - LIDAR"
+
+alasdair_rae:
+  - url: "http://www.statsmapsnpix.com/2020/11/how-to-make-3d-population-density.html"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/alasdair_rae_population.png"
+    alt: "population 3D"
+    title: "Rendu 3D de la population mondiale"
+  - url: "http://www.statsmapsnpix.com/2018/08/watching-ships-go-by-uk-marine-traffic.html"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/alasdair_rae_vessels.png"
+    alt: "Trajets des bateaux"
+    title: "Trajets des bateaux"
+  - url: "http://www.statsmapsnpix.com/2020/08/automatic-knowledge.html"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/alasdair_rae_buildings.png"
+    alt: "automatic knowledge"
+    title: "Automatic Knowledge"
+
+federica_fragapane:
+  - url: "https://www.behance.net/gallery/82752197/The-Menstrual-Cycle-Scientific-American"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/federica_fragapane_menstruel.png"
+    alt: "cycle menstruel"
+    title: "Cycle menstruel en graphique"
+  - url: "https://www.behance.net/gallery/94198961/The-Shape-of-Dreams-for-Google-Trends"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/federica_fragapane_shape.png"
+    alt: "shape of dreams"
+    title: "The Shape of Dreams"
+  - url: "https://www.behance.net/gallery/110024405/Stolen-paintings"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/federica_fragapane_paintings.png"
+    alt: "stolen paintings"
+    title: "Stolen Paintings"
 ---
 
 Cette section me permet d'avoir un espace pour garder en mémoire les différentes personnes qui m'inspirent, souvent par leur design mais aussi par leur technique.
 
->N'hésitez pas à cliquer sur leur nom, cela vous renverra vers leur compte Twitter, Instagram ou autre !
+>N'hésitez pas à cliquer sur leur nom, cela vous renverra vers leur compte Twitter, Instagram ou autre !  
+>Un clic sur une image vous amènera sur sa source :+1:
 
 ## [Sean Conway](https://twitter.com/geo_spatialist)
 
@@ -34,7 +63,11 @@ Sa carte géologique française est assez dingue !" %}
 
 ## [Alasdair Rae](https://twitter.com/undertheraedar)
 
-Alasdair Rae est celui qui m'a fait connaître Aerialod (sans doute un des plus gros contributeurs actuellement à son utilisation dans le monde d'ailleurs !)
+{% include gallery id="alasdair_rae" caption="Alasdair Rae est celui qui m'a fait connaître Aerialod (sans doute un des plus gros contributeurs actuellement à son utilisation dans le monde d'ailleurs !)" %}
+
+## [Federica Fragapane](https://twitter.com/fedfragapane)
+
+{% include gallery id="federica_fragapane" caption="Federica Fragapane possède un sens artistique unique et un style bien à elle. Ses réalisations sont toujours épurées mais très réfléchies" %}
 
 - https://twitter.com/Cchurchili?s=09
 - https://twitter.com/lacxrx?s=09
@@ -53,9 +86,6 @@ Jonni Walker est un MapBoxgicien. Vous lui donnez 3 jeu de données et Mapbox et
 Boris Mericskay est notamment professeur au Master SIGAT de Rennes et met librement à disposition beaaaaaaucoup de matières pédagogiques autour des SIG et des bases de données
 
 - https://instagram.com/spatial_occasions?igshid=d5mnvnxdzvnf
-- https://instagram.com/federicafragapane?igshid=gjtn6jf9xivl
-
-Federica Fragapane possède un sens artistique unique et un style bien à elle. Ses réalisations sont toujours épurées mais très réfléchies
 
 - https://instagram.com/lescartesmarines?igshid=gb5parif2p5g
 
