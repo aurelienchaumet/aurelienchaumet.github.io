@@ -8,7 +8,7 @@ header:
   caption: "Données DVF sur Kepler.gl"
 
 feature_row:
-  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/realisations_puzzle_sd.png_
+  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/realisations_puzzle_sd.png
     alt: "applications geographiques"
     title: "Réalisations"
     excerpt: "Diverses réalisations de cartes ou d'applications cartographiques web"

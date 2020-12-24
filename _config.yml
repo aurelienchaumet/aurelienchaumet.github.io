@@ -25,7 +25,7 @@ url                      : "https://aurelienchaumet.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "aurelienchaumet/aurelienchaumet.github.io"
 teaser                   : "https://dl01fbzxdpfby.cloudfront.net/images/source.png"
-logo                     : "https://dl01fbzxdpfby.cloudfront.net/images/logo.webp"
+logo                     : "https://dl01fbzxdpfby.cloudfront.net/images/logo.png"
 masthead_title           : "Aurélien Chaumet"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 250
