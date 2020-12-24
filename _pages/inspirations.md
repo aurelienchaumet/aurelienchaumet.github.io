@@ -34,7 +34,7 @@ Sa carte géologique française est assez dingue !" %}
 
 ## [Alasdair Rae](https://twitter.com/undertheraedar)
 
-Alasdair Rae est celui qui m'a fait connaître Aerialod (sans doute un des plus gros contributeurs à son utilisation dans le monde d'ailleurs !)
+Alasdair Rae est celui qui m'a fait connaître Aerialod (sans doute un des plus gros contributeurs actuellement à son utilisation dans le monde d'ailleurs !)
 
 - https://twitter.com/Cchurchili?s=09
 - https://twitter.com/lacxrx?s=09
