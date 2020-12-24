@@ -41,7 +41,7 @@ feature_row_2:
     btn_class: "btn--primary"
 
 feature_row_3:
-  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30dmc_stats_header_sd.png"
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png"
     alt: "statistiques 30daymapchallenge 2020"
     title: "30 DayMapChallenge 2020 Statistics"
     excerpt: "Some statistics about the 30DayMapChallenge 2020 with Python"
@@ -50,7 +50,7 @@ feature_row_3:
     btn_class: "btn--primary"
 
 feature_row_4:
-  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30dmc_stats_header_sd.png"
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png"
     alt: "statistiques 30daymapchallenge 2020"
     title: "Statistiques 30 DayMapChallenge 2020"
     excerpt: "Quelques statistiques sur le 30DayMapChallenge 2020 avec Python"
