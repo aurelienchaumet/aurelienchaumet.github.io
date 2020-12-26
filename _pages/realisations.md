@@ -17,23 +17,14 @@ geo_noel_2020:
     btn_class: "btn--primary"
     btn_label: ":gift: Deux cadeaux ici :gift:"
 
-spikes_map_fr:
+spikes_map:
   - image_path: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_sd.png
     alt: "Cartes de population en pics"
-    title: "Cartes de population en pics"
-    excerpt: "Rendu de la notion de densité de population en pics"
-    url: "/realisations/spikes_map_fr/"
-    btn_class: "btn--primary"
-    btn_label: "Accéder"
-
-spikes_map_en:
-  - image_path: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_sd.png
-    alt: "Spikes population maps"
-    title: "Spikes population maps"
-    excerpt: "Rendering of the concept of peak population density"
-    url: "/realisations/spikes_map_en/"
-    btn_class: "btn--primary"
-    btn_label: "Go for it"
+    title: ":fr: Cartes de population en pics - :us: Spikes population maps"
+    excerpt: "[:fr: Lire en français :fr:](spikes_map_fr/){: .btn .btn--danger}  
+    Rendu de la notion de densité de population en pics  
+    [:us: Read it in english :us:](spikes_map_en/){: .btn .btn--danger}  
+    Rendering of the concept of peak population density"
 
 30daymapchallenge:
   - image_path: https://dl01fbzxdpfby.cloudfront.net/images/map_challenge_themes_2020_ac_sd.png
@@ -46,8 +37,6 @@ spikes_map_en:
 ---
 {% include feature_row id="geo_noel_2020" loading="lazy" type="right" %}
 
-{% include feature_row id="spikes_map_fr" loading="lazy" type="left" %}
+{% include feature_row id="spikes_map" loading="lazy" type="left" %}
 
-{% include feature_row id="spikes_map_en" loading="lazy" type="right" %}
-
-{% include feature_row id="30daymapchallenge" loading="lazy" type="left" %}
+{% include feature_row id="30daymapchallenge" loading="lazy" type="right" %}
