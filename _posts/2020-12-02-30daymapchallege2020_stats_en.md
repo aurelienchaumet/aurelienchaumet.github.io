@@ -7,6 +7,7 @@ header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png
   overlay_filter: 0.3
   caption: "Poster created by [Haifeng Niu](https://twitter.com/niu_haifeng)"
+  teaser: https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png
 excerpt:
   Some statistics about the 30DayMapChallenge 2020 with Python
 

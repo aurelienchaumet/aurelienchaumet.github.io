@@ -5,6 +5,8 @@ title : "Géo Noël 2020"
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod_sd.png
   overlay_filter: 0.3
+  teaser: https://dl01fbzxdpfby.cloudfront.net/images/merry_christmas_aerialod_sd.png
+excerpt: Passez de bonnes fêtes !
 
 classes: wide
 comments: true

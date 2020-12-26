@@ -5,6 +5,7 @@ title : "Cartes de population en pics"
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_sd.png
   overlay_filter: 0.3
+  teaser: https://dl01fbzxdpfby.cloudfront.net/images/spikes-map/african_pop_border_sd.png
 excerpt: "Rendu de la notion de densité de population en pics"
 
 comments: true
