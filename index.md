@@ -23,7 +23,7 @@ feature_row:
     btn_label: "Accéder"
     btn_class: "btn--primary"
   - image_path: https://dl01fbzxdpfby.cloudfront.net/images/inspiration_sd.png
-    title: "Inspiration - En cours de construction"
+    title: "Inspiration"
     excerpt: "Un recueil de réalisations extérieures sur des sujets autour de la cartographie, des données et de visualisations diverses et variées"
     #url: "https://aurelienchaumet.github.io/inspiration/"
     #btn_label: "Accéder"
