@@ -1,46 +1,40 @@
 ---
-layout: splash
+layout: single
 permalink: /inspirations/
 title : "Inspirations"   
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/inspiration.png
   overlay_filter: 0.3
 excerpt:
-  Un recueil de personnes, de sites ou d'applications qui donnent envie de visualiser des données
+  Un recueil de personnes, de sites ou d'applications qui donnent envie de visualiser des données géographiques, mais pas que !
+
+classes: wide
+comments: true
+toc: true
+toc_label: "Sommaire"
+toc_icon: "users"
 
 sean_conway:
-  - url: "https://twitter.com/geo_spatialist/status/1257352618705387526"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_france_sd.png"
-    alt: "sean conway france"
-    title: "Sean Conway France"
   - url: "https://twitter.com/geo_spatialist/status/1332020570720972802/photo/1"
     image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_arcbuckle_mountains_sd.png"
     alt: "sean conway arcbuckle mountains"
     title: "Sean Conway - Arbuckle Mountains"
-  - url: "https://twitter.com/geo_spatialist/status/1336183850997870594/photo/1"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_lidar_sd.png"
-    alt: "sean conway lidar"
-    title: "Sean Conway - LIDAR"
+  - url: "https://twitter.com/geo_spatialist/status/1257352618705387526"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/sean_conway_france_sd.png"
+    alt: "sean conway france"
+    title: "Sean Conway France"
 
 alasdair_rae:
-  - url: "http://www.statsmapsnpix.com/2020/11/how-to-make-3d-population-density.html"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/alasdair_rae_population.png"
-    alt: "population 3D"
-    title: "Rendu 3D de la population mondiale"
-  - url: "http://www.statsmapsnpix.com/2018/08/watching-ships-go-by-uk-marine-traffic.html"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/alasdair_rae_vessels.png"
-    alt: "Trajets des bateaux"
-    title: "Trajets des bateaux"
   - url: "http://www.statsmapsnpix.com/2020/08/automatic-knowledge.html"
     image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/alasdair_rae_buildings.png"
     alt: "automatic knowledge"
     title: "Automatic Knowledge"
+  - url: "http://www.statsmapsnpix.com/2020/11/how-to-make-3d-population-density.html"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/alasdair_rae_population.png"
+    alt: "population 3D"
+    title: "Rendu 3D de la population mondiale"
 
 federica_fragapane:
-  - url: "https://www.behance.net/gallery/82752197/The-Menstrual-Cycle-Scientific-American"
-    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/federica_fragapane_menstruel.png"
-    alt: "cycle menstruel"
-    title: "Cycle menstruel en graphique"
   - url: "https://www.behance.net/gallery/94198961/The-Shape-of-Dreams-for-Google-Trends"
     image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/federica_fragapane_shape.png"
     alt: "shape of dreams"
@@ -49,6 +43,26 @@ federica_fragapane:
     image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/federica_fragapane_paintings.png"
     alt: "stolen paintings"
     title: "Stolen Paintings"
+
+r_lacroix:
+  - url: "https://twitter.com/lacxrx/status/1326763865460367361"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/r_lacroix_carottes_sd.png"
+    alt: "production carottes"
+    title: "La production de carottes en France"
+  - url: "https://rxlacroix.github.io/articles/lignes_dubois"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/r_lacroix_webdubois_sd.png"
+    alt: "population web du bois"
+    title: "Structure de la population française à la WEB Du Bois"
+
+j_walker:
+  - url: "https://public.tableau.com/profile/jonni.walker#!/vizhome/TheTurtle/Tester"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/j_walker_turtles_sd.png"
+    alt: "sea turltes greek ocean"
+    title: "Tortues de mer en Grèce"
+  - url: "https://twitter.com/jonni_walker/status/1340777327240892416"
+    image_path: "https://dl01fbzxdpfby.cloudfront.net/images/inspirations/j_walker_mountains_sd.png"
+    alt: "mountains mapbox"
+    title: "Montagnes à la MapBox"
 ---
 
 Cette section me permet d'avoir un espace pour garder en mémoire les différentes personnes qui m'inspirent, souvent par leur design mais aussi par leur technique.
@@ -58,55 +72,26 @@ Cette section me permet d'avoir un espace pour garder en mémoire les différent
 
 ## [Sean Conway](https://twitter.com/geo_spatialist)
 
-{% include gallery id="sean_conway" caption="Le maître de la carte ancienne mise en relief ! Grosse technique permettant de mettre en relief des cartes anciennes, mais pas que !  
+{% include gallery id="sean_conway" layout ="half" caption="Le maître de la carte ancienne mise en relief ! Grosse technique permettant de mettre en relief des cartes anciennes, mais pas que !  
 Sa carte géologique française est assez dingue !" %}
 
 ## [Alasdair Rae](https://twitter.com/undertheraedar)
 
-{% include gallery id="alasdair_rae" caption="Alasdair Rae est celui qui m'a fait connaître Aerialod (sans doute un des plus gros contributeurs actuellement à son utilisation dans le monde d'ailleurs !)" %}
+{% include gallery id="alasdair_rae" layout="half" caption="Alasdair Rae est celui qui m'a fait connaître Aerialod (sans doute un des plus gros contributeurs actuellement à son utilisation dans le monde d'ailleurs !)  
+Il est notamment professeur en Aménagement à l'Université de Sheffield et a, depuis peu, créé [Automatic Knowledge](https://automaticknowledge.co.uk/).  
+Il écrit également des articles très intéressants sur son blog [statsmapsnpix.com](http://www.statsmapsnpix.com/)." %}
 
 ## [Federica Fragapane](https://twitter.com/fedfragapane)
 
-{% include gallery id="federica_fragapane" caption="Federica Fragapane possède un sens artistique unique et un style bien à elle. Ses réalisations sont toujours épurées mais très réfléchies" %}
+{% include gallery id="federica_fragapane" layout="half" caption="Federica Fragapane possède un sens artistique unique et un style bien à elle. Ses réalisations sont toujours épurées mais très réfléchies." %}
 
-- https://twitter.com/Cchurchili?s=09
-- https://twitter.com/lacxrx?s=09
+## [Romain Lacroix](https://rxlacroix.github.io/)
 
-J'ai découvert Romain Lacroix lors du 30daymapchallenge 2019 avec des cartes souvent autour du thème dans l'agriculture. Un style souvent minimaliste et toujours très léché
+{% include gallery id="r_lacroix" layout="half" caption="J'ai découvert Romain Lacroix lors du 30daymapchallenge 2019 avec des cartes souvent autour du thème dans l'agriculture. Un style souvent minimaliste et toujours très léché." %}
 
-- https://twitter.com/CRVanPollard?s=09
-- https://twitter.com/John_M_Nelson?s=09
-- https://twitter.com/jonni_walker?s=09
+## [Jonni Walker](https://twitter.com/jonni_walker)
 
-Jonni Walker est un MapBoxgicien. Vous lui donnez 3 jeu de données et Mapbox et il sort des images hallucinantes ! Ce n'est pas pour rien qu'il y travaille maintenant. Sa manière d'aborder la cartographie est très inspirante pour moi au quotidien
+{% include gallery id="j_walker" layout="half" caption="Jonni Walker est un MapBoxgicien. Vous lui donnez 3 jeu de données avec Tableau et Mapbox et il sort des images hallucinantes ! Ce n'est pas pour rien qu'il travaille pour ces derniers maintenant. Sa manière d'aborder la cartographie est très inspirante pour moi au quotidien." %}
 
-- https://twitter.com/lecartographe?s=09
-- https://twitter.com/BorisMericskay?s=09
-
-Boris Mericskay est notamment professeur au Master SIGAT de Rennes et met librement à disposition beaaaaaaucoup de matières pédagogiques autour des SIG et des bases de données
-
-- https://instagram.com/spatial_occasions?igshid=d5mnvnxdzvnf
-
-- https://instagram.com/lescartesmarines?igshid=gb5parif2p5g
-
-Gros coup de cœur de cette année pour moi cette année ! Elle dessine à la main des cartes (souvent marines...) avec un brio sans égal. Ses créations sont uniques, visibles physiquement dans son atelier à la Rochelle
-
-- https://instagram.com/goodwoodglobes?igshid=juhim2q8to4i
-
-Si vous aimez les globes physiques, ce compte Instagram est celui qu'il faut suivre ! (OK avec le suivant...) Réalisé en bois, ces pièces sont vraiment magnifiques
-
-- https://instagram.com/globemakers?igshid=do14z5zq9kkf
-
-Attention chefs d'œuvre !! Si vous souhaitez faire plaisir à un cartographe, vous venez de trouver le cadeau idéal. Entièrement fabriqués à la main, les globes sont hallucinants de précision et de beauté
-
-- https://instagram.com/shadedreliefmaps?igshid=c2vzwaus5zen
-
-OK encore un créateur de cartes 3D. Mais franchement, je me devais de le citer ici. J'adore vraiment la manière de mêler des reliefs aux cartes anciennes
-
-- https://instagram.com/the.itinerarium?igshid=1dmn1hqwr4x8i
-- https://instagram.com/justglassit?igshid=7tx3tv1m0v1
-- https://instagram.com/lezanviz?igshid=1xzz3idmuqtfc
-- https://instagram.com/ibensack?igshid=ligaenaxdlpd
-- https://instagram.com/nadiehbremer?igshid=fwjj3skzb4b3
-
-Pleines de formes et souvent colorées, les créations de Nadieh Bremer sont toujours intéressantes. Elle mêle un style onirique à une technique impressionnante
+## :fire: À suivre... :fire:
+{: .text-center}
