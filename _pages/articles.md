@@ -40,28 +40,16 @@ feature_row_2:
     btn_label: "Accéder"
     btn_class: "btn--primary"
 
-feature_row_3:
+30dmc-stats:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png"
     alt: "statistiques 30daymapchallenge 2020"
     title: "30 DayMapChallenge 2020 Statistics"
-    excerpt: "Some statistics about the 30DayMapChallenge 2020 with Python"
-    url: "/articles/30daymapchallenge_stats_en/"
-    btn_label: "Go read this wonderful article now !"
-    btn_class: "btn--primary"
-
-feature_row_4:
-  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png"
-    alt: "statistiques 30daymapchallenge 2020"
-    title: "Statistiques 30 DayMapChallenge 2020"
-    excerpt: "Quelques statistiques sur le 30DayMapChallenge 2020 avec Python"
-    url: "/articles/30daymapchallenge_stats_fr/"
-    btn_label: "Allez lire ce magnifique article en français !"
-    btn_class: "btn--primary"
+    title: ":fr: Statistiques 30DayMapChallenge 2020 - :us: Statistics 30DayMapChallenge 2020"
+    excerpt: "[:fr: Lire en français :fr:](30daymapchallenge_stats_fr/){: .btn .btn--danger .btn--large}
+    [:us: Read it in english :us:](30daymapchallenge_stats_en/){: .btn .btn--danger .btn--large}"
 ---
 
-{% include feature_row id="feature_row_4" type="left" %}
-
-{% include feature_row id="feature_row_3" type="right" %}
+{% include feature_row id="30dmc-stats" type="left" %}
 
 {% include feature_row id="feature_row_1" type="left" %}
 
