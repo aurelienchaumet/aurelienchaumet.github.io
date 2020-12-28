@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /articles/30daymapchallenge_stats_bts_fr/  
-title : "30 DayMapChallenge 2020 Statistiques - Dans les coulisses" 
+title : "Scraping et analyse des données statistiques du 30 DayMapChallenge 2020 via Twint, Plotly et Bokeh" 
 classes: wide
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png
@@ -9,7 +9,7 @@ header:
   caption: "Poster created by [Haifeng Niu](https://twitter.com/niu_haifeng)"
   teaser: https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png
 excerpt:
-  Explications du process ayant mené à l'analyse des statistiques du 30DayMapChallenge 2020
+  30 DayMapChallenge 2020 Statistiques - Dans les coulisses - Explications du process ayant mené à l'analyse des statistiques
 
 og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/30dmc_stats_header.webp
 
@@ -28,6 +28,7 @@ Ce challenge totalement non officiel reste un moment unique de partage cartograp
 Toutes ces cartes sont un matériel vraiment très intéressant d'étude concernant la cartographie, et c'est pourquoi j'ai essayé d'en [ressortir quelques statistiques dans un précédent article](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/), principalement du point de vue social du challenge.
 
 IMAGE
+![site david maps](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/capture_david_site.webp "David Frigge's site, which collect all submissions"){: .align-center}
 
 J'ai pour cela utilisé (et appris à m'en servir par la même occasion) un certain nombre d'outils en Python :
 
@@ -109,8 +110,58 @@ Il y a ensuite 2 manières de s'en servir :
 
 L'avantage de cette deuxième méthode est que des fonctions pythoniques peuvent être utilisées, et vous pourrez ainsi vous en servir dans un script plus élaboré.
 
+Dans les deux cas, des options existent pour enregistrer le résultat de la recherche directement en csv.
+
 #### Utilisation de Twint pour récupérer les tweets du 30DayMapChallenge
 
-![site david maps](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/capture_david_site.webp "David Frigge's site, which collect all submissions"){: .align-center}
+À la base, ce qui nous intéresse plus particulièrement est la possibilité de récupérer les tweets publiés pour le 30DayMapChallenge. OK, donc il suffit de demander gentiment (toujours) à Twint de nous ramener les tweets contenant **_#30daymapchallenge_**.  
+Pour cela, j'ai utilisé la deuxième méthode. Même si dans ce cas précis la recherche n'a rien de complexe, je souhaitais comprendre comment m'en servir.
 
-## Finishers
+>Pour les curieux, je pense qu'il aurait suffi de quelque chose comme ça avec la première méthode:_
+
+```python
+
+twint -s #30daymapchallenge --since "2020-09-01 00:00:00" -o file.csv --csv
+
+```
+
+>Le _since_ permet de spécifier une date de départ du scrap, pour être sûr de ne pas récupérer les tweets du challenge 2019.  
+>Le _-o file.csv --csv_ permet de spécifier le nom du fichier de sorti (ainsi que son emplacement), et le format dans lequel le >fichier est souhaité.
+
+Le code que j'ai utilisé est donc le suivant :
+
+```python
+
+import nest_asyncio
+nest_asyncio.apply()
+
+import twint
+
+# Configure
+c = twint.Config()
+c.Search = "30daymapchallenge"
+c.Store_csv = True
+c.Since = "2020-10-01"
+c.Until = "2020-12-02"
+c.Output = "2020-12-02.tweets.csv"
+
+# Run
+twint.run.Search(c)
+
+```
+
+Cela mérite quelques explications :
+
+- J'ai réalisé ce scrape via un notebook Jupyter, et il était indispensable d'ajouter la commande **nest_asyncio.apply()** pour que le notebook ne plante pas.
+- On crée un objet **c** qui permet de paramétrer ce que nous allons demander à Twint
+- Puis on définit ces paramètres (dans l'ordre d'apparition au générique):
+  - on cherche les tweets contenant 30daymapchallenge
+  - on veut les stocker en csv
+  - à partir du 1er octobre 2020
+  - jusqu'au 2 décembre 2020 (pour l'exemple du s.Until)
+  - on le stocke dans un fichier qui s'appelle **2020-12-02.tweets.csv**
+  - et on lui demande ~~d'aller faire un tour en courant~~ de récupérer les données !
+
+Rien de très compliqué ici, mais job done, comme disent les américains.
+
+# Finishers
