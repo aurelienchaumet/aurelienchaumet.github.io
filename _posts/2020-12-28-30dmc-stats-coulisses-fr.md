@@ -29,11 +29,11 @@ Toutes ces cartes sont un matériel vraiment très intéressant d'étude concern
 
 IMAGE
 
-J'ai pour cela utilisé (et appris à m'en servir par la même occasion) un certain nombre d'outils :
+J'ai pour cela utilisé (et appris à m'en servir par la même occasion) un certain nombre d'outils en Python :
 
-- Twint
-- La librairie python Plotly
-- La librairie python Bokeh
+- Twint pour récupérer les données
+- Plotly pour [visualiser les statistiques des finishers](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/#finishers)
+- Bokeh pour [visualiser les statistiques de l'ensemble des participants](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/#statistiques-g%C3%A9n%C3%A9rales)
 
 Je souhaitais donc partager ici la manière dont j'ai récupéré et traité ces données, et comment je me suis servi de ces outils pour y arriver.
 
@@ -53,7 +53,63 @@ Un robot, ou un algorithme, est configuré pour récupérer les données qui nou
 
 ### Twint ou comment récupérer facilement des données de Twitter
 
+Il est possible de récupérer les données de Twitter via Tweepy, une librairie Python.  
+Ses principales limites sont que vous ne pourrez récupérer que les 3 200 premiers tweets d'une timeline, couplé à un nombre limité toutes les 15 minutes.
 
+Mais il y a mieux ! Une autre librairie s'appelant [Twint](https://github.com/twintproject/twint) existe et s'affranchit de ces limitations (car elle ne fait pas appel à l'API de Twitter).  
+
+#### Installation de Twint
+
+L'installation est ultra simple, il suffit de taper dans un terminal de commande :
+
+```python
+
+pip3 install twint
+
+```
+
+Et logiquement, c'est réglé !
+
+#### Utilisation générique de Twint
+
+Il y a ensuite 2 manières de s'en servir :
+
+- Pour les cas d'usage les plus simples, vous pouvez passer par une commande CLI
+  ```python
+
+  twint -u username
+
+  ```
+  Cela récupèrera l'ensemble des tweets de username
+
+  ```python
+
+  twint -s pineapple
+
+  ```
+  Cela vous ramènera l'ensemble des tweets contenant pineapple
+
+- Pour les cas un peu plus poussés, il faudra passer par l'usage du Module
+
+  ```python
+
+  import twint
+
+  # Configure
+  c = twint.Config()
+  c.Username = "realDonaldTrump"
+  c.Search = "great"
+
+  # Run
+  twint.run.Search(c)
+
+  ```
+  Ici, vous récupèrerait l'ensemble des tweets de Donald Trump contenant "great"
+  _L'exemple cité provient de la documentation de Twint et ne réflète en aucun cas un quelconque intérêt pour le fond_
+
+L'avantage de cette deuxième méthode est que des fonctions pythoniques peuvent être utilisées, et vous pourrez ainsi vous en servir dans un script plus élaboré.
+
+#### Utilisation de Twint pour récupérer les tweets du 30DayMapChallenge
 
 ![site david maps](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/capture_david_site.webp "David Frigge's site, which collect all submissions"){: .align-center}
 
