@@ -240,7 +240,7 @@ L'idéal serait de le faire également pour d'autres langues afin de maximiser l
 Une fois cela effectué, il y a encore un gros travail de vérification à réaliser pour les tweets dont le champ **day** n'aura pas été peuplé.  
 Travail fort fastidieux, mais indispensable pour récupérer un maximum de participations !
 
-## Première visualisation des statistiques sur les finishers
+## Plotly pour visualiser les statistiques sur les finishers
 
 Il semblait intéressant de regarder d'un peu plus près les statistiques des participants ayant soumis des réalisations pour l'ensemble des 30 jours du mois de novembre.  
 Pour cela, j'ai choisi de travailler avec Plotly, en exportant un graphique en html afin de l'afficher dans l'article via un iframe.
