@@ -8,6 +8,15 @@ header:
 excerpt:
   Partage de connaissance sur des outils et des données
 
+30dmc_analyse:
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png"
+    alt: "30daymapchallenge statistiques scraping analyse"
+    title: "Scraping et analyse des données statistiques du 30 DayMapChallenge 2020 via Twint, Plotly et Bokeh"
+    excerpt: "Dans les coulisses - Explications du process ayant mené à l'analyse des statistiques"
+    url: "/articles/30daymapchallenge_stats_scraping_analyse_fr"
+    btn_label: "Accéder"
+    btn_class: "btn--primary"
+
 feature_row_1:
   - image_path: "https://cdn.geotribu.fr/img/tuto/aerialod/bora_bora.png"
     alt: "tutoriel aerialod"
@@ -48,6 +57,8 @@ feature_row_2:
     excerpt: "[:fr: Lire en français :fr:](30daymapchallenge_stats_fr/){: .btn .btn--danger .btn--large}
     [:us: Read it in english :us:](30daymapchallenge_stats_en/){: .btn .btn--danger .btn--large}"
 ---
+
+{% include feature_row id="30dmc_analyse" type="right" %}
 
 {% include feature_row id="30dmc-stats" type="left" %}
 
