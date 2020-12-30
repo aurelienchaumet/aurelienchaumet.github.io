@@ -8,6 +8,15 @@ header:
 excerpt:
   Partage de connaissance sur des outils et des données
 
+30dmc_analyse:
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png"
+    alt: "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint et préparation via Pandas"
+    title: "Scraping de données Twitter via Twint et préparation des données via Pandas"
+    excerpt: "Comment récupérer des données de Twitter via Twint et les préparer via Pandas - Exemple des données du 30DayMapChallenge"
+    url: "/articles/30daymapchallenge_scraping_twitter"
+    btn_label: "Accéder"
+    btn_class: "btn--primary"
+
 feature_row_1:
   - image_path: "https://cdn.geotribu.fr/img/tuto/aerialod/bora_bora.png"
     alt: "tutoriel aerialod"
@@ -48,6 +57,8 @@ feature_row_2:
     excerpt: "[:fr: Lire en français :fr:](30daymapchallenge_stats_fr/){: .btn .btn--danger .btn--large}
     [:us: Read it in english :us:](30daymapchallenge_stats_en/){: .btn .btn--danger .btn--large}"
 ---
+
+{% include feature_row id="30dmc_analyse" type="right" %}
 
 {% include feature_row id="30dmc-stats" type="left" %}
 
