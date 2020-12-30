@@ -20,7 +20,10 @@ toc_icon: "chart-line"
 toc_sticky: true
 ---
 
->Cet article fait partie d'une série de 3 articles 
+>Cet article fait partie d'une série de 3 articles expliquant le process de création derrière celui donnant des statistiques autour du 30DayMapChallenge 2020 que [vous pouvez trouver ici](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/).  
+Ce premier article détaille la manière de récupérer les données en masse provenant de Twitter.  
+Le deuxième traitera de la construction du graphique sur les finishers via Plotly.  
+Le dernier expliquera comment construire le graphique intéractif sur les statistiques générales via Bokeh et déployé sur Heroku.
 
 L'un des évènements sociaux marquants de la fin d'année 2020 reste pour bon nombre de cartographes le [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge).  
 Le concept où chacun peut réaliser des cartes l'intéressant, de la manière dont il le souhaite et partage tout ça auprès d'un public averti, tout en se confrontant à d'autres réalisations, sur des thèmes imposés est vraiment intéressant.
