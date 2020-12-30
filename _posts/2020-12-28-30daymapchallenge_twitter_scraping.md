@@ -32,7 +32,7 @@ Ce challenge totalement non officiel reste un moment unique de partage cartograp
 
 Toutes ces cartes sont un matériel vraiment très intéressant d'étude concernant la cartographie, et c'est pourquoi j'ai essayé d'en [ressortir quelques statistiques dans un précédent article](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/), principalement du point de vue social du challenge.
 
-![site david maps](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats/capture_david_site.webp "David Frigge's site, which collect all submissions"){: .align-center}
+![article statistiques 30daymapchallenge](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/article_stats_30dmc.png "Article statistiques 30DayMapChallenge"){: .align-center}
 
 J'ai pour cela utilisé (et appris à m'en servir par la même occasion) un certain nombre d'outils en Python :
 
