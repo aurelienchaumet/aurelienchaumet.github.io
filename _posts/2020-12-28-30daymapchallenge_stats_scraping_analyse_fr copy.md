@@ -1,7 +1,7 @@
 ---
 layout: single
-permalink: /articles/30daymapchallenge_stats_scraping_analyse_fr/  
-title : "Scraping et analyse des données statistiques du 30 DayMapChallenge 2020 via Twint, Plotly et Bokeh" 
+permalink: /articles/30daymapchallenge_scraping_analyse_/  
+title : "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint" 
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
   overlay_filter: 0.3
