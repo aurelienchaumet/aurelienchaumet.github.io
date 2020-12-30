@@ -1,7 +1,7 @@
 ---
 layout: single
-permalink: /articles/30daymapchallenge_plotly/  
-title : "Visualisation des données des finishers du 30 DayMapChallenge 2020 via Plotly" 
+permalink: /articles/30daymapchallenge_scraping_twitter/  
+title : "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint" 
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
   overlay_filter: 0.3
