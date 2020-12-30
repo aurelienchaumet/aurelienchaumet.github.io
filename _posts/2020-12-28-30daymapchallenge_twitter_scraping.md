@@ -15,13 +15,14 @@ og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_co
 comments: true
 share: true
 toc: true
-toc_label: "Statistics"
+toc_label: "Plan"
 toc_icon: "chart-line"
 toc_sticky: true
 ---
 
 >Cet article fait partie d'une série de 3 articles expliquant le process de création derrière celui donnant des statistiques autour du 30DayMapChallenge 2020 que [vous pouvez trouver ici](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/).  
-Ce premier article détaille la manière de récupérer les données en masse provenant de Twitter.  
+>
+>Ce premier article détaille la manière de récupérer les données en masse provenant de Twitter.  
 Le deuxième traitera de la construction du graphique sur les finishers via Plotly.  
 Le dernier expliquera comment construire le graphique intéractif sur les statistiques générales via Bokeh et déployé sur Heroku.
 
@@ -42,7 +43,7 @@ J'ai pour cela utilisé (et appris à m'en servir par la même occasion) un cert
 
 Comme dit précédemment, ce premier article traitera de la manière de récupérer les données intéressantes venant de Twitter, grâce à Twint, ainsi que d'une première préparation de la donnée.
 
-## DataMining
+## Scraping de Twitter
 
 David Friggens a vraiment réalisé un travail spectaculaire de collecte des différents tweets afférant au 30DayMapChallenge. Mais très honnêtement, même si le travail de récupération se fait automatiquement, la classification en fonction des jours (et donc des thèmes) est assez fastidieux pour une seule personne.  
 J'ai donc apporté ma pierre à l'édifice en scrapant également ces données de mon côté, en les confrontant à celles de David, puis en lui renvoyant ce qui m'apparaissait commem manquant de son côté.
@@ -126,11 +127,11 @@ Pour cela, j'ai utilisé la deuxième méthode.
 Même si dans ce cas précis la recherche n'a rien de complexe, je souhaitais comprendre comment m'en servir.
 
 >Pour les curieux, je pense qu'il aurait suffi de quelque chose comme ça avec la première méthode:
-
-```python
-twint -s 30daymapchallenge --since "2020-09-01 00:00:00" -o file.csv --csv
-```
-
+>
+>```python
+>twint -s 30daymapchallenge --since "2020-09-01 00:00:00" -o file.csv --csv
+>```
+>
 >`--since` permet de spécifier une date de départ du scrap, pour être sûr de ne pas récupérer les tweets du challenge 2019.  
 >`-o file.csv --csv` permet de spécifier le nom du fichier de sorti (ainsi que son emplacement), et le format dans lequel le fichier est souhaité.
 
@@ -190,9 +191,10 @@ Et dans notre cas, nous en avons besoin pour affiner le fichier que Twint nous a
 
 Nous allons avoir besoin d'automatiser au maximum le remplissage de la catégorie **Day**.  
 En effet, pour les analyses ultèrieures, il va être intéressant de catégoriser les participations en fonction des thèmes quotidiens.  
-Les participants mettent en grande partie quelque chose du genre **Day1** ou **Day01**.
+Les participants mettent en grande partie quelque chose du genre `Day1` ou `Day01`.
 
-Je tiens à dire que ce n'est pas le bout de code pour lequel je suis le plus fier, car il n'apparait clairement comme optimisé, mais je n'ai rien trouvé de mieux pour l'instant et il fonctionne. Attention les yeux !
+> :exclamation: Je tiens à dire que ce n'est pas le bout de code pour lequel je suis le plus fier, car il n'apparait clairement pas comme étant optimisé, mais je n'ai rien trouvé de mieux pour l'instant et il fonctionne.  
+Attention les yeux !
 
 ```python
 import pandas as pd
@@ -231,13 +233,15 @@ tweets.loc[tweets['tweet'].str.contains('Day29', case = False) | tweets['tweet']
 tweets.loc[tweets['tweet'].str.contains('Day30', case = False) | tweets['tweet'].str.contains('Day 30', case = False),'day'] = '30'
 ```
 
-Oui c'est très moche... Mais efficace !  
+Oui c'est très moche... Mais efficace :smile: !  
 
-- La première ligne permet d'importer la bibliothèque pandas en tant que **pd**.  
-- La deuxième déclare le csv créé via Twint sous le nom de **tweets** afin de pouvoir s'en resservir ensuite.  
-- Le reste permet de peupler une nouvelle colonne **day** en fonction de ce qu'il peut y avoir dans le champ **tweet**  
-S'il voit **Day1**, **Day 1**, **Day01** ou **Day 01**, le champ **day** sera peuplé de **1**, et ainsi de suite...  
+- La première ligne permet d'importer la bibliothèque pandas en tant que `pd`.  
+- La deuxième déclare le csv créé via Twint sous le nom de `tweets` afin de pouvoir s'en resservir ensuite.  
+- Le reste permet de peupler une nouvelle colonne `day` en fonction de ce qu'il peut y avoir dans le champ `tweet`  
+S'il voit `Day1`, `Day 1`, `Day01` ou `Day 01`, le champ `day` sera peuplé de `1`, et ainsi de suite...  
 L'idéal serait de le faire également pour d'autres langues afin de maximiser l'automatisation.
 
-Une fois cela effectué, il y a encore un gros travail de vérification à réaliser pour les tweets dont le champ **day** n'aura pas été peuplé.  
+Une fois cela effectué, il y a encore un gros travail de vérification à réaliser à la main pour les tweets dont le champ `day` n'aura pas été peuplé.  
 Travail fort fastidieux, mais indispensable pour récupérer un maximum de participations !
+
+Prochain article à paraître très bientôt pour la visualisation sous Plotly !
