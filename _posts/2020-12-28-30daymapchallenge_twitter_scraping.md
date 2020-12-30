@@ -1,16 +1,15 @@
 ---
 layout: single
 permalink: /articles/30daymapchallenge_scraping_twitter/  
-title : "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint" 
+title : "Scraping de données Twitter via Twint et préparation des données via Pandas" 
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png
   overlay_filter: 0.3
-  caption: "Poster created by [Haifeng Niu](https://twitter.com/niu_haifeng)"
-  teaser: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
+  teaser: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png
 excerpt:
-  Comment récupérer des données de Twitter via Twint - Exemple des données du 30DayMapChallenge
+  Comment récupérer des données de Twitter via Twint et les préparer via Pandas - Exemple des données du 30DayMapChallenge
 
-og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
+og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png
 
 comments: true
 share: true
@@ -22,7 +21,7 @@ toc_sticky: true
 
 >Cet article fait partie d'une série de 3 articles expliquant le process de création derrière celui donnant des statistiques autour du 30DayMapChallenge 2020 que [vous pouvez trouver ici](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/).  
 >
->Ce premier article détaille la manière de récupérer les données en masse provenant de Twitter.  
+>Ce premier article détaille la manière de récupérer les données en masse provenant de Twitter et les préparer grâce à Pandas.  
 Le deuxième traitera de la construction du graphique sur les finishers via Plotly.  
 Le dernier expliquera comment construire le graphique intéractif sur les statistiques générales via Bokeh et déployé sur Heroku.
 
@@ -188,6 +187,18 @@ Cela peut ressembler à ça :
 
 Si vous avez déjà travaillé en Python avec des données, j'imagine que vous avez utilisé [la bibliothèque Pandas](https://pandas.pydata.org/). Elle est très utile pour préparer et analyser des données.  
 Et dans notre cas, nous en avons besoin pour affiner le fichier que Twint nous a sorti.
+
+### Installation de Pandas
+
+Rien de très compliqué encore une fois pour l'installer :
+
+```python
+pip install pandas
+```
+
+>Vous trouverez [plus d'informations ici](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html) en fonction de votre configuration.
+
+### Création d'une nouvelle colonne `day`
 
 Nous allons avoir besoin d'automatiser au maximum le remplissage de la catégorie **Day**.  
 En effet, pour les analyses ultèrieures, il va être intéressant de catégoriser les participations en fonction des thèmes quotidiens.  

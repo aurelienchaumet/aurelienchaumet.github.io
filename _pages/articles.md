@@ -9,11 +9,11 @@ excerpt:
   Partage de connaissance sur des outils et des données
 
 30dmc_analyse:
-  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png"
-    alt: "30daymapchallenge statistiques scraping analyse"
-    title: "Scraping et analyse des données statistiques du 30 DayMapChallenge 2020 via Twint, Plotly et Bokeh"
-    excerpt: "Dans les coulisses - Explications du process ayant mené à l'analyse des statistiques"
-    url: "/articles/30daymapchallenge_stats_scraping_analyse_fr"
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png"
+    alt: "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint et préparation via Pandas"
+    title: "Scraping de données Twitter via Twint et préparation des données via Pandas"
+    excerpt: "Comment récupérer des données de Twitter via Twint et les préparer via Pandas - Exemple des données du 30DayMapChallenge"
+    url: "/articles/30daymapchallenge_scraping_twitter"
     btn_label: "Accéder"
     btn_class: "btn--primary"
 
