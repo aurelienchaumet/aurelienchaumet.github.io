@@ -1,27 +1,27 @@
 ---
 layout: single
-permalink: /articles/30daymapchallenge_plotly/  
-title : "Visualisation des données des finishers du 30 DayMapChallenge 2020 via Plotly" 
+permalink: /articles/30daymapchallenge_scraping_twitter/  
+title : "Scraping de données Twitter via Twint et préparation des données via Pandas" 
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png
   overlay_filter: 0.3
-  caption: "Poster created by [Haifeng Niu](https://twitter.com/niu_haifeng)"
-  teaser: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
+  teaser: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png
 excerpt:
-  Comment récupérer des données de Twitter via Twint - Exemple des données du 30DayMapChallenge
+  Comment récupérer des données de Twitter via Twint et les préparer via Pandas - Exemple des données du 30DayMapChallenge
 
-og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
+og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png
 
 comments: true
 share: true
 toc: true
-toc_label: "Statistics"
+toc_label: "Plan"
 toc_icon: "chart-line"
 toc_sticky: true
 ---
 
 >Cet article fait partie d'une série de 3 articles expliquant le process de création derrière celui donnant des statistiques autour du 30DayMapChallenge 2020 que [vous pouvez trouver ici](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/).  
-Ce premier article détaille la manière de récupérer les données en masse provenant de Twitter.  
+>
+>Ce premier article détaille la manière de récupérer les données en masse provenant de Twitter et les préparer grâce à Pandas.  
 Le deuxième traitera de la construction du graphique sur les finishers via Plotly.  
 Le dernier expliquera comment construire le graphique intéractif sur les statistiques générales via Bokeh et déployé sur Heroku.
 
@@ -40,64 +40,64 @@ J'ai pour cela utilisé (et appris à m'en servir par la même occasion) un cert
 - Plotly pour [visualiser les statistiques des finishers](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/#finishers)
 - Bokeh pour [visualiser les statistiques de l'ensemble des participants](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/#statistiques-g%C3%A9n%C3%A9rales)
 
-Je souhaitais donc partager ici la manière dont j'ai récupéré et traité ces données, et comment je me suis servi de ces outils pour y arriver.
+Comme dit précédemment, ce premier article traitera de la manière de récupérer les données intéressantes venant de Twitter, grâce à Twint, ainsi que d'une première préparation de la donnée.
 
-## DataMining
+## Scraping de Twitter
 
-Comme évoqué précédemment, David Friggens a vraiment réalisé un travail spectaculaire de collecte des différents tweets afférant au 30DayMapChallenge. Mais très honnêtement, même si le travail de récupération se fait automatiquement, la classification en fonction des jours (et donc des thèmes) est assez fastidieux pour une seule personne.  
+David Friggens a vraiment réalisé un travail spectaculaire de collecte des différents tweets afférant au 30DayMapChallenge. Mais très honnêtement, même si le travail de récupération se fait automatiquement, la classification en fonction des jours (et donc des thèmes) est assez fastidieux pour une seule personne.  
 J'ai donc apporté ma pierre à l'édifice en scrapant également ces données de mon côté, en les confrontant à celles de David, puis en lui renvoyant ce qui m'apparaissait commem manquant de son côté.
 
 Wait... Scrap what ??
 
 ### Définition du webscraping
 
-Je m'arrête rapidement sur la définition du scraping, qui ne consiste en aucun cas à gratter frénétiquement des tickets issus de la FDJ. C'est en réalité un processus qui permet de collecter des données se situant sur internet.  
+Je m'arrête rapidement sur [la définition du scraping](https://fr.wikipedia.org/wiki/Web_scraping), qui ne consiste en aucun cas à gratter frénétiquement des tickets issus de la FDJ. C'est en réalité un processus qui permet de collecter des données se situant sur internet.  
 Cela évite d'avoir des copier-coller longs et fortement fastidieux à réaliser à la main.
 
-Un robot, ou un algorithme, est configuré pour récupérer les données qui nous intéressent, à l'endroit où cela nous sied, et les remet dans un format qui nous est approprié, à l'endroit où on le souhaite. C'est beau dit comme ça...
+Un robot (il faut le voir non pas comme Nono ce gentil robot, mais plutôt comme un algorithme) est configuré pour récupérer les données qui nous intéressent, à l'endroit où cela nous sied, et les remet dans un format qui nous est approprié, à l'endroit où on le souhaite. C'est beau dit comme ça...
+
+Ce robot va ici être construit en Python.
 
 ### Twint ou comment récupérer facilement des données de Twitter
 
-Il est possible de récupérer les données de Twitter via Tweepy, une librairie Python.  
+Il est possible de récupérer les données de Twitter via Tweepy, une bibliothèque Python.  
 Ses principales limites sont que vous ne pourrez récupérer que les 3 200 premiers tweets d'une timeline, couplé à un nombre limité toutes les 15 minutes.
 
-Mais il y a mieux ! Une autre librairie s'appelant [Twint](https://github.com/twintproject/twint) existe et s'affranchit de ces limitations (car elle ne fait pas appel à l'API de Twitter).  
+Mais il y a mieux ! Une autre bibliothèque s'appelant [Twint](https://github.com/twintproject/twint) existe et s'affranchit de ces limitations (car elle ne fait pas appel à l'API de Twitter).  
 
 #### Installation de Twint
 
 L'installation est ultra simple, il suffit de taper dans un terminal de commande :
 
 ```python
-
 pip3 install twint
-
 ```
 
 Et logiquement, c'est réglé !
+
+>Si vous souhaitez avoir d'autres manières de l'installer, vous les trouverez dans [le wiki de Twint](https://github.com/twintproject/twint/wiki/Setup).
 
 #### Utilisation générique de Twint
 
 Il y a ensuite 2 manières de s'en servir :
 
 - Pour les cas d'usage les plus simples, vous pouvez passer par une commande CLI
-  ```python
 
+  ```python
   twint -u username
-
   ```
-  Par exemple, récupèrera l'ensemble des tweets de username
+
+  Par exemple, récupèrera l'ensemble des tweets de `username`.
 
   ```python
-
   twint -s pineapple
-
   ```
-  Ce deuxième exemple ramènera l'ensemble des tweets contenant pineapple
+
+  Ce deuxième exemple ramènera l'ensemble des tweets contenant `pineapple`.
 
 - Pour les cas un peu plus poussés, il faudra passer par l'usage du Module
 
   ```python
-
   import twint
 
   # Configure
@@ -107,36 +107,36 @@ Il y a ensuite 2 manières de s'en servir :
 
   # Run
   twint.run.Search(c)
-
   ```
-  Ici, vous récupèrerez l'ensemble des tweets de Donald Trump contenant "great"  
+
+  Ici, vous récupèrerez l'ensemble des tweets de Donald Trump contenant `great`.  
   _L'exemple cité provient de la documentation de Twint et ne réflète en aucun cas un quelconque intérêt pour le fond_
 
 L'avantage de cette deuxième méthode réside dans le fait de povuoir utiliser des fonctions pythoniques, et vous pourrez ainsi vous en servir dans un script plus élaboré.
 
 Dans les deux cas, des options existent pour enregistrer le résultat de la recherche directement en csv.
 
+Vous trouverez plus d'informations sur [les fonctions utilisables ici](https://github.com/twintproject/twint/wiki/Configuration), ainsi que [plusieurs exemples ici](https://github.com/twintproject/twint/wiki/Scraping-functions).
+
 #### Utilisation de Twint pour récupérer les tweets du 30DayMapChallenge
 
 À la base, ce qui nous intéresse plus particulièrement est la possibilité de récupérer les tweets publiés pour le 30DayMapChallenge.  
-Il suffit de demander gentiment (toujours) à Twint de nous ramener les tweets contenant **_30daymapchallenge_**.  
-Pour cela, j'ai utilisé la deuxième méthode. Même si dans ce cas précis la recherche n'a rien de complexe, je souhaitais comprendre comment m'en servir.
+Il suffit de demander (toujours) gentiment à Twint de nous ramener les tweets contenant `30daymapchallenge`.  
+Pour cela, j'ai utilisé la deuxième méthode.  
+Même si dans ce cas précis la recherche n'a rien de complexe, je souhaitais comprendre comment m'en servir.
 
 >Pour les curieux, je pense qu'il aurait suffi de quelque chose comme ça avec la première méthode:
-
-```python
-
-twint -s #30daymapchallenge --since "2020-09-01 00:00:00" -o file.csv --csv
-
-```
-
->Le _since_ permet de spécifier une date de départ du scrap, pour être sûr de ne pas récupérer les tweets du challenge 2019.  
->Le _-o file.csv --csv_ permet de spécifier le nom du fichier de sorti (ainsi que son emplacement), et le format dans lequel le >fichier est souhaité.
+>
+>```python
+>twint -s 30daymapchallenge --since "2020-09-01 00:00:00" -o file.csv --csv
+>```
+>
+>`--since` permet de spécifier une date de départ du scrap, pour être sûr de ne pas récupérer les tweets du challenge 2019.  
+>`-o file.csv --csv` permet de spécifier le nom du fichier de sorti (ainsi que son emplacement), et le format dans lequel le fichier est souhaité.
 
 Le code que j'ai utilisé est donc le suivant :
 
 ```python
-
 import nest_asyncio
 nest_asyncio.apply()
 
@@ -152,22 +152,21 @@ c.Output = "2020-12-02.tweets.csv"
 
 # Run
 twint.run.Search(c)
-
 ```
 
 Cela mérite quelques explications :
 
-- J'ai réalisé ce scrape via un notebook Jupyter, et il était indispensable d'ajouter la commande **nest_asyncio.apply()** pour que le notebook ne plante pas
-- On crée un objet **c** qui permet de paramétrer ce que nous allons demander à Twint
+- J'ai réalisé ce scrape via un notebook Jupyter, et il était indispensable d'ajouter la commande `nest_asyncio.apply()` pour que le notebook ne plante pas
+- On crée un objet `c` qui permet de paramétrer ce que nous allons demander à Twint
 - Puis on définit ces paramètres (dans l'ordre d'apparition au générique) :
   - on cherche les tweets contenant 30daymapchallenge
   - on veut les stocker en csv
   - à partir du 1er octobre 2020
   - jusqu'au 2 décembre 2020 (pour l'exemple d'utilisation du c.Until)
-  - on le stocke dans un fichier qui s'appelle **2020-12-02.tweets.csv**
+  - on le stocke dans un fichier qui s'appelle `2020-12-02.tweets.csv`
   - et on lui demande ~~d'aller faire un tour en courant~~ de récupérer les données !
 
-Rien de très compliqué ici, mais job done ! (Comme disent les américains)
+Rien de très compliqué ici, mais job done (Comme disent les américains) !
 
 Ce qui est pratique avec Twint, c'est qu'il renvoie pas mal d'informations sur chaque tweet, comme par exemple :
 
@@ -186,17 +185,29 @@ Cela peut ressembler à ça :
 
 ## Pandas à la rescousse de la préparation de la donnée
 
-Si vous avez déjà travaillé en Python avec des données, j'imagine que vous avez utilisé [la librairie Pandas](https://pandas.pydata.org/). Elle est très utile pour préparer et analyser des données.  
-Et dans notre cas, nous en avons besoin ici, pour affiner le fichier que Twint nous a sorti.
+Si vous avez déjà travaillé en Python avec des données, j'imagine que vous avez utilisé [la bibliothèque Pandas](https://pandas.pydata.org/). Elle est très utile pour préparer et analyser des données.  
+Et dans notre cas, nous en avons besoin pour affiner le fichier que Twint nous a sorti.
 
-La première étape consiste à tenter d'automatiser au maximum le remplissage de la catégorie **Day**.  
-En effet, pour les analyses ultèrieures, il va être intéressant de catégoriser les participations en fonction des thèmes quotidiens.  
-Les participants mettent en grande partie quelque chose du genre **Day1** ou **Day01**.
+### Installation de Pandas
 
-Je tiens à dire que ce n'est pas le bout de code pour lequel je suis le plus fier, car il n'apparait clairement comme optimisé, mais je n'ai rien trouvé de mieux pour l'instant et il fonctionne. Attention les yeux !
+Rien de très compliqué encore une fois pour l'installer :
 
 ```python
+pip install pandas
+```
 
+>Vous trouverez [plus d'informations ici](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html) en fonction de votre configuration.
+
+### Création d'une nouvelle colonne `day`
+
+Nous allons avoir besoin d'automatiser au maximum le remplissage de la catégorie **Day**.  
+En effet, pour les analyses ultèrieures, il va être intéressant de catégoriser les participations en fonction des thèmes quotidiens.  
+Les participants mettent en grande partie quelque chose du genre `Day1` ou `Day01`.
+
+> :exclamation: Je tiens à dire que ce n'est pas le bout de code pour lequel je suis le plus fier, car il n'apparait clairement pas comme étant optimisé, mais je n'ai rien trouvé de mieux pour l'instant et il fonctionne.  
+Attention les yeux !
+
+```python
 import pandas as pd
 
 tweets = pd.read_csv("2020-12-02.tweets.csv")
@@ -231,62 +242,17 @@ tweets.loc[tweets['tweet'].str.contains('Day27', case = False) | tweets['tweet']
 tweets.loc[tweets['tweet'].str.contains('Day28', case = False) | tweets['tweet'].str.contains('Day 28', case = False),'day'] = '28'
 tweets.loc[tweets['tweet'].str.contains('Day29', case = False) | tweets['tweet'].str.contains('Day 29', case = False),'day'] = '29'
 tweets.loc[tweets['tweet'].str.contains('Day30', case = False) | tweets['tweet'].str.contains('Day 30', case = False),'day'] = '30'
-
 ```
 
-Oui c'est très moche... Mais efficace !  
+Oui c'est très moche... Mais efficace :smile: !  
 
-- La première ligne permet d'importer la bibliothèque pandas en tant que **pd**.  
-- La deuxième déclare le csv créé via Twint sous le nom de **tweets** afin de pouvoir s'en resservir ensuite.  
-- Le reste permet de peupler une nouvelle colonne **day** en fonction de ce qu'il peut y avoir dans le champ **tweet**  
-S'il voit **Day1**, **Day 1**, **Day01** ou **Day 01**, le champ **day** sera peuplé de **1**, et ainsi de suite...  
+- La première ligne permet d'importer la bibliothèque pandas en tant que `pd`.  
+- La deuxième déclare le csv créé via Twint sous le nom de `tweets` afin de pouvoir s'en resservir ensuite.  
+- Le reste permet de peupler une nouvelle colonne `day` en fonction de ce qu'il peut y avoir dans le champ `tweet`  
+S'il voit `Day1`, `Day 1`, `Day01` ou `Day 01`, le champ `day` sera peuplé de `1`, et ainsi de suite...  
 L'idéal serait de le faire également pour d'autres langues afin de maximiser l'automatisation.
 
-Une fois cela effectué, il y a encore un gros travail de vérification à réaliser pour les tweets dont le champ **day** n'aura pas été peuplé.  
+Une fois cela effectué, il y a encore un gros travail de vérification à réaliser à la main pour les tweets dont le champ `day` n'aura pas été peuplé.  
 Travail fort fastidieux, mais indispensable pour récupérer un maximum de participations !
 
-## Plotly pour visualiser les statistiques sur les finishers
-
-Il semblait intéressant de regarder d'un peu plus près les statistiques des participants ayant soumis des réalisations pour l'ensemble des 30 jours du mois de novembre.  
-Pour cela, j'ai choisi de travailler avec Plotly, en exportant un graphique en html afin de l'afficher dans l'article via un iframe.
-
-Voici le code que j'ai utilisé :
-
-```python
-
-# Lit le fichier csv
-tweets = pd.read_csv("20.12.02_tweets_ok_with_counts.csv")
-
-# Récupère le nombre de tweets par participant
-tweets_count = tweets.groupby('handle').count().reset_index().rename(columns={'tweet_id':'Number of tweets'})[['handle', 'Number of tweets']]
-
-# Récupère le total de likes par participant
-tweets_sum = tweets.groupby('handle').sum().reset_index().rename(columns={'likes_count':'Total likes'})[['handle', 'Total likes']]
-
-# Fusionne les deux derniers
-tweets_sum_count = pd.merge(tweets_count, tweets_sum, left_on = ['handle'], right_on = ['handle'])
-
-# Récupère le nombre de likes et de tweets par participant sur le premier fichier
-tweets_stats = pd.merge(tweets, tweets_sum_count, left_on = ['handle'], right_on = ['handle']).rename(columns={'handle':'Participant', 'likes_count':'Number of likes on this tweet'})
-
-list_day = tweets_stats.groupby(tweets_stats['Participant'])['Day'].apply(list)
-
-day30 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 20, 30]
-list = list_day.apply(lambda x: all([k in x for k in day30]))
-
-list_frame = pd.DataFrame(list).reset_index()
-
-tweets_finisher = pd.merge(tweets_stats, list_frame, left_on ='Participant', right_on = 'Participant')
-
-tweets_stats_finisher = tweets_finisher.loc[tweets_finisher['Day_y'] == True].rename(columns={'Day_x':'Jour', 
-                                                                                              'Number of tweets': 'Nombre de tweets',
-                                                                                              'Number of likes on this tweet': 'Nombre de likes de ce tweet'})
-
-fig = px.bar(tweets_stats_finisher.sort_values(by=['Total likes','Jour'], ascending=False), x='Participant', y='Nombre de likes de ce tweet',
-             hover_data=['Total likes', 'Nombre de tweets', 'Jour', 'Nombre de likes de ce tweet'],
-             color='Participant',
-             height=500)
-
-fig.write_html("finisher_stats_fr.html")
-
-```
+Prochain article à paraître très bientôt pour la visualisation sous Plotly !
