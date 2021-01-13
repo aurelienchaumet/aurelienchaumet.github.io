@@ -153,20 +153,20 @@ Nous avons besoin pour la suite du nombre de tweets et du nombre total de likes 
 On utilise la fonction `groupby` afin de compter (ou de sommer) les colonnes nous intéressant :
 
 ```python
-# Get the number of tweets by handle
+# Récupère le nombre de tweets par participant
 tweets_count = tweets.groupby('handle').count().reset_index().rename(columns={'tweet_id':'Number of tweets'})[['handle', 'Number of tweets']]
 
-# Get the total of tweets by handle
+# Récupère le nombre total de likes par participant
 tweets_sum = tweets.groupby('handle').sum().reset_index().rename(columns={'likes_count':'Total likes'})[['handle', 'Total likes']]
 ```
 
 Il faut ensuite remettre ces données aggrégées par participant dans le dataframe de départ (que nous renommerons par la même occasion `tweets_stats`; car il contient maintenant des statistiques...) :
 
 ```python
-# Merge both in one pandaframe
+# Fusionne les deux en un dataframe
 tweets_sum_count = pd.merge(tweets_count, tweets_sum, left_on = ['handle'], right_on = ['handle'])
 
-# Merge the last one with the first one, to get 1 line = 1 tweet, with globam stats on each participant
+# Fusionne le dernier avec le tout premier
 tweets_stats = pd.merge(tweets, tweets_sum_count, left_on = ['handle'], right_on = ['handle']).rename(columns={'handle':'Participant', 'likes_count':'Number of likes on this tweet'})
 ```
 
@@ -176,5 +176,32 @@ Alors que la 2ème ligne, fusionne ce dernier avec le dataframe `tweets` de dép
 Nous avons maintenant une ligne = une participation au challenge, avec le nombre de tweets totaux du participant, ainsi que son nombre de tweets !
 
 #### Filtrage des finishers
+
+Encore un dernier coup de Pandas et on peut aller regarder la donnée !
+
+Il nous faut maintenant filtrer les finishers pour visualiser leurs données.
+Voici le code que j'ai utilisé :
+
+```python
+# Donne la liste des jours participés par participan
+list_day = tweets_stats.groupby(tweets_stats['Participant'])['Day'].apply(list)
+
+# Envoie l'information True ou False sur le fait que les participants ont participé aux 30 jours dans un dataframe
+day30 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 20, 30]
+list = list_day.apply(lambda x: all([k in x for k in day30]))
+list_frame = pd.DataFrame(list).reset_index()
+
+# Récupère l'information des finishers dans le dataframe de statistiques
+tweets_finisher = pd.merge(tweets_stats, list_frame, left_on ='Participant', right_on = 'Participant')
+
+# Filtre les finishers et renomme des colonnes
+tweets_stats_finisher = tweets_finisher.loc[tweets_finisher['Day_y'] == True].rename(columns={'Day_x':'Jour', 
+                                                                                              'Number of tweets': 'Nombre de tweets',
+                                                                                              'Number of likes on this tweet': 'Nombre de likes de ce tweet'})
+```
+
+Le fait de passer par une liste, dans la première partie, évite d'avoir à réaliser une boucle (ce qui est préférable lorsqu'on travaille avec des dataframes).
+
+Sur la denrière partie, on filtre les finishers en utilisant la colonne jointe lors de la fusion précédente, et on en profite pour faire un coup de renommage de colonnes, histoire de passer en français :smile:
 
 #### Dataviz !!
