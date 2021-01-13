@@ -14,16 +14,26 @@ og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_co
 comments: true
 share: true
 toc: true
-toc_label: "Statistics"
+toc_label: "Plan"
 toc_icon: "chart-line"
 toc_sticky: true
 ---
 
->Cet article fait partie d'une série de 3 articles expliquant le process de création derrière celui donnant des statistiques autour du 30DayMapChallenge 2020 que [vous pouvez trouver ici](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/).  
->
->Le premier article détaille la manière de récupérer les données en masse provenant de Twitter et les préparer grâce à Pandas.  
-Ce deuxième traite de la construction du graphique sur les finishers via Plotly.  
-Le dernier expliquera comment construire le graphique intéractif sur les statistiques générales via Bokeh et déployé sur Heroku.
+>Cet article fait partie d'une série de 3 articles expliquant le processus de création derrière celui donnant des statistiques autour du 30DayMapChallenge 2020 que [vous pouvez trouver ici](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/).  
+
+[![twitter twint](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png){: .align-center}](/articles/30daymapchallenge_scraping_twitter)
+
+[Le premier article](/articles/30daymapchallenge_scraping_twitter) détaille la manière de récupérer les données en masse provenant de Twitter et les préparer grâce à Pandas.
+
+[![twitter plotly](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_plotly.png){: .align-center}](/articles/30daymapchallenge_plotly)
+
+Le deuxième traite de la construction du graphique sur les finishers via Plotly.
+
+![twitter bokeh heroku](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_bokeh.png){: .align-center}
+
+Le dernier expliquera comment construire le graphique interactif sur les statistiques générales via Bokeh et déployé sur Heroku.
+
+----
 
 L'un des évènements sociaux marquants de la fin d'année 2020 reste pour bon nombre de cartographes le [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge).  
 Le concept où chacun peut réaliser des cartes l'intéressant, de la manière dont il le souhaite et partage tout ça auprès d'un public averti, tout en se confrontant à d'autres réalisations, sur des thèmes imposés est vraiment intéressant.
