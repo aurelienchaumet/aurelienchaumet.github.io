@@ -127,9 +127,53 @@ Ce qui donnerait quelque chose comme ça :
 
 La prochaine question, avant de commencer jouer avec Plotly (mais promis ça va très vite arriver !), est : est-ce que mes données répondent aux besoins identifiés plus haut ?
 
-Et la réponse est (comme presqu'à chauqe fois...) NON ! (Enfin pas loin)
+Et la réponse est (comme presqu'à chaque fois...) NON ! (Enfin pas loin ce coup-ci, étant donné qu'on a commencé à préparer le terrain)
 
 #### Création des statistiques par participant
+
+On commence par importer les bibliothèques dont nous allons avoir besoin
+
+```python
+import pandas as pd
+import plotly.express as px
+```
+
+- Pandas va nous servir à modifier un peu nos données
+- Plotly à les représenter
+
+Ensuite, il faut lire le fichier :
+
+```python
+tweets = pd.read_csv("20.12.02_tweets_ok_with_counts.csv")
+```
+
+>On le stocke dans `tweets` afin de s'en resservir plus facilement par la suite
+
+Nous avons besoin pour la suite du nombre de tweets et du nombre total de likes par participant.  
+On utilise la fonction `groupby` afin de compter (ou de sommer) les colonnes nous intéressant :
+
+```python
+# Get the number of tweets by handle
+tweets_count = tweets.groupby('handle').count().reset_index().rename(columns={'tweet_id':'Number of tweets'})[['handle', 'Number of tweets']]
+
+# Get the total of tweets by handle
+tweets_sum = tweets.groupby('handle').sum().reset_index().rename(columns={'likes_count':'Total likes'})[['handle', 'Total likes']]
+```
+
+Il faut ensuite remettre ces données aggrégées par participant dans le dataframe de départ (que nous renommerons par la même occasion `tweets_stats`; car il contient maintenant des statistiques...) :
+
+```python
+# Merge both in one pandaframe
+tweets_sum_count = pd.merge(tweets_count, tweets_sum, left_on = ['handle'], right_on = ['handle'])
+
+# Merge the last one with the first one, to get 1 line = 1 tweet, with globam stats on each participant
+tweets_stats = pd.merge(tweets, tweets_sum_count, left_on = ['handle'], right_on = ['handle']).rename(columns={'handle':'Participant', 'likes_count':'Number of likes on this tweet'})
+```
+
+La première ligne fusionne les 2 dataframes créés précédemment avec les nouvelles statistiques.  
+Alors que la 2ème ligne, fusionne ce dernier avec le dataframe `tweets` de départ. Cette même ligne nous permet également de renommer 2 colonnes (`handle` en `Participant` et `likes_count` en `Number of likes on this tweet`).
+
+Nous avons maintenant une ligne = une participation au challenge, avec le nombre de tweets totaux du participant, ainsi que son nombre de tweets !
 
 #### Filtrage des finishers
 
