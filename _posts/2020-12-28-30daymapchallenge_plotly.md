@@ -123,7 +123,7 @@ Ce qui donnerait quelque chose comme ça :
 
 > Cette combinaison n'est qu'un exemple et les données issues de Twint [comme expliqué dans le premier article](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/), possèdent d'autres données.
 
-### Code Python
+### Préparation de la donnée
 
 La prochaine question, avant de commencer jouer avec Plotly (mais promis ça va très vite arriver !), est : est-ce que mes données répondent aux besoins identifiés plus haut ?
 
@@ -204,11 +204,13 @@ Le fait de passer par une liste, dans la première partie, évite d'avoir à ré
 
 Sur la denrière partie, on filtre les finishers en utilisant la colonne jointe lors de la fusion précédente, et on en profite pour faire un coup de renommage de colonnes, histoire de passer en français :smile:
 
-#### Dataviz !!
+### Dataviz !!
 
 Ca y est, nous y sommes ! Nous allons pouvoir utiliser pour la première fois de cet article la bibliothèque dont il est question !
 
 Comme je le disais en introduction, Plotly est plutôt simple d'utilisation.
+
+#### Première visualisation
 
 Pour commencer, nous pouvons réaliser un graphique en barre, avec les participants en abscisse et le nombre de likes de chaque tweet en ordonnées :
 
@@ -227,3 +229,26 @@ Comme je vous l'avais dit, c'est assez simple :
 - `px.bar` crée un graphique en barre
 - on appelle le fichier source `tweets_stats_finisher`
 - on indique ce que Plotly doit représenter en x et en y, directement par le nom des colonnes
+- et on appelle la visualisation du graphique avec `fig.show()`
+
+Tout fonctionne très bien, mais pour l'instant, ce n'est pas très convaincant visuellement...
+
+#### Ajustement de la couleur, du tri et des infobulles
+
+Pour affiner le graphique, il n'y a qu'à passer des paramètres supplémentaires dans le `px.bar()` !
+
+Premièrement, ajoutons un peu de couleur grâce à... `color` !!  
+En indiquant le champ sur lequel doit se baser la couleur, Plotly sort une rampe de couleurs automatiquement.
+
+```python
+fig = px.bar(tweets_stats_finisher, 
+            x='Participant', 
+            y='Nombre de likes de ce tweet',
+            color='Participant')
+
+fig.show()
+```
+
+<iframe width="100%" height="600"
+    src="/data/30daymapchallenge_stats/finishers_couleur.html">
+</iframe>
