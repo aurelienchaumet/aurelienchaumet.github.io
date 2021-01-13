@@ -1,14 +1,13 @@
 ---
 layout: single
-permalink: /articles/30daymapchallenge_scraping_twitter/  
-title : "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint" 
+permalink: /articles/30daymapchallenge_plotly/  
+title : "Visualisation des statistiques Twitter du 30 DayMapChallenge 2020 via Plotly" 
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
   overlay_filter: 0.3
-  caption: "Poster created by [Haifeng Niu](https://twitter.com/niu_haifeng)"
   teaser: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
 excerpt:
-  Comment récupérer des données de Twitter via Twint - Exemple des données du 30DayMapChallenge
+  Affichage de données Twitter via Plotly et rendu html - Exemple des données du 30DayMapChallenge
 
 og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
 
@@ -21,8 +20,9 @@ toc_sticky: true
 ---
 
 >Cet article fait partie d'une série de 3 articles expliquant le process de création derrière celui donnant des statistiques autour du 30DayMapChallenge 2020 que [vous pouvez trouver ici](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/).  
-Ce premier article détaille la manière de récupérer les données en masse provenant de Twitter.  
-Le deuxième traitera de la construction du graphique sur les finishers via Plotly.  
+>
+>Le premier article détaille la manière de récupérer les données en masse provenant de Twitter et les préparer grâce à Pandas.  
+Ce deuxième traite de la construction du graphique sur les finishers via Plotly.  
 Le dernier expliquera comment construire le graphique intéractif sur les statistiques générales via Bokeh et déployé sur Heroku.
 
 L'un des évènements sociaux marquants de la fin d'année 2020 reste pour bon nombre de cartographes le [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge).  
