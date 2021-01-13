@@ -12,23 +12,23 @@ excerpt:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png"
     alt: "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint et préparation via Pandas"
     title: "Scraping de données Twitter via Twint et préparation des données via Pandas"
-    excerpt: "Comment récupérer des données de Twitter via Twint et les préparer via Pandas - Exemple des données du 30DayMapChallenge"
+    excerpt: "Comment récupérer des données de Twitter via Twint et les préparer via Pandas"
     url: "/articles/30daymapchallenge_scraping_twitter"
     btn_label: "Accéder"
     btn_class: "btn--primary"
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png"
-    alt: "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint et préparation via Pandas"
-    title: "Scraping de données Twitter via Twint et préparation des données via Pandas"
-    excerpt: "Comment récupérer des données de Twitter via Twint et les préparer via Pandas - Exemple des données du 30DayMapChallenge"
-    url: "/articles/30daymapchallenge_scraping_twitter"
-    btn_label: "Accéder"
+    alt: "Visualisation des statistiques Twitter du 30 DayMapChallenge 2020 via Plotly"
+    title: "Visualisation des statistiques Twitter via Plotly"
+    excerpt: "_En cours de rédaction_"
+    url: 
+    btn_label: "En cours de rédaction"
     btn_class: "btn--primary"  
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png"
     alt: "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint et préparation via Pandas"
-    title: "Scraping de données Twitter via Twint et préparation des données via Pandas"
-    excerpt: "Comment récupérer des données de Twitter via Twint et les préparer via Pandas - Exemple des données du 30DayMapChallenge"
-    url: "/articles/30daymapchallenge_scraping_twitter"
-    btn_label: "Accéder"
+    title: "Visualisation Bokeh déployée sur Heroku"
+    excerpt: "_En cours de rédaction_"
+    url: 
+    btn_label: "En cours de rédaction"
     btn_class: "btn--primary"
 
 30dmc-stats:
@@ -78,16 +78,16 @@ python_medium:
     btn_class: "btn--primary"
 ---
 
-# Exemples d'utilisation de données de Twitter sur le 30DayMapChallenge
+## Récupérer et visualiser les données Twitter du 30DayMapChallenge
 
 {% include feature_row id="30dmc_analyse" %}
 
-# Statistiques 30DayMapChallenge 2020
+## Statistiques 30DayMapChallenge 2020
 
 {% include feature_row id="30dmc-stats" %}
 
 {% include feature_row id="aerialod" type="right" %}
 
-# Quelques éléments autour de l'intérêt d'apprendre à utiliser Python en Géo Data Science
+## Quelques éléments autour de l'intérêt d'apprendre à utiliser Python en Géo Data Science
 
 {% include feature_row id="python_medium" %}
