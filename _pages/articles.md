@@ -16,7 +16,21 @@ excerpt:
     url: "/articles/30daymapchallenge_scraping_twitter"
     btn_label: "Accéder"
     btn_class: "btn--primary"
-  
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png"
+    alt: "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint et préparation via Pandas"
+    title: "Scraping de données Twitter via Twint et préparation des données via Pandas"
+    excerpt: "Comment récupérer des données de Twitter via Twint et les préparer via Pandas - Exemple des données du 30DayMapChallenge"
+    url: "/articles/30daymapchallenge_scraping_twitter"
+    btn_label: "Accéder"
+    btn_class: "btn--primary"  
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png"
+    alt: "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint et préparation via Pandas"
+    title: "Scraping de données Twitter via Twint et préparation des données via Pandas"
+    excerpt: "Comment récupérer des données de Twitter via Twint et les préparer via Pandas - Exemple des données du 30DayMapChallenge"
+    url: "/articles/30daymapchallenge_scraping_twitter"
+    btn_label: "Accéder"
+    btn_class: "btn--primary"
+
 30dmc-stats:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png"
     alt: "statistiques 30daymapchallenge 2020 francais"
@@ -64,7 +78,9 @@ python_medium:
     btn_class: "btn--primary"
 ---
 
-{% include feature_row id="30dmc_analyse" type="right" %}
+# Exemples d'utilisation de données de Twitter sur le 30DayMapChallenge
+
+{% include feature_row id="30dmc_analyse" %}
 
 # Statistiques 30DayMapChallenge 2020
 
