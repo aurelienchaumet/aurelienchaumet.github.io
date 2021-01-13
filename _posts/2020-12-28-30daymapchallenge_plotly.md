@@ -85,7 +85,7 @@ fig.show()
 ```
 
 <iframe width="100%" height="400"
-    src="https://aurelienchaumet.github.io/data/30daymapchallenge_coulisses/premier_graphique_plotly.html">
+    src="/data/30daymapchallenge_coulisses/premier_graphique_plotly.html">
 </iframe>
 
 Ca c'était de l'exemple utile ! :smile:
@@ -116,7 +116,7 @@ En reprenant le tiercé précédent dans l'ordre, cela pourrait donner par exemp
 Ce qui donnerait quelque chose comme ça :
 
 <iframe width="100%" height="600"
-    src="https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html">
+    src="/data/30daymapchallenge_stats/finisher_stats.html">
 </iframe>
 
 [Ou ici en plein écran :smile:](https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html)
@@ -205,3 +205,25 @@ Le fait de passer par une liste, dans la première partie, évite d'avoir à ré
 Sur la denrière partie, on filtre les finishers en utilisant la colonne jointe lors de la fusion précédente, et on en profite pour faire un coup de renommage de colonnes, histoire de passer en français :smile:
 
 #### Dataviz !!
+
+Ca y est, nous y sommes ! Nous allons pouvoir utiliser pour la première fois de cet article la bibliothèque dont il est question !
+
+Comme je le disais en introduction, Plotly est plutôt simple d'utilisation.
+
+Pour commencer, nous pouvons réaliser un graphique en barre, avec les participants en abscisse et le nombre de likes de chaque tweet en ordonnées :
+
+```python
+fig = px.bar(tweets_stats_finisher, x='Participant', y='Nombre de likes de ce tweet')
+
+fig.show()
+```
+
+<iframe width="100%" height="600"
+    src="/data/30daymapchallenge_stats/finishers_premier_essai.html">
+</iframe>
+
+Comme je vous l'avais dit, c'est assez simple :
+
+- `px.bar` crée un graphique en barre
+- on appelle le fichier source `tweets_stats_finisher`
+- on indique ce que Plotly doit représenter en x et en y, directement par le nom des colonnes
