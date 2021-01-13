@@ -72,6 +72,20 @@ pip install "notebook>=5.3" "ipywidgets>=7.5
 
 >Ou remplacez `pip` par `conda` si vous travaillez avec conda :wink:
 
+Vous pouvez maintenant afficher votre premier graphique via Plotly !
+
+```python
+import plotly.graph_objects as go
+fig = go.Figure(data=go.Bar(y=[2, 3, 1]))
+fig.show()
+```
+
+<iframe width="100%" height="820"
+    src="https://aurelienchaumet.github.io/data/30daymapchallenge_coulisses/premier_graphique_plotly.html">
+</iframe>
+
+Ca c'était de l'exemple utile ! :smile:
+
 Jusque là tout va bien ? On avance alors !!
 
 ### 
