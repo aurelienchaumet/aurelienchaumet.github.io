@@ -16,8 +16,22 @@ excerpt:
     url: "/articles/30daymapchallenge_scraping_twitter"
     btn_label: "Accéder"
     btn_class: "btn--primary"
+  
+30dmc-stats:
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png"
+    alt: "statistiques 30daymapchallenge 2020 francais"
+    excerpt: "Quelques statistiques sur le 30DayMapChallenge 2020 avec Python"
+    url: "30daymapchallenge_stats_fr/"
+    btn_label: ":fr: Lire en français :fr:"
+    btn_class: "btn--primary"
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png"
+    alt: "statistiques 30daymapchallenge 2020"
+    excerpt: "Some statistics about the 30DayMapChallenge 2020 with Python"
+    url: "30daymapchallenge_stats_en/"
+    btn_label: ":us: Read it in english :us:"
+    btn_class: "btn--primary"
 
-feature_row_1:
+aerialod:
   - image_path: "https://cdn.geotribu.fr/img/tuto/aerialod/bora_bora.png"
     alt: "tutoriel aerialod"
     title: "Tutoriel Aerialod"
@@ -26,7 +40,7 @@ feature_row_1:
     btn_label: "Accéder"
     btn_class: "btn--primary"
 
-feature_row_2:
+python_medium:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/source.png"
     alt: "geo data science python 1"
     title: "(Geo)Data Science avec Python — Le parcours du débutant — Partie 1"
@@ -48,22 +62,16 @@ feature_row_2:
     url: "https://medium.com/@aurelienchaumet/geo-data-science-avec-python-le-parcours-du-d%C3%A9butant-partie-3-ressources-df4988dc7e45"
     btn_label: "Accéder"
     btn_class: "btn--primary"
-
-30dmc-stats:
-  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30dmc_stats_header_sd.png"
-    alt: "statistiques 30daymapchallenge 2020"
-    title: "30 DayMapChallenge 2020 Statistics"
-    title: ":fr: Statistiques 30DayMapChallenge 2020 - :us: Statistics 30DayMapChallenge 2020"
-    excerpt: "[:fr: Lire en français :fr:](30daymapchallenge_stats_fr/){: .btn .btn--danger .btn--large}
-    [:us: Read it in english :us:](30daymapchallenge_stats_en/){: .btn .btn--danger .btn--large}"
 ---
 
 {% include feature_row id="30dmc_analyse" type="right" %}
 
-{% include feature_row id="30dmc-stats" type="left" %}
+# Statistiques 30DayMapChallenge 2020
 
-{% include feature_row id="feature_row_1" type="left" %}
+{% include feature_row id="30dmc-stats" %}
 
-## Quelques éléments autour de l'intérêt d'apprendre à utiliser Python en Géo Data Science
+{% include feature_row id="aerialod" type="right" %}
 
-{% include feature_row id="feature_row_2" %}
+# Quelques éléments autour de l'intérêt d'apprendre à utiliser Python en Géo Data Science
+
+{% include feature_row id="python_medium" %}
