@@ -116,7 +116,7 @@ En reprenant le tiercé précédent dans l'ordre, cela pourrait donner par exemp
 Ce qui donnerait quelque chose comme ça :
 
 <iframe width="100%" height="600"
-    src="/data/30daymapchallenge_stats/finisher_stats.html">
+    src="/data/30daymapchallenge_coulisses/finisher_stats.html">
 </iframe>
 
 [Ou ici en plein écran :smile:](https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html)
@@ -221,7 +221,7 @@ fig.show()
 ```
 
 <iframe width="100%" height="600"
-    src="/data/30daymapchallenge_stats/finishers_premier_essai.html">
+    src="/data/30daymapchallenge_coulisses/finishers_premier_essai.html">
 </iframe>
 
 Comme je vous l'avais dit, c'est assez simple :
@@ -250,5 +250,5 @@ fig.show()
 ```
 
 <iframe width="100%" height="600"
-    src="/data/30daymapchallenge_stats/finishers_couleur.html">
+    src="/data/30daymapchallenge_coulisses/finishers_couleur.html">
 </iframe>
