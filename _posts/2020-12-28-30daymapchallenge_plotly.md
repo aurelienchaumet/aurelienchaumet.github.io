@@ -252,3 +252,46 @@ fig.show()
 <iframe width="100%" height="600"
     src="/data/30daymapchallenge_coulisses/finishers_couleur.html">
 </iframe>
+
+Autre étape, la donnée doit être présentée du plus grand nombre de tweets totaux au plus faible.
+
+Il n'y a qu'à demander poliment.
+Plutôt que de passer le dataframe `tweets_stats_finisher` tel quel, trions le :
+
+```python
+fig = px.bar(tweets_stats_finisher.sort_values(by=['Total likes','Jour'], ascending=False), 
+            x='Participant', 
+            y='Nombre de likes de ce tweet',
+            color='Participant')
+
+fig.show()
+```
+
+Ici le tri est effectué directement sur 2 champs.  
+`Total likes` pour le tri évoqué plus haut.  
+Et `Jour` permet de trier les barres empilées pour chaque participant : le premier tweet aura ses statistiques en haut de la barre et le dernier tou en bas.
+
+<iframe width="100%" height="600"
+    src="/data/30daymapchallenge_coulisses/finishers_tri.html">
+</iframe>
+
+J'ai déjà dit que Plotly était interactif par nature, dans le sens où (si vous ne l'avez pas encore remarqué sur les précédents graphiques), lorsque vous passez votre souris sur un élément, une infobulle s'affiche.
+
+Ce qui est bien, mais pas top ! Car nous n'avons pas exactement les informations souhaitées mais uniquement celles affichées en x et y.
+
+```python
+fig = px.bar(tweets_stats_finisher.sort_values(by=['Total likes','Jour'], ascending=False), x='Participant', y='Nombre de likes de ce tweet',
+             hover_data=['Total likes', 'Nombre de tweets', 'Jour', 'Nombre de likes de ce tweet'],
+             color='Participant')
+
+fig.show()
+```
+
+Encore une fois, c'est très simple !  
+Il suffit d'ajouter le paramètre `hover_data =` suivi des champs qui nous intéressent.
+
+Et voilà donc le résultat final :
+
+<iframe width="100%" height="600"
+    src="/data/30daymapchallenge_coulisses/finishers_hover.html">
+</iframe>
