@@ -52,6 +52,9 @@ De plus, elle est extrêmement simple à prendre en main, interactive par nature
 
 Vous trouverez l'ensemble des types de graphiques que Plotly est susceptible de produire à cette adresse : <https://plotly.com/python/>
 
+>J'utilise ici le module plotly.express qui est une première approche de ce que Plotly peut faire.  
+>Enormément de choses sont gérés simplement par le module, mais il a tout de même moins de possibilités que le module plotly.graph_objects, qui lui, est beaucoup plus complet et maléable.
+
 ### Installation
 
 Côté installation, comme souvent, rien de bien complexe :
@@ -293,5 +296,30 @@ Il suffit d'ajouter le paramètre `hover_data =` suivi des champs qui nous inté
 Et voilà donc le résultat final :
 
 <iframe width="100%" height="600"
-    src="/data/30daymapchallenge_coulisses/finishers_hover.html">
+    src="/data/30daymapchallenge_coulisses/finisher_hover.html">
 </iframe>
+
+#### Export en html
+
+Afin de pouvoir afficher dynamiquement ces différents graphiques, j'ai choisi l'option de les exporter en format HTML.  
+Et Plotly a une fonction pour ça !
+
+Il suffit d'indiquer
+
+```python
+fig.write_html("NOM_DU_FICHIER.html")
+```
+
+en fin de script, et il se charge de tout !
+
+## Conclusions
+
+Nous venons de voir que Plotly est plutôt simple pour une première approche de la visualisation de données sous Python, en créant un graphique, aggrémenté de quelques paramètres.
+
+Dans le dernier article de cette série, sera traité la création d'un graphique avec [Bokeh](https://bokeh.org/).  
+J'avais décidé à l'époque de tester une autre bibliothèque, qui me permettrait d'intégrer des fonctions de filtre et de sélection.  
+_Ce que Plotly sait faire grâce à [Dash](), mais ça c'est une toute autre histoire :smile:_
+
+----
+
+N'hésitez pas à commenter directement en dessous, ou à m'envoyer un [message sur Twitter](https://twitter.com/messages/compose?recipient_id=938055192221765634), je vous répondrai avec plaisir :pray: !
