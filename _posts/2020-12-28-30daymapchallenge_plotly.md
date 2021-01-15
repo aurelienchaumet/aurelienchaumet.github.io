@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /articles/30daymapchallenge_plotly/  
+permalink: /articles/30daymapchallenge_plotly/
 title : "Visualisation des statistiques Twitter du 30 DayMapChallenge 2020 via Plotly" 
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
@@ -27,7 +27,7 @@ toc_sticky: true
 
 [![twitter plotly](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_plotly.png){: .align-center}](/articles/30daymapchallenge_plotly)
 
-Le deuxième traite de la construction du graphique sur les finishers via Plotly.
+Ce deuxième article traite de la construction du graphique sur les finishers via Plotly.
 
 ![twitter bokeh heroku](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_bokeh.png){: .align-center}
 
@@ -42,7 +42,7 @@ Maintenant que nous avons récupéré et commencé à préparer les données qui
 Si vous commencez en datavisualisation sur Python, vous allez forcément très vite en venir à vouloir réaliser des représentations interactives et donc mettre de côté (pour ne pas dire, laisser tomber) [Matplotlib](https://matplotlib.org/).  
 Bien que cette bibliothèque propose énormément de types de graphiques différents, et qu'elle soit très accessible, vous allez assez rapidement avoir envie de passer votre souris pour faire apparaître un tooltip et avoir des informations sur ce point là en particulier. Ou même vouloir ajouter des filtres, des sélecteurs... Et que sais-je d'autre encore !
 
-C'est ici que [Plotly](https://plotly.com/python/) entre en scène !
+![icone plotly](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/plotly.png "Icône Plotly") C'est ici que [Plotly](https://plotly.com/python/) entre en scène !
 
 ### Principes de Plotly
 
@@ -200,9 +200,9 @@ tweets_stats_finisher = tweets_finisher.loc[tweets_finisher['Day_y'] == True].re
                                                                                               'Number of likes on this tweet': 'Nombre de likes de ce tweet'})
 ```
 
-Le fait de passer par une liste, dans la première partie, évite d'avoir à réaliser une boucle (ce qui est préférable lorsqu'on travaille avec des dataframes).
+Le fait de passer par une liste dans la première partie, évite d'avoir à réaliser une boucle (ce qui est préférable lorsqu'on travaille avec des dataframes).
 
-Sur la denrière partie, on filtre les finishers en utilisant la colonne jointe lors de la fusion précédente, et on en profite pour faire un coup de renommage de colonnes, histoire de passer en français :smile:
+Sur la dernière partie, on filtre les finishers en utilisant la colonne jointe lors de la fusion précédente, et on en profite pour faire un coup de renommage de colonnes, histoire de passer en français :smile:
 
 ### Dataviz !!
 
