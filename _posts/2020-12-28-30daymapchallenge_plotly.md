@@ -19,7 +19,8 @@ toc_icon: "chart-line"
 toc_sticky: true
 ---
 
->Cet article fait partie d'une série de 3 articles expliquant le processus de création derrière celui donnant des statistiques autour du 30DayMapChallenge 2020 que [vous pouvez trouver ici](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/).  
+Cet article fait partie d'une série de 3 articles expliquant le processus de création derrière celui donnant des statistiques autour du 30DayMapChallenge 2020 que [vous pouvez trouver ici](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/).
+{: .notice--info}
 
 [![twitter twint](https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png){: .align-center}](/articles/30daymapchallenge_scraping_twitter)
 
@@ -52,8 +53,9 @@ De plus, elle est extrêmement simple à prendre en main, interactive par nature
 
 Vous trouverez l'ensemble des types de graphiques que Plotly est susceptible de produire à cette adresse : <https://plotly.com/python/>
 
->J'utilise ici le module plotly.express qui est une première approche de ce que Plotly peut faire.  
->Enormément de choses sont gérés simplement par le module, mais il a tout de même moins de possibilités que le module plotly.graph_objects, qui lui, est beaucoup plus complet et maléable.
+J'utilise ici le module `plotly.express` qui est une première approche de ce que Plotly peut faire.  
+Enormément de choses sont gérés simplement par le module, mais il a tout de même moins de possibilités que le module `plotly.graph_objects`, qui lui, est beaucoup plus complet et maléable.
+{: .notice--warning}
 
 ### Installation
 
@@ -77,7 +79,8 @@ Si vous souhaitez l'utiliser dans un [Jupyter Notebook](https://jupyter.org/), p
 pip install "notebook>=5.3" "ipywidgets>=7.5
 ```
 
->Ou remplacez `pip` par `conda` si vous travaillez avec Anaconda :wink:
+:exclamation: Ou remplacez `pip` par `conda` si vous travaillez avec Anaconda :wink:
+{: .notice--success}
 
 Vous pouvez maintenant afficher votre premier graphique via Plotly !
 
@@ -124,7 +127,8 @@ Ce qui donnerait quelque chose comme ça :
 
 [Ou ici en plein écran :smile:](https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html)
 
-> Cette combinaison n'est qu'un exemple et les données issues de Twint [comme expliqué dans le premier article](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/), possèdent d'autres données.
+Cette combinaison n'est qu'un exemple et les données issues de Twint [comme expliqué dans le premier article](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/), possèdent d'autres données.
+{: .notice--warning}
 
 ### Préparation de la donnée
 
@@ -150,7 +154,8 @@ Ensuite, il faut lire le fichier :
 tweets = pd.read_csv("20.12.02_tweets_ok_with_counts.csv")
 ```
 
->On le stocke dans `tweets` afin de s'en resservir plus facilement par la suite
+:exclamation: On le stocke dans `tweets` afin de s'en resservir plus facilement par la suite
+{: .notice--success}
 
 Nous avons besoin pour la suite du nombre de tweets et du nombre total de likes par participant.  
 On utilise la fonction `groupby` afin de compter (ou de sommer) les colonnes nous intéressant :
@@ -207,7 +212,7 @@ Le fait de passer par une liste dans la première partie, évite d'avoir à réa
 
 Sur la dernière partie, on filtre les finishers en utilisant la colonne jointe lors de la fusion précédente, et on en profite pour faire un coup de renommage de colonnes, histoire de passer en français :smile:
 
-### Dataviz !!
+### Dataviz
 
 Ca y est, nous y sommes ! Nous allons pouvoir utiliser pour la première fois de cet article la bibliothèque dont il est question !
 
@@ -270,9 +275,10 @@ fig = px.bar(tweets_stats_finisher.sort_values(by=['Total likes','Jour'], ascend
 fig.show()
 ```
 
-Ici le tri est effectué directement sur 2 champs.  
-`Total likes` pour le tri évoqué plus haut.  
-Et `Jour` permet de trier les barres empilées pour chaque participant : le premier tweet aura ses statistiques en haut de la barre et le dernier tou en bas.
+Ici le tri est effectué directement sur 2 champs :
+
+- `Total likes` pour le tri évoqué plus haut.  
+- `Jour` permet de trier les barres empilées pour chaque participant : le premier tweet aura ses statistiques en haut de la barre et le dernier tou en bas.
 
 <iframe width="100%" height="600"
     src="/data/30daymapchallenge_coulisses/finishers_tri.html">
@@ -318,7 +324,7 @@ Nous venons de voir que Plotly est plutôt simple pour une première approche de
 
 Dans le dernier article de cette série, sera traité la création d'un graphique avec [Bokeh](https://bokeh.org/).  
 J'avais décidé à l'époque de tester une autre bibliothèque, qui me permettrait d'intégrer des fonctions de filtre et de sélection.  
-_Ce que Plotly sait faire grâce à [Dash](), mais ça c'est une toute autre histoire :smile:_
+_Ce que Plotly sait faire grâce à [Dash](https://plotly.com/dash/), mais ça c'est une toute autre histoire :smile:_
 
 ----
 
