@@ -19,7 +19,7 @@ excerpt:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_plotly.png"
     alt: "Visualisation des statistiques Twitter du 30 DayMapChallenge 2020 via Plotly"
     title: "Visualisation des statistiques Twitter via Plotly"
-    excerpt: "Affichage de données Twitter via Plotly et rendu html"
+    excerpt: "Affichage de données Twitter via Plotly et rendu HTML"
     url: "/articles/30daymapchallenge_plotly"
     btn_label: "Accéder"
     btn_class: "btn--primary"  

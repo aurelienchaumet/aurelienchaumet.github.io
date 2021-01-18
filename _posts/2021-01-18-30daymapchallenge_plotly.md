@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.3
   teaser: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
 excerpt:
-  Affichage de données Twitter via Plotly et rendu html
+  Affichage de données Twitter via Plotly et rendu HTML
 
 og_image: https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/30dmc_stats.png
 
