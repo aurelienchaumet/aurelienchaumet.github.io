@@ -76,7 +76,7 @@ Côté installation, comme souvent, rien de bien complexe :
 Si vous souhaitez l'utiliser dans un [Jupyter Notebook](https://jupyter.org/), pensez également à installer `notebook` et `ipywidgets` :
 
 ```python
-pip install "notebook>=5.3" "ipywidgets>=7.5
+pip install "notebook>=5.3" "ipywidgets>=7.5"
 ```
 
 :exclamation: Ou remplacez `pip` par `conda` si vous travaillez avec Anaconda :wink:
@@ -102,11 +102,12 @@ Jusque là tout va bien ? On avance alors !!
 
 ### Objectifs de visualisation
 
-Avant de rentrer dans le vif du sujet, arrêtons-nous une seconde et demandons ce que nous souhaitons voir (et a fortiori montrer)?
+Avant de rentrer dans le vif du sujet, arrêtons-nous une seconde et demandons-nous ce que nous souhaitons voir (et a fortiori montrer) ?
 
 Nous partons ici du postulat que nous avons déjà exploré la donnée et que nous savons ce que nous voulons en faire.  
-Dans ce cas-là, la meilleure chose à faire est de rédiger un petit cahier des charges pour soi.  
-Cela permettra de connaître :
+Dans ce cas-là, la meilleure chose à faire est de rédiger un petit cahier des charges pour soi.
+
+Cela permettra de mettre en exergue :
 
 - Ce que nous voulons montrer
 - Comment nous souhaitons l'afficher
@@ -117,7 +118,7 @@ En reprenant le tiercé précédent dans l'ordre, cela pourrait donner par exemp
 
 - Le **nombre de likes de chaque tweet** pour l'ensemble des **finishers**
 - Représenté par un **graphique en barre**
-- Avec la possibilité de connaître **au survol d'autres données** comme, le nombre de likes total du participant ainsi que le nombre de tweets sur le challenge
+- Avec la possibilité de connaître **au survol d'autres données** comme, le nombre total de likes du participant ainsi que le nombre de tweets sur le challenge
 
 Ce qui donnerait quelque chose comme ça :
 
@@ -127,12 +128,12 @@ Ce qui donnerait quelque chose comme ça :
 
 [Ou ici en plein écran :smile:](https://aurelienchaumet.github.io/data/30daymapchallenge_stats/finisher_stats.html)
 
-Cette combinaison n'est qu'un exemple et les données issues de Twint [comme expliqué dans le premier article](https://aurelienchaumet.github.io/articles/30daymapchallenge_stats_fr/), possèdent d'autres données.
+Cette combinaison n'est qu'un exemple et les données issues de Twint [comme expliqué dans le premier article](https://aurelienchaumet.github.io/articles/30daymapchallenge_scraping_twitter/), possèdent d'autres données.
 {: .notice--warning}
 
 ### Préparation de la donnée
 
-La prochaine question, avant de commencer jouer avec Plotly (mais promis ça va très vite arriver !), est : est-ce que mes données répondent aux besoins identifiés plus haut ?
+La prochaine question, avant de commencer à jouer avec Plotly (mais promis ça va très vite arriver !), est : est-ce que mes données répondent aux besoins identifiés plus haut ?
 
 Et la réponse est (comme presqu'à chaque fois...) NON ! (Enfin pas loin ce coup-ci, étant donné qu'on a commencé à préparer le terrain)
 
@@ -145,7 +146,7 @@ import pandas as pd
 import plotly.express as px
 ```
 
-- Pandas va nous servir à modifier un peu nos données
+- Pandas va nous servir à travailler nos données
 - Plotly à les représenter
 
 Ensuite, il faut lire le fichier :
@@ -185,9 +186,10 @@ Nous avons maintenant une ligne = une participation au challenge, avec le nombre
 
 #### Filtrage des finishers
 
-Encore un dernier coup de Pandas et on peut aller regarder la donnée !
+Encore un dernier coup de Pandas :panda_face: et on peut aller visualiser la donnée !
 
-Il nous faut maintenant filtrer les finishers pour visualiser leurs données.
+Il nous faut maintenant filtrer les finishers.
+
 Voici le code que j'ai utilisé :
 
 ```python
@@ -263,7 +265,7 @@ fig.show()
 
 Autre étape, la donnée doit être présentée du plus grand nombre de tweets totaux au plus faible.
 
-Il n'y a qu'à demander poliment.
+Il n'y a qu'à demander poliment (toujours).  
 Plutôt que de passer le dataframe `tweets_stats_finisher` tel quel, trions le :
 
 ```python
@@ -278,7 +280,7 @@ fig.show()
 Ici le tri est effectué directement sur 2 champs :
 
 - `Total likes` pour le tri évoqué plus haut.  
-- `Jour` permet de trier les barres empilées pour chaque participant : le premier tweet aura ses statistiques en haut de la barre et le dernier tou en bas.
+- `Jour` permet de trier les barres empilées pour chaque participant : le premier tweet aura ses statistiques en haut de la barre et le dernier tout en bas.
 
 <iframe width="100%" height="600"
     src="/data/30daymapchallenge_coulisses/finishers_tri.html">
@@ -307,7 +309,7 @@ Et voilà donc le résultat final :
 
 #### Export en html
 
-Afin de pouvoir afficher dynamiquement ces différents graphiques, j'ai choisi l'option de les exporter en format HTML.  
+Afin de pouvoir afficher dynamiquement ces différents graphiques, j'ai choisi comme option de les exporter en format HTML.  
 Et Plotly a une fonction pour ça !
 
 Il suffit d'indiquer
