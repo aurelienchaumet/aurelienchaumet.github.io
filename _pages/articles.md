@@ -13,7 +13,7 @@ tableau_conteneurs_retractables:
     alt: "Tableau : Utilisation des conteneurs rétractables"
     title: "Tableau : Utilisation des conteneurs rétractables"
     excerpt: "Paramétrage et utilisation de conteneurs rétractables sur Tableau"
-    url: "/articles/tableau_conteneurs_retractables/"
+    url: "/articles/tableau_conteneurs_retractables"
     btn_label: "Accéder"
     btn_class: "btn--primary"
 
