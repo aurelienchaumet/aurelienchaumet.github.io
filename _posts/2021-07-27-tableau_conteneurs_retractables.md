@@ -26,6 +26,8 @@ J'espère que cet article apportera ma pierre à l'édifice de la connaissance T
 
 N'hésitez pas à commenter et à me faire des retours sur votre propre expérience.
 
+[Les données utilisées pour cet article](https://legacy.data.gouv.fr/fr/datasets/donnees-relatives-aux-aides-exceptionnelles-aux-artisans-et-commercants-dans-le-cadre-de-lepidemie-de-covid-19/#_) sont issues du jeu de données _Données relatives aux aides exceptionnelles aux artisans et commerçants dans le cadre de l'épidémie de COVID-19_ depuis data.gouv.fr.{: .notice--info}
+
 ----
 
 ## Ajouter un bouton Afficher/Masquer
@@ -35,7 +37,7 @@ Tableau Software a apporté lors de [sa dernière mise à jour 2021.2](https://w
 Comme vous pouvez le voir ci-dessous, il suffit d'aller dans les options de l'object en question (une feuille, un conteneur, un bloc texte...) et de sélectionner "Ajouter un bouton Afficher/Masquer".  
 Apparait alors un bouton flottant avec une croix. Si vous cliquez dessus en maintenant `Alt` sur votre clavier, cela aura pour effet de masquer l'objet précédemment sélectionné. Un nouveau `Alt+Clic` et l'élément réapparait ! :sparkles:
 
-![objet retractable](https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/objet_retractable.gif "Gif objet rétractable")
+![objet retractable](https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/objet_retractable.gif "Gif objet rétractable"){: .align-center}
 
 Auparavant, et depuis la version 2019.2, seuls les conteneurs flottants avaient cette possibilité.
 {: .notice--info}
@@ -47,11 +49,11 @@ Cette nouvelle est intéressante, mais comme vous avez pu le constater, paramét
 Et c'est là que la magie opère !  
 Etant donné que nous pouvons masquer n'importe quel objet, essayons sur des conteneurs, mais pas n'importe lesquels, les fixes !
 
-![conteneur fixe retractable](https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneur_retractable.gif "Gif conteneur fixe rétractable")
+![conteneur fixe retractable](https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneur_retractable.gif "Gif conteneur fixe rétractable"){: .align-center}
 
 Alors là comme ça, vous serez bien tentés de me dire "Mais quelle est la différence entre ces 2 GIF ?? Quel procédé subtil et magique as-tu utilisé ?" ou même "C'est sorcellerie messire !!"
 
-![sorcellerie](https://media.giphy.com/media/MrHFzd4JQ22Zy/giphy.gif "Sorcellerie")
+![sorcellerie](https://media.giphy.com/media/MrHFzd4JQ22Zy/giphy.gif "Sorcellerie"){: .align-center}
 
 ### Mais d'ailleurs, c'est quoi un conteneur ?
 
@@ -71,23 +73,25 @@ Etant donné qu'un conteneur est réactif à ce qu'il contient, nous allons nous
 
 Nous souhaitons arriver à cette disposition :
 
-![disposition souhaitée](https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/disposition.png "Disposition souhaitée")
+![disposition souhaitée](https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/disposition.png "Disposition souhaitée"){: .align-center}
 
 Le fait que "aides par benef" (le graphique de droite) soit à l'intérieur du même conteneur que les 2 autres (situés dans le dernier Horizontal) va leur permettre de prendre sa place lorsqu'il sera masqué.
 
-![la ruse est finaude](https://media.giphy.com/media/i3OheHKgFAqha/giphy.gif "La ruse est finaude")
+![la ruse est finaude](https://media.giphy.com/media/i3OheHKgFAqha/giphy.gif "La ruse est finaude"){: .align-center}
 
-Pour ce faire, il suffit de glisser d'abord un conteneur horizontal. Puis d'y insérer le graphique qui sera à droite. Ensuite un conteneur vertical sur la gauche du premier conteneur. Et il n'y a plus qu'à mettre dans ce dernier conteneur, les 2 graphiques que nous voulons garder à droite !
+Pour ce faire, il suffit de glisser d'abord un conteneur horizontal. Puis d'y insérer le graphique qui sera à droite. Ensuite un conteneur vertical sur la gauche, à l'intérieur du premier conteneur. Et il n'y a plus qu'à mettre dans ce dernier conteneur, les 2 graphiques que nous voulons garder à gauche !
 
-![mise en place](https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/mise_en_place.gif "Mise en place")
+![mise en place](https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/mise_en_place.gif "Mise en place"){: .align-center}
 
 Et voilà !! Maintenant, il n'y a plus qu'à effectuer la manipulation décrite en début d'article. A savoir sélectionner le graphique de droite, ouvrir ses options grâce à la petite flèche pointant vers le bas, "Ajouter un bouton Afficher/Masquer" et le tour est joué !
 
 Vous pouvez par la suite modifier l'apparence du bouton en mettant l'image que vous souhaitez, ajouter une légende ou même faire des conteneurs de boutons (ça pourra être pour un prichain article :smile:) !
 
-![dingue](https://media.giphy.com/media/12GP2pkws57gd2/giphy.gif "Dingue")
+![dingue](https://media.giphy.com/media/12GP2pkws57gd2/giphy.gif "Dingue"){: .align-center}
 
-## Conclusions
+Vous pouvez [télécharger le fichier Tableau directement depuis mon profil Tableau Public](https://public.tableau.com/app/profile/aurelien.chaumet/viz/Tuto-Conteneursrtractables/Pasdeconteneur-Pasdechocolat?publish=yes).
+
+## Conclusion
 
 Cette nouvelle possibilité offerte dans la dernière mise à jour de Tableau permet de réaliser de nombreuses améliorations en termes d'interface en simplifiant le design de certains dashboards.
 
