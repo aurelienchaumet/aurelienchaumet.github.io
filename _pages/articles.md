@@ -8,6 +8,15 @@ header:
 excerpt:
   Partage de connaissance sur des outils et des données
 
+tableau_conteneurs_retractables:
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png"
+    alt: "Tableau : Utilisation des conteneurs rétractables"
+    title: "Tableau : Utilisation des conteneurs rétractables"
+    excerpt: "Paramétrage et utilisation de conteneurs rétractables sur Tableau"
+    url: "/articles/tableau_conteneurs_retractables/"
+    btn_label: "Accéder"
+    btn_class: "btn--primary"
+
 30dmc_analyse:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/30daymapchallenge_stats_coulisses/tweets_sortie_import.png"
     alt: "Scraping de données Twitter du 30 DayMapChallenge 2020 via Twint et préparation via Pandas"
@@ -77,6 +86,10 @@ python_medium:
     btn_label: "Accéder"
     btn_class: "btn--primary"
 ---
+
+## Tableau : Utiliser les conteneurs rétractables
+
+{% include feature_row id="tableau_conteneurs_retractables" %}
 
 ## Récupérer et visualiser les données Twitter du 30DayMapChallenge
 
