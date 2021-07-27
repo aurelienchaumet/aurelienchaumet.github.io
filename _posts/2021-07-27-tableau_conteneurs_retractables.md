@@ -26,7 +26,8 @@ J'espère que cet article apportera ma pierre à l'édifice de la connaissance T
 
 N'hésitez pas à commenter et à me faire des retours sur votre propre expérience.
 
-[Les données utilisées pour cet article](https://legacy.data.gouv.fr/fr/datasets/donnees-relatives-aux-aides-exceptionnelles-aux-artisans-et-commercants-dans-le-cadre-de-lepidemie-de-covid-19/#_) sont issues du jeu de données _Données relatives aux aides exceptionnelles aux artisans et commerçants dans le cadre de l'épidémie de COVID-19_ depuis data.gouv.fr.{: .notice--info}
+[Les données utilisées pour cet article](https://legacy.data.gouv.fr/fr/datasets/donnees-relatives-aux-aides-exceptionnelles-aux-artisans-et-commercants-dans-le-cadre-de-lepidemie-de-covid-19/#_) sont issues du jeu de données _Données relatives aux aides exceptionnelles aux artisans et commerçants dans le cadre de l'épidémie de COVID-19_ depuis data.gouv.fr.
+{: .notice--info}
 
 ----
 
