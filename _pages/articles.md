@@ -87,6 +87,8 @@ python_medium:
     btn_class: "btn--primary"
 ---
 
+{% include feature_row id="tableau_conteneurs_retractables" type="right" %}
+
 ## Récupérer et visualiser les données Twitter du 30DayMapChallenge
 
 {% include feature_row id="30dmc_analyse" %}
