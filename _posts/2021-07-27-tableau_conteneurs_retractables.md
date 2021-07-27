@@ -3,7 +3,7 @@ layout: single
 permalink: /articles/tableau_conteneurs_retractables/
 title : "Tableau : Utilisation des conteneurs rétractables" 
 header:
-  overlay_image:https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
   overlay_filter: 0.3
   teaser: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
 excerpt:
