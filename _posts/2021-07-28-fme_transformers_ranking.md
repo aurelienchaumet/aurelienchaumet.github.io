@@ -73,7 +73,56 @@ _[Vous pouvez également le consulter directement ici.](https://public.tableau.c
 En passant la souris sur la barre d'un Transformer, vous verrez également son évolution apparaître depuis 2018.
 {: .notice--info}
 
-<div class='tableauPlaceholder' id='viz1627484356766' style='position: relative'><noscript><a href='#'><img alt='FME Transformers ranking ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FM&#47;FMETransformersRankingJuly2021&#47;FMETransformersranking&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FMETransformersRankingJuly2021&#47;FMETransformersranking' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FM&#47;FMETransformersRankingJuly2021&#47;FMETransformersranking&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1627484356766');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<iframe id="Classement_Transformers_FME"
+    title="Classement Transformers FME"
+    width="1000"
+    height="700"
+    src="https://public.tableau.com/views/FMETransformersRankingJuly2021/FMETransformersranking?:language=fr-FR&publish=yes&:display_count=n&:origin=viz_share_link:showVizHome=no#5">
+</iframe>
+
+## Analyse et réflexions personnelles
+
+Les réflexions suivantes proviennent de mon expérience personnelle et pourraient bien sûr différer pour vous.  
+Je suis d'ailleurs curieux d'avoir d'autres avis sur ces Transformers !
+
+### Tester forever
+
+Ici, je pense qu'il n'y a pas vraiment photo, ni trop de débat. Compliqué de passe à côté du [Tester](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/tester.htm?Highlight=tester) dans un workbench FME... Donc j'imagine qu'il mérite sa place de numéro indétrôné depuis 2018.
+
+Je viens d'ouvrir au hasard 6 projets et tous en contenaient au moins 2 :smile:.
+
+### AttributeManager passe second
+
+[L'AttributeManager](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributemanager.htm) est pour moi un des Transformers incontournables, tant il remplit de fonctions à lui tout seul.
+
+Il a été released en 2016 et quelle release ! Il permet de :
+
+- renommer des champs
+- supprimer des champs
+- créer des champs
+- définir les valeurs d'un champ que ce soit par une opération arithmétique, des valeurs conditionnelles ou une concaténation de champs
+- utiliser des paramètres
+
+Il peut donc en théorie remplacer les Transformers qui réalisent ces opérations :
+
+- AttributeCreator
+- AttributeCopier
+- AttributeRenamer
+- AttributeKeeper
+- AttributeRemover
+
+Il peut également remplacer d'autres Transformers qui réalisent des opérations sur les chiffres comme AttributeRounder ou bien l'AreaCalculator qui permet de calculer la superficie d'objets géométriques (en utilisant la fonction Area dans l'Editeur Arithmétique de l'AttributeManager).  
+Et je suis sûr d'en oublier un tas d'autres !
+
+Vous aurez compris que personnellement je ne m'en passerai pas, donc pas étonnant qu'il soit à la 2ème place depuis 2 ans.
+
+En revanche, ce que je comprends moins, c'est le fait que Safe laisse encore coexister tous ces Transformers alors que celui-là pourrait tout à fait les remplacer sans douleur.
+
+Essayons-nous à un test de performance qui expliquerait peut-être leur coexistence en fonction des cas d'usage.
+
+#### Test de l'AttributeManager en face to face avec ses ancêtres
+
+#### Test de l'AttributeManager en remplacement d'un enchaînement de ses prédécesseurs
 
 ## Conclusion
 
