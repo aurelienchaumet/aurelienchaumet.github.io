@@ -3,13 +3,13 @@ layout: single
 permalink: /articles/fme_transformers_ranking/
 title : "FME : Exploration du classement des Transformers FME" 
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/fme_lizard_trophy.png
   overlay_filter: 0.3
-  teaser: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+  teaser: https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/fme_lizard_trophy.png
 excerpt:
   Comment utilisez-vous les différents transformers FME ?
 
-og_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+og_image: https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/fme_lizard_trophy.png
 
 comments: true
 share: true
@@ -25,7 +25,7 @@ toc_sticky: true
 Comme tout bon ETL (Extract-Transform-Load), il permet de lire des données [(+ de 500 formats différents)](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_ReadersWriters/Format-List-All.htm#All), de les transformer et de les charger dans un des formats supportés par FME.  
 Il est édité par la société canadienne Safe.
 
-IMAGE SAFE
+![logo safe](https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/safe.png "Logo Safe"){: .align-center}
 
 Au-delà de la rapidité de certaines opérations réalisées, l'autre puissance de FME réside dans son interface graphique.  
 Il fonctionne sur le système de box qu'on connecte entre elles.  
@@ -94,7 +94,6 @@ Je viens d'ouvrir au hasard 6 projets et tous en contenaient au moins 2 :smile:.
 ### AttributeManager passe second
 
 [L'AttributeManager](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributemanager.htm) est pour moi un des transformers incontournables, tant il remplit de fonctions à lui tout seul.  
-_Nous l'appellerons *AM* dans la suite de cet article afin d'éviter de surcharger la lecture._
 
 Il a été released en 2016 et quelle release ! Il permet de :
 
@@ -119,76 +118,91 @@ Vous aurez compris que personnellement je ne m'en passerai pas, donc pas étonna
 
 En revanche, ce que je comprends moins, c'est le fait que Safe laisse encore coexister tous ces transformers, alors que celui-ci pourrait tout à fait les remplacer sans douleur.
 
-Essayons-nous à un test de performance qui expliquerait peut-être leur coexistence en fonction des cas d'usage.
+Vous trouverez dans un prochain article un test de performance qui tente de comprendre leur coexistence en fonction de cas d'usage.
 
-Pour réaliser ce test, j'ai récupéré [les parcelles PCI (Plan Cadastral Informatisé) de la Charente-Maritime](https://cadastre.data.gouv.fr/data/etalab-cadastre/2021-04-01/geojson/departements/17/), environ 1Go de données.
+### L'ascension du DuplicateFilter
+
+Passé depuis 2019 de la 18ème place à la 7ème place en juillet de cette année, le [DuplicateFilter](http://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/duplicatefilter.htm) réalise une belle progression !
+
+Il est extrêmement pratique pour détecter des doublons dans les données. Il est possible de lui spécifier un ou plusieurs attributs à prendre en compte pour détecter ces doublons.  
+De là à expliquer ce soudain regain d'intérêt de la communauté...
+
+### L'éternel Inspector
+
+Pour ceux ayant commencé à travailler avec FME avant la version 2018, l'[Inspector](http://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/inspector.htm) était un outil indispensable !
+
+Il permet de voir les éléments à la sortie d'un transformer.
+
+Et pourquoi ai-je parlé de la version 2018 ? Car c'est cette année que SAFE a sorti le Feature Caching ([que Mark Ireland a comparé très judisiceusement à un écureuil](https://www.safe.com/blog/2018/05/caching-data-fme-evangelist174/)).
+
+Le Feature Caching vous laisse la possibilité de garder en mémoire les données à chaque étape d'un workbench. Et donc à chaque sortie de transformer. J'imagine que c'est ce qui explique sa (lente) décroissance initiée en 2021.  
+Même s'il subit (de manière plutôt inexpliquée pour moi), un regain de reconnaissance en ce milieu d'année.
+
+J'imagine que certains l'utilisent encore sur de gros workbenchs qui tournent déjà depuis un moment, pour inspecter très ponctuellement certaines étapes.  
+Car il ne faut pas oublier que le Feature Caching, en fonction des données et de votre workbench, peut manger pas mal de ressources et donc demander du temps.  
+Mais au prix d'une praticité sans pareil !
+
+Petit tips, vous avez la possibilit d'insérer un Inspector en réalisant un clic droit n'importe où à l'intérieur d'un workbench.
 {: .notice--info}
 
-#### Test de l'AM en face to face avec ses ancêtres
+IMAGE DE L'INSERTION DE L'INSPECTOR
 
-Pour tenter de gagner un peu de temps, le [Feature Caching](https://www.safe.com/blog/2018/05/caching-data-fme-evangelist174/) est activé pour l'ensemble des tests suivants.  
-A chaque fois qu'un test de process est indiqué, j'ai fait tourner 5 fois le même transformer (ou enchainement de transformers) et fait la moyenne des 5 temps.
+### Junction is here
 
-| Transformer ancêtre  | Temps          | Temps AM | Plus rapide |
-| :--------------- |:---------------|:-----|:-----|
-| AttributeRenamer  | 1 minute 12.6 secondes | 1 minute 39.5 secondes | Ancêtre +37% |
-| AttributeCreator  | 2 minutes 48.2 secondes | 2 minutes 47.5 secondes | AM +0.2% |
-| AttributeKeeper  | 51.6 secondes | 58.3 secondes | Ancêtre +13% |
-| AreaCalculator  | 1 minute 22.3 secondes | 1 minute 25.7 secondes | Ancêtre +4% |
+[Junction](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Workbench/Workbench/Using-Junctions.htm) n'est (d'après moi) pas un transformer à part entière. Il ne réalise aucune modification de la donnée. Mais il permet, notamment d'y voir un peu plus clair dans ses workbenchs, d'où son utilité et son entrée à la 27ème place du classement.
 
-Pour l'instant, hormis sur la création d'attributs où un doute peut subsister (l'écart étant plutôt mince), les Transformers spécifiques apparaissent comme plus performants que l'AM.
+Il est apparu en 2016 [avec la possibilité de cacher des connexions](https://www.safe.com/blog/2016/05/fmeevangelist150/).
 
-#### Test de l'AM en remplacement d'un enchaînement de ses prédécesseurs
+L'idée est de rassembler plusieurs connexions en un seul et même point, appelé Junction.  
+Personnellement je m'en sers également pour "amener" une connexion déjà existante sur une partie distante d'un workbench, comme dans l'exemple ci-dessous.
 
-Cette fois, j'ai réalisé un enchaînement des 4 précédents transformers comparés aux même taches effectuées dans l'AM.
+IMAGE D'UNE JONCTION PROPRE
 
-Avant toute chose, il est à noter qu'un seul AM peut, parfois, ne pas remplir les mêmes fonctions que les transformers à tache unique.  
-Par exemple, vous souhaitez créer un nouvel Attribut 2 à parti d'un Attribut 1 déjà existant, et supprimer l'Attribut 1 dans la foulée.  
-Il suffit d'enchainer un AttributeCreator puis un AttributeRemover (ou AttributeKeeper). Ici, un seul AM ne suffira pas.  
-En effet, si vous dites dans les paramètres de l'AM que vous souhaitez à la fois créer un champ à partir d'un attribut et le supprimer en même temps, il risque de ne pas comprendre ce que vous voulez lui faire faire...
+Vous admettrez que c'est légèrement plus élégant et lisible que de laisser l'ensemble des jonctions telles qu'elles...
 
-![fme pas comprendre](https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/fme_pas_comprendre.png "FME pas comprendre"){: .align-center}
+IMAGE SANS JONCTION TOUT MOCHE
 
-Enchainement de 2 transformers :
+## Ranking de mes propres workbenchs
 
-- AttributeRenamer+AttributeCreator : 4 minutes 45 seconds
-- AM équivalent : 3 minutes 10.9 seconds
-- Gain de l'AM : +33%
+Après ce petit tour du classement officiel des transformers FME, je vous propose mon propre classement, basée sur l'utilisation que j'en ai.
 
-- AttributeKeeper+AreaCalculator : 1 minute 42.6 seconds
-- AM équivalent : 1 minute 0.4 second
-- Gain de l'AM : +41%
+Pour le réaliser, j'ai utilisé le Reader FME Workspace (FMW) qui permet de lire les métadonnées des workspaces créés.  
+Ce Reader donne notamment l'ensemble des transformers utilisés.
 
-- AttributeCreator+AttributeKeeper : 6 minutes 52.5 seconds (met plus de temps que l'enchaînement des 4 ???)
-- AM équivalent :  3 minutes 1.5 seconds
-- Gain de l'AM : +56%
+Vous trouverez ci-dessous les transformers que j'ai le plus utilisés cette année.  
+En passant la souris sur la barre d'un transformer, vous verrez également son évolution apparaître depuis 2016.
+{: .notice--info}
 
-Enchainement de 3 transformers :
+<iframe id="Classement_Transformers_FME"
+    title="Classement Transformers FME"
+    width="1000"
+    height="700"
+    src="https://public.tableau.com/views/FMETransformersPersoRanking/FMETRANSFORMERSrankingperso?publish=yes&:display_count=n&:origin=viz_share_link:showVizHome=no#2">
+</iframe>
 
-- AttributeRenamer+AttributeCreator+AttributeKeeper : 4 minutes 37.2 seconds
-- AM équivalent : 2 minutes 54 seconds
-- Gain de l'AM : +37%
+### AttributeManager forever
 
-- AttributeCreator+AttributeKeeper+AreaCalculator : 6 minutes 3.7 seconds
-- AM équivalent : 3 minutes 8 seconds
-- Gain de l'AM : +48%
+Quand je vous disais plus haut que j'aurais du mal à me passer de l'attributeManager, je ne mentais pas :smile:
 
-Enchainement des 4 transformers mono taches :
+Sur 335 transformers utilisés dans 16 workbenchs cette année, j'ai utilisé l'AttributeManager 66 fois, soit 20% de l'ensemble des transformers utilisés.
 
-- Historiques : 5 minutes 32.1 seconds
-- AM : 3 minutes 15.5 seconds
-- Gain de l'AM : +41%
+Alors que le tester n'arrive qu'au 4ème rang de mon côté.
+
+### FeatureMerger et autres transformers que j'utilise sur des données spatiales
+
+Le FeatureMerger est au 2ème rang des transformers que j'utilise le plus. Pas très étonnant, car au quotidien je passe pas mal de temps àc roiser des données.
+
+Données notamment spatiales, ce qui explique la position de transformers plus spécifiques, comme l'AreaCalculator (que je pourrais très bien remplacer par l'AttributeManager d'ailleurs...), le VertexCreator (qui permet de créer des géométries ponctuelles à partir de coordonnées), le CenterPointReplacer (que j'utilise fréquemment pour réaliser des jointures spatiales) ou encore le SpatialRelator.
+
+Le BANGeocoder est [un transformer personnalisé publié par Geonov](https://hub.safe.com/publishers/geonov/transformers/bangeocoder) et permet de réaliser du géoréférencement français.  
+Petit bijou de siplicité d'utilisation, j'en profite d'ailleurs pour remercier [Mathieu Ambrosy](https://twitter.com/geonov_fr?lang=fr) pour celui-ci car il est fort pratique !
 
 ## Conclusion
 
-Cette nouvelle possibilité offerte dans la dernière mise à jour de Tableau permet de réaliser de nombreuses améliorations en termes d'interface en simplifiant le design de certains dashboards.
+J'espère que ce petit tour des différents transformers les plus utilisés par la communauté (et par moi-même) vous aura intéressé, voire même donné des idées !
 
-Il est possible d'imaginer par exemple qu'un graphique pop directement à la sélection d'un élément sur un graphique lié, sans pourautant être affiché en permanence.
-
-En bref, encore bien des choses à imaginer grâce à Tableau !
+Et n'oubliez pas qu'il en existe un bon millier, et que si vous avez besoin de réaliser quelque chose sur de la donnée (quelque soit le format, à peu de chose près), FME a surement un transformer pour ça !
 
 ----
-
-Cet article m'a [été inspiré par un post de Samuel Parsons](https://www.linkedin.com/posts/samuel-parsons-b9184b97_tableau-activity-6824262186844610560-Mp7N), que je tiens à remercier vivement pour m'avoir (enfin) poussé à comprendre le fonctionnement des conteneurs et leur nouvelle rétractabilité !!
 
 N'hésitez pas à commenter directement en dessous, ou à m'envoyer un [message sur Twitter](https://twitter.com/messages/compose?recipient_id=938055192221765634), je vous répondrai avec plaisir :pray: !

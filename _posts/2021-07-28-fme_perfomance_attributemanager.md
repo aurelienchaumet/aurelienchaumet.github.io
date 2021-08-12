@@ -1,13 +1,13 @@
 ---
 layout: single
-permalink: /articles/fme_transformers_ranking/
-title : "FME : Exploration du classement des Transformers FME" 
+permalink: /articles/fme_performance_attributemanager/
+title : "FME : Test de performance comparative entre l'AttributeManager et ertais transformers équivalents" 
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
   overlay_filter: 0.3
   teaser: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
 excerpt:
-  Comment utilisez-vous les différents transformers FME ?
+  Est-ce que seules les performances peuvent expliquer la cohabitation de plusieurs transformers FME équivalents ?
 
 og_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
 
@@ -23,15 +23,22 @@ toc_sticky: true
 
 Comme expliqué dans l'article précédent LIEN ARTICLE RANKING, je trouve étonnant que SAFE laisser cohabiter plusieurs transformers qui auraient les mêmes fonctions.
 
-Je formule donc l'hypothèse qu'en fonction des cas d'usage, les performances ne doivent pas être les mêmes.
+Je formule donc l'hypothèse qu'en fonction des cas d'usage, les performances ne doivent pas être les mêmes. Voyons voir cela d'un peu plus près.
 
 Pour réaliser ce test, j'ai récupéré [les parcelles PCI (Plan Cadastral Informatisé) de la Charente-Maritime](https://cadastre.data.gouv.fr/data/etalab-cadastre/2021-04-01/geojson/departements/17/), environ 1Go de données, avec 1 671 935 lignes.
 {: .notice--info}
 
-#### Test de l'AM en face to face avec ses ancêtres
+_Nous appellerons le transfromer AttributeManager *AM* dans la suite de cet article afin d'éviter de surcharger la lecture._
 
-Pour tenter de gagner un peu de temps, le [Feature Caching](https://www.safe.com/blog/2018/05/caching-data-fme-evangelist174/) est activé pour l'ensemble des tests suivants.  
+Vous trouverez le workbench qui m'a permis de réaliser les tests de performance ici :
+METTRE LE LIEN
+
+### Test de l'AM en face to face avec ses ancêtres
+
+Pour tenter de gagner un peu de temps, le [Feature Caching](https://www.safe.com/blog/2018/05/caching-data-fme-evangelist174/) est activé pour l'ensemble des tests suivants, uniquement après la lecture de la donnée entrante.  
 A chaque fois qu'un test de process est indiqué, j'ai fait tourner 5 fois le même transformer (ou enchainement de transformers) et fait la moyenne des 5 temps.
+
+Concernant l'AM face à ses ancètres, un par un, vous trouverez le résumé des temps ci-dessous :
 
 | Transformer ancêtre  | Temps          | Temps AM | Plus rapide |
 | :--------------- |:---------------|:-----|:-----|
@@ -42,14 +49,14 @@ A chaque fois qu'un test de process est indiqué, j'ai fait tourner 5 fois le m�
 
 Pour l'instant, hormis sur la création d'attributs où un doute peut subsister (l'écart étant plutôt mince), les Transformers spécifiques apparaissent comme plus performants que l'AM.
 
-#### Test de l'AM en remplacement d'un enchaînement de ses prédécesseurs
+### Test de l'AM en remplacement d'un enchaînement de ses prédécesseurs
 
-Cette fois, j'ai réalisé un enchaînement des 4 précédents transformers comparés aux même taches effectuées dans l'AM.
+Réalisons maintenant des enchaînement des 4 précédents transformers comparés aux même taches effectuées dans l'AM.
 
 Avant toute chose, il est à noter qu'un seul AM peut, parfois, ne pas remplir les mêmes fonctions que les transformers à tache unique.  
-Par exemple, vous souhaitez créer un nouvel Attribut 2 à parti d'un Attribut 1 déjà existant, et supprimer l'Attribut 1 dans la foulée.  
-Il suffit d'enchainer un AttributeCreator puis un AttributeRemover (ou AttributeKeeper). Ici, un seul AM ne suffira pas.  
-En effet, si vous dites dans les paramètres de l'AM que vous souhaitez à la fois créer un champ à partir d'un attribut et le supprimer en même temps, il risque de ne pas comprendre ce que vous voulez lui faire faire...
+Par exemple, si vous souhaitez créer un nouvel Attribut 2 à parti d'un Attribut 1 déjà existant, et supprimer l'Attribut 1 dans la foulée.  
+Il suffit d'enchainer un AttributeCreator puis un AttributeRemover (ou AttributeKeeper pour ceux qui aiment cocher plein de cases :smile:). Ici, un seul AM ne suffira pas.  
+En effet, si vous dites dans les paramètres de l'AM que vous souhaitez à la fois créer un champ à partir d'un attribut et le supprimer, il risque de ne pas comprendre ce que vous voulez lui faire faire...
 
 ![fme pas comprendre](https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/fme_pas_comprendre.png "FME pas comprendre"){: .align-center}
 
