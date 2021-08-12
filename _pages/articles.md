@@ -8,6 +8,15 @@ header:
 excerpt:
   Partage de connaissance sur des outils et des données
 
+fme_transformers_classement:
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/fme_lizard_trophy.jpg"
+    alt: "FME : Exploration du classement des Transformers FME"
+    title: "FME : Exploration du classement des Transformers FME"
+    excerpt: "Quels sont les transformers FME les plus utilisés ?"
+    url: "/articles/fme_transformers_classement"
+    btn_label: "Accéder"
+    btn_class: "btn--primary"
+
 tableau_conteneurs_retractables:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png"
     alt: "Tableau : Utilisation des conteneurs rétractables"
@@ -86,6 +95,8 @@ python_medium:
     btn_label: "Accéder"
     btn_class: "btn--primary"
 ---
+
+{% include feature_row id="fme_transformers_classement" type="left" %}
 
 {% include feature_row id="tableau_conteneurs_retractables" type="right" %}
 
