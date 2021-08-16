@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /articles/fme_performance_attributemanager/
-title : "FME : Test de performance comparative entre l'AttributeManager et ertais transformers équivalents" 
+title : "FME : Test de performance comparative entre l'AttributeManager et certains transformers équivalents" 
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
   overlay_filter: 0.3
@@ -49,6 +49,8 @@ Concernant l'AM face à ses ancètres, un par un, vous trouverez le résumé des
 
 Pour l'instant, hormis sur la création d'attributs où un doute peut subsister (l'écart étant plutôt mince), les Transformers spécifiques apparaissent comme plus performants que l'AM.
 
+C'est un peu comme si vous aviez un [Leatherman](https://fr.wikipedia.org/wiki/Leatherman) et un tournevis cruciforme sous la main, et que vous n'avez que des vis cruciforme à poser. Vous irez sans doute plus vite en vous servant du tournevis.
+
 ### Test de l'AM en remplacement d'un enchaînement de ses prédécesseurs
 
 Réalisons maintenant des enchaînement des 4 précédents transformers comparés aux même taches effectuées dans l'AM.
@@ -72,9 +74,12 @@ Enchainement des 4 transformers mono taches :
 
 ![comparaison 4V1](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/4V1.png "Comparaison 4V1"){: .align-center}
 
-On se rend compte ici, que lorsque 2 transformers historiques sont enchaînés, face à un unique AM, les gains de temps sont là.
-
+On se rend compte ici, que lorsq'au moins 2 transformers historiques sont enchaînés, face à un unique AM, les gains de temps sont là.  
 Et il peut parfois même être 2x fois plus rapide !
+
+J'imagine que l'AM est optimisé, lorsqu'il y a plusieurs taches à réaliser, pour qu'elles se réalisent le plus rapidement possible.
+
+Pour reprendre la métaphore du Leatherman, si vous devez visser des cruciformes, redresser une tige, ouvrir une bière (il peut le faire !), cette fois , vous gagnerez du temps en prenant le Leatherman plutôt que d'aller chercher chaque outil un par un dans votre boîte à outils.
 
 ### Test d'enchainement d'AM
 
