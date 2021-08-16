@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /articles/fme_performance_attributemanager/
+permalink: /articles/fme_performance_attributemanager_fr/
 title : "FME : Test de performance comparative entre l'AttributeManager et certains transformers équivalents" 
 header:
   overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
