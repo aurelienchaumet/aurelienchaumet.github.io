@@ -21,7 +21,7 @@ toc_sticky: true
 
 ## Pourquoi un test de performance ?
 
-[Comme expliqué dans le précédent article](https://aurelienchaumet.github.io/articles/fme_transformers_classement/), je trouve étonnant que SAFE laisser cohabiter plusieurs transformers qui auraient les mêmes fonctions.
+[Comme expliqué dans le précédent article](https://aurelienchaumet.github.io/articles/fme_transformers_classement/), je trouve étonnant que Safe laisser cohabiter plusieurs transformers qui auraient les mêmes fonctions.
 
 Je formule donc l'hypothèse qu'en fonction des cas d'usage, les performances ne doivent pas être les mêmes. Voyons voir cela d'un peu plus près, en prenant, pour le test, 4 transformers que l'AttributeManager pourrait remplacer foncontionnellement parlant :
 

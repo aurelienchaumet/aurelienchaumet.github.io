@@ -19,11 +19,25 @@ toc_icon: "chart-line"
 toc_sticky: true
 ---
 
+L'AttributeManager est un transformer présent dans la boite à outils de tout bon FMEiste depuis 2016.  
+Il permet notamment de :
+
+- renommer des champs
+- supprimer des champs
+- créer des champs
+- définir les valeurs d'un champ que ce soit par une opération arithmétique, des valeurs conditionnelles ou une concaténation de champs
+- utiliser des paramètres
+
+Avant 2016, chacune de ces fonctions étaient possibles dans FME grâce à des transformers particuliers ; AttributeCreator permet, par exemple, de créer de nouveaux champs et AreaCalculator de calculer les superficies de polygones.
+
+On pourrait donc penser, que 5 ans après sa release, les utilisateurs se soient habitués à son fonctionnement (ce qui est vrai en grande partie au vu [de sa 2nde place dans le classement des transformers](https://aurelienchaumet.github.io/articles/fme_transformers_classement/#attributemanager-passe-second)), et que Safe aurait pu décider d'abandonner ses prédécesseurs.
+
+Mais il n'en est rien, ils continuent de cohabiter joyeusement.
+
 ## Pourquoi un test de performance ?
 
-[Comme expliqué dans le précédent article](https://aurelienchaumet.github.io/articles/fme_transformers_classement/), je trouve étonnant que SAFE laisser cohabiter plusieurs transformers qui auraient les mêmes fonctions.
-
-Je formule donc l'hypothèse qu'en fonction des cas d'usage, les performances ne doivent pas être les mêmes. Voyons voir cela d'un peu plus près, en prenant, pour le test, 4 transformers que l'AttributeManager pourrait remplacer foncontionnellement parlant :
+Je formule donc l'hypothèse qu'en fonction des cas d'usage, les performances ne doivent pas être les mêmes. Cela pourrait donc expliquer que des transformers, ayant des fonctions similaires existent encore en parallèle.  
+Voyons voir cela d'un peu plus près, en prenant, pour le test, 4 transformers que l'AttributeManager pourrait remplacer fonctionnellement parlant :
 
 - [AttributeRenamer](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributerenamer.htm), pour renommer les attributs
 - [AttributeCreator](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributecreator.htm), qui permet de créer de nouveaux attributs
@@ -60,8 +74,7 @@ Par exemple, si vous souhaitez créer un nouvel Attribut 2 à partir d'un Attrib
 Il suffit d'enchainer un AttributeCreator puis un AttributeRemover (ou AttributeKeeper pour ceux qui aiment cocher plein de cases :smile:). Ici, un seul AM ne suffira pas.  
 En effet, si vous dites dans les paramètres de l'AM que vous souhaitez à la fois créer un champ à partir d'un attribut et le supprimer, il risque de ne pas comprendre ce que vous voulez lui faire faire...
 
-![fme pas comprendre](https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/fme_pas_comprendre.png "FME pas comprendre"){: .align-center}
-
+c
 Enchainement de 2 transformers :
 
 ![comparaison 2V1](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/2V1.png "Comparaison 2V1"){: .align-center}
@@ -79,12 +92,23 @@ Et il peut parfois même être 2x fois plus rapide !
 
 J'imagine que l'AM est optimisé, lorsqu'il y a plusieurs taches à réaliser, pour qu'elles se réalisent le plus rapidement possible.
 
-Pour reprendre la métaphore du Leatherman, si vous devez visser des cruciformes, redresser une tige, ouvrir une bière (il peut le faire !), cette fois , vous gagnerez du temps en prenant le Leatherman plutôt que d'aller chercher chaque outil un par un dans votre boîte à outils.
+Pour reprendre la métaphore du Leatherman, si vous devez visser des cruciformes, redresser une tige et ouvrir une bière (il peut le faire !), cette fois, vous gagnerez du temps en prenant le Leatherman, plutôt que d'aller chercher chaque outil un par un dans votre boîte à outils.
 
 ### Test d'enchainement d'AM
 
+Un dernier test histoire de...
+
+Que se passe-t-il si on se trouve dans le cas de figure évoqué plus haut de la création d'un Attribut1 et d'un Attribut 2, puis d'un Attribut3, lui-même dépendant des 2 premiers, mais que nous souhaitons echaîner avec la suppression des 2 premiers attributs créés ?
+
+Clairement, un AttributeCreator + un AttributeKeeper font l'affaire.  
+Mais si nou sosuhaitons passer par de l'AM, il faudra en enchaîner 2 :
+
 - AttributeCreator (création d'un Attribut 1, Attribut 2 et d'un Attribut 3 = Attribut 1 + Attribut 2) + AttributeKeeper (on ne garde que l'Attribute 3) : 139 secondes
 - AM qui crée les 3 attributs + AM qui ne garde que l'Attribut 3 : 148 secondes
+
+Assez logiquement, l'enchaînement de 2 AM est plus longue que celui de 2 transformers historiques.
+
+Si vous souhaitez utiliser 2 Leathermans différents, chacun pour des taches différentes, autant prendre le soutils spécifiques, et vous gagnerez ainsi du temps !
 
 ## Conclusion
 
@@ -92,6 +116,10 @@ Après ces quelques tests rapides, je pense qu'il y a du vrai dans mon hypothès
 En réalité, nous avons tout intérêt à utiliser un transformer historique type AttributeQuelquechose plutôt que l'AM, uniquement dans le cas où une seule opération est réalisée.
 
 Dès lors, que plusieurs opérations sont enchaînées, il ne faut surtout pas se priver d'utiliser directement l'AM afin de gagner en temps de traitement !!
+
+Métaphore du Leatherman. CQFD...
+
+![gif barack obama drop the mic](https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif "Barack drops the mic"){: .align-center}
 
 Même s'il est toujours de bon ton de se méfier de l'ordre dans lequel les opérations sont réalisées.  
 Comme dit précédemment, évitez par exemple, dans un même AM de supprimer un attribut si vous souhaitez réaliser un calcul de champ ou une concaténation sur celui-ci :smirk:.
