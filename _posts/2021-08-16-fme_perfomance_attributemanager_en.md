@@ -1,15 +1,15 @@
 ---
 layout: single
 permalink: /articles/fme_performance_attributemanager_en/
-title : "FME : Test de performance comparative entre l'AttributeManager et ertais transformers équivalents" 
+title : "FME : Comparative performance test between AttributeManager and some equivalent transformers" 
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png
   overlay_filter: 0.3
-  teaser: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+  teaser: https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png
 excerpt:
-  Est-ce que seules les performances peuvent expliquer la cohabitation de plusieurs transformers FME équivalents ?
+  Can only performance explain the cohabitation of several equivalent FME transformers ?
 
-og_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+og_image: https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png
 
 comments: true
 share: true
@@ -19,73 +19,113 @@ toc_icon: "chart-line"
 toc_sticky: true
 ---
 
-## Pourquoi un test de performance ?
+The [AttributeManager](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributemanager.htm) is a transformer present in the toolbox of any good FMEist **since 2016**.
 
-[Comme expliqué dans le précédent article](https://aurelienchaumet.github.io/articles/fme_transformers_classement/), je trouve étonnant que Safe laisser cohabiter plusieurs transformers qui auraient les mêmes fonctions.
+It allows :
 
-Je formule donc l'hypothèse qu'en fonction des cas d'usage, les performances ne doivent pas être les mêmes. Voyons voir cela d'un peu plus près, en prenant, pour le test, 4 transformers que l'AttributeManager pourrait remplacer foncontionnellement parlant :
+- **rename** attributes
+- **delete** attributes
+- **create** attributes
+- **defines values of an attribute** whether by arithmetic operation, conditional values or concatenation of fields
 
-- [AttributeRenamer](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributerenamer.htm), pour renommer les attributs
-- [AttributeCreator](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributecreator.htm), qui permet de créer de nouveaux attributs
-- [AttributeKeeper](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributekeeper.htm), qui ne garde que les attributs sélectionnés
-- [AreaCalculator](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/areacalculator.htm), permettant de calculer la superficie de polygones
+Before 2016, each of these functions was possible in FME through **special transformers** ; AttributeCreator allows, for instance, create new attributes and AreaCalculator calculate polygons area.
 
-Pour réaliser ce test, j'ai récupéré [les parcelles PCI (Plan Cadastral Informatisé) de la Charente-Maritime](https://cadastre.data.gouv.fr/data/etalab-cadastre/2021-04-01/geojson/departements/17/), environ 1Go de données, avec 1 671 935 lignes.
+We might therefore think, that 5 years after its release, users have become accustomed to its operation (which is true largely in view of [its 2nd place in transformers ranking](https://aurelienchaumet.github.io/articles/fme_transformers_classement/#attributemanager-passe-second)), and Safe should decide to **abandon his predecessors**.
+
+But this is not the case, they continue to live happily together.
+
+## Why a speed test ?
+
+So I’m making the assumption that based on the use cases, **_performance must not be the same_**. This could explain why transformers, having similar functions, still exist in parallel.
+
+Let’s take a closer look at this, taking, for the test, 4 transformers that the AttributeManager could replace functionally speaking :
+
+- [AttributeRenamer](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributerenamer.htm), to rename attributes
+- [AttributeCreator](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributecreator.htm), to create new attributes
+- [AttributeKeeper](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributekeeper.htm), which just keep some attributes
+- [AreaCalculator](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/areacalculator.htm), allows to calculate polygons area
+
+To carry out this test, I get [Charente-Maritime PCI parcels (Plan Cadastral Informatisé)](https://cadastre.data.gouv.fr/data/etalab-cadastre/2021-04-01/geojson/departements/17/), nearly 1Go of data, with 1 671 935 lines.
 {: .notice--info}
 
-_Nous appellerons le transfromer AttributeManager *AM* dans la suite de cet article afin d'éviter de surcharger la lecture._
+_We will call the AttributeManager transformer *AM* in the rest of this article to avoid overloading the reading._
 
-Vous trouverez le workbench qui m'a permis de réaliser les tests de performance ici :
-METTRE LE LIEN
+You will find the workbench that allowed me to perform the performance tests [here](aurelienchaumet.github.io/data/fme/).
 
-### Test de l'AM en face to face avec ses ancêtres
+## Test of the AM face to face with its ancestors
 
-Pour tenter de gagner un peu de temps, le [Feature Caching](https://www.safe.com/blog/2018/05/caching-data-fme-evangelist174/) est activé pour l'ensemble des tests suivants, uniquement après la lecture de la donnée entrante.  
-A chaque fois qu'un test de process est indiqué, j'ai fait tourner 5 fois le même transformer (ou enchainement de transformers) et fait la moyenne des 5 temps.
+To try to save some time, [Feature Caching](https://www.safe.com/blog/2018/05/caching-data-fme-evangelist174/) is enabled for all of the following tests only after reading the input data.  
+Each time a process test is indicated, I ran the same transformer (or chain of transformers) 5 times and averaged the 5 times.
 
-Concernant l'AM face à ses ancètres, un par un, vous trouverez le résumé des temps ci-dessous :
+Regarding the AM facing its anchors, one by one, and for the same tasks, you will find the summary of times below :
 
-![comparaison 1V1](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/1V1.png "Comparaison 1V1"){: .align-center}
+![1V1 comparison](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/1V1_en.png "1V1 Comparison"){: .align-center}
 
-Pour l'instant, hormis sur la création d'attributs où un doute peut subsister (l'écart étant plutôt mince), les Transformers spécifiques apparaissent comme plus performants que l'AM.
+For the moment, except for the creation of attributes where a doubt may remain (the gap is rather small), **the "old" specific transformers appear as more efficient than the AM**.
 
-### Test de l'AM en remplacement d'un enchaînement de ses prédécesseurs
+It’s like having a [Leatherman](https://en.wikipedia.org/wiki/Leatherman) and a Phillips screwdriver on hand, and you only have Phillips screws to put on. You’ll probably go faster using the screwdriver.
 
-Réalisons maintenant des enchaînement des 4 précédents transformers comparés aux même taches effectuées dans l'AM.
+## AM test to replace a chain of predecessors
 
-Avant toute chose, il est à noter qu'un seul AM peut, parfois, ne pas remplir les mêmes fonctions que les transformers à tache unique.  
-Par exemple, si vous souhaitez créer un nouvel Attribut 2 à partir d'un Attribut 1 déjà existant, et supprimer l'Attribut 1 dans la foulée.  
-Il suffit d'enchainer un AttributeCreator puis un AttributeRemover (ou AttributeKeeper pour ceux qui aiment cocher plein de cases :smile:). Ici, un seul AM ne suffira pas.  
-En effet, si vous dites dans les paramètres de l'AM que vous souhaitez à la fois créer un champ à partir d'un attribut et le supprimer, il risque de ne pas comprendre ce que vous voulez lui faire faire...
+Let’s now perform sequences of the previous 4 transformers compared to the same tasks performed in the AM.
 
-![fme pas comprendre](https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/fme_pas_comprendre.png "FME pas comprendre"){: .align-center}
+First of all, it should be noted that a single AM may, at times, not perform the same functions as single-spot transformers.  
+For example, if you want to create a new Attribute 2 from an already existing Attribute 1, and delete Attribute 1 in the stride.
+Just chain an AttributeCreator and then an AttributeRemover (or AttributeKeeper for those who like to check a lot of boxes:smile:).  
+Here, one AM is not enough.  
+Indeed, if you say in the AM parameters that you want to both create a field from an attribute and delete it, it may not understand what you want it to do...
+{: .notice--info}
 
-Enchainement de 2 transformers :
+2 transformers chain :
 
-![comparaison 2V1](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/2V1.png "Comparaison 2V1"){: .align-center}
+![2V1 comparison](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/2V1_en.png "2V1 comparison"){: .align-center}
 
-Enchainement de 3 transformers :
+3 transformers chain :
 
-![comparaison 3V1](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/3V1.png "Comparaison 3V1"){: .align-center}
+![3V1 comparison](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/3V1_en.png "3V1 comparison"){: .align-center}
 
-Enchainement des 4 transformers mono taches :
+4 transformers chain :
 
-![comparaison 4V1](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/4V1.png "Comparaison 4V1"){: .align-center}
+![4V1 comparison](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/4V1_en.png "4V1 comparison"){: .align-center}
 
-On se rend compte ici, que dès que 2 transformers historiques sont enchaînés, face à un unique AM, les gains de temps sont là.
+We realize here, that **when at least 2 historical transformers are chained, against a single AM, the time saving is there**.  
+And it can sometimes even be 2x times faster!
 
-Et il peut parfois même être 2x fois plus rapide !
+I guess that the AM is optimized, when there are several tasks to perform, so that they are carried out as quickly as possible.
+
+To use the Leatherman metaphor, if you have to screw in cruciforms, straighten a rod and open a beer (it can!), this time you’ll save time by taking the Leatherman, rather than picking up each tool one by one from your toolbox.
+
+## AM Chain test
+
+A last test to push a little...
+
+What happens if we find ourselves in the case of figure mentioned above of the creation of an Attribute 1 and an Attribute 2, then of an Attribute 3, itself dependent on the first 2, but that we wish to exchange with the deletion of the first 2 created attributes?
+
+Clearly, an AttributeCreator + an AttributeKeeper do the trick.  
+But if we want to go through AM, we will have to chain 2:
+
+- AttributeCreator (creation of Attribute 1, Attribute 2 and Attribute 3 = Attribute 1 + Attribute 2) + AttributeKeeper (we just keep Attribute 3) : 139 seconds
+- AM which create the 3 attributes + AM which keeps only Attribute 3 : 148 seconds
+
+Logically enough, **the chain of 2 AM is longer than that of 2 historical transformers**.
+
+If you want to use 2 different Leathermans, each for different tasks, you might as well take the specific tools, and you will save time!
 
 ## Conclusion
 
-Après ces quelques tests rapides, je pense qu'il y a du vrai dans mon hypothèse de départ.  
-En réalité, nous avons tout intérêt à utiliser un transformer historique type AttributeQuelquechose plutôt que l'AM, uniquement dans le cas où une seule opération est réalisée.
+After these few quick tests, I think there is some truth in my initial hypothesis.
 
-Dès lors, que plusieurs opérations sont enchaînées, il ne faut surtout pas se priver d'utiliser directement l'AM afin de gagner en temps de traitement !!
+In fact, it is in our best interest to use a **transform history** AttributeWhat rather than the AM, only if **a single operation** is performed.
 
-Même s'il est toujours de bon ton de se méfier de l'ordre dans lequel les opérations sont réalisées.  
-Comme dit précédemment, évitez par exemple, dans un même AM de supprimer un attribut si vous souhaitez réaliser un calcul de champ ou une concaténation sur celui-ci :smirk:.
+Therefore, as **several operations** are chained, we must not deprive ourselves of using the**AttributeManager** directly in order to save processing time!!
+
+**_Leatherman Metaphore_**. I rest my case...
+
+![gif barack obama drop the mic](https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif "Barack drops the mic"){: .align-center}
+
+Even if it is always good tone to be wary of the order in which the operations are carried out.  
+As mentioned earlier, avoid, for example, in the same AM deleting an attribute if you want to perform a field calculation or concatenation on it :smirk:.
 
 ----
 
-N'hésitez pas à commenter directement en dessous, ou à m'envoyer un [message sur Twitter](https://twitter.com/messages/compose?recipient_id=938055192221765634), je vous répondrai avec plaisir :pray: !
+Feel free to comment directly below, or send me a [message on Twitter](https://twitter.com/messages/compose?recipient_id=938055192221765634), I will answer you with pleasure :pray: !
