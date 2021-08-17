@@ -8,6 +8,20 @@ header:
 excerpt:
   Partage de connaissance sur des outils et des données
 
+fme_performance_attributemanager:
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png"
+    alt: "FME : Test de performance comparative entre l'AttributeManager et certains transformers équivalents"
+    excerpt: "Est-ce que seules les performances peuvent expliquer la cohabitation de plusieurs transformers FME équivalents ?"
+    url: "/articles/fme_performance_attributemanager_fr/"
+    btn_label: ":fr: Lire en français :fr:"
+    btn_class: "btn--primary"
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png"
+    alt: "FME : Comparative performance test between AttributeManager and some equivalent transformers"
+    excerpt: "Can only performance explain the cohabitation of several equivalent FME transformers ?"
+    url: "/articles/fme_performance_attributemanager_en/"
+    btn_label: ":us: Read it in english :us:"
+    btn_class: "btn--primary"
+
 fme_transformers_classement:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/fme/transformers_ranking/fme_lizard_trophy.jpg"
     alt: "FME : Exploration du classement des Transformers FME"
@@ -95,6 +109,12 @@ python_medium:
     btn_label: "Accéder"
     btn_class: "btn--primary"
 ---
+
+## FME : AttributeManager Speedtest
+
+{% include feature_row id="30dmc-stats" %}
+
+{% include feature_row id="aerialod" type="right" %}
 
 {% include feature_row id="fme_transformers_classement" type="left" %}
 
