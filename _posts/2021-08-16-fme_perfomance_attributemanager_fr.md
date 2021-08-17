@@ -49,8 +49,7 @@ Pour réaliser ce test, j'ai récupéré [les parcelles PCI (Plan Cadastral Info
 
 _Nous appellerons le transfromer AttributeManager *AM* dans la suite de cet article afin d'éviter de surcharger la lecture._
 
-Vous trouverez le workbench qui m'a permis de réaliser les tests de performance ici :
-METTRE LE LIEN
+[Vous trouverez le workbench qui m'a permis de réaliser les tests de performance ici.](aurelienchaumet.github.io/data/fme/)
 
 ### Test de l'AM en face to face avec ses ancêtres
 
