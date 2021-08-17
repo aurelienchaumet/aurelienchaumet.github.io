@@ -19,6 +19,8 @@ toc_icon: "chart-line"
 toc_sticky: true
 ---
 
+Vous trouverez une [version française de cet article ici](/articles/fme_performance_attributemanager_fr/) :smirk:
+
 The [AttributeManager](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/attributemanager.htm) is a transformer present in the toolbox of any good FMEist **since 2016**.
 
 It allows :
