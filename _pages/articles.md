@@ -112,9 +112,7 @@ python_medium:
 
 ## FME : AttributeManager Speedtest
 
-{% include feature_row id="30dmc-stats" %}
-
-{% include feature_row id="aerialod" type="right" %}
+{% include feature_row id="fme_performance_attributemanager"%}
 
 {% include feature_row id="fme_transformers_classement" type="left" %}
 
