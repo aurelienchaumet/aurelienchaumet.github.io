@@ -3,13 +3,13 @@ layout: single
 permalink: /articles/fme_performance_attributemanager_fr/
 title : "FME : Test de performance comparative entre l'AttributeManager et certains transformers équivalents" 
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png
   overlay_filter: 0.3
-  teaser: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+  teaser: https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png
 excerpt:
   Est-ce que seules les performances peuvent expliquer la cohabitation de plusieurs transformers FME équivalents ?
 
-og_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/conteneur_retractable/conteneurs_retractables.png
+og_image: https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png
 
 comments: true
 share: true
@@ -74,7 +74,6 @@ Par exemple, si vous souhaitez créer un nouvel Attribut 2 à partir d'un Attrib
 Il suffit d'enchainer un AttributeCreator puis un AttributeRemover (ou AttributeKeeper pour ceux qui aiment cocher plein de cases :smile:). Ici, un seul AM ne suffira pas.  
 En effet, si vous dites dans les paramètres de l'AM que vous souhaitez à la fois créer un champ à partir d'un attribut et le supprimer, il risque de ne pas comprendre ce que vous voulez lui faire faire...
 
-c
 Enchainement de 2 transformers :
 
 ![comparaison 2V1](https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/2V1.png "Comparaison 2V1"){: .align-center}
@@ -96,7 +95,7 @@ Pour reprendre la métaphore du Leatherman, si vous devez visser des cruciformes
 
 ### Test d'enchainement d'AM
 
-Un dernier test histoire de...
+Un dernier test histoire de pousser un peu...
 
 Que se passe-t-il si on se trouve dans le cas de figure évoqué plus haut de la création d'un Attribut1 et d'un Attribut 2, puis d'un Attribut3, lui-même dépendant des 2 premiers, mais que nous souhaitons echaîner avec la suppression des 2 premiers attributs créés ?
 
