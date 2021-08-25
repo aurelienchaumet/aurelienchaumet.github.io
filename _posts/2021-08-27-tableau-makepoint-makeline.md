@@ -1,15 +1,15 @@
 ---
 layout: single
 permalink: /articles/tableau_makepoint_makeline/
-title : "Tableau : MakePoint et MakeLine : Fonctionnement et cas d'usage" 
+title : "Tableau - MakePoint et MakeLine : Fonctionnement et cas d'usage" 
 header:
-  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png
+  overlay_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/makepoint_makeline/tableau_makepoint_makeline.png
   overlay_filter: 0.3
-  teaser: https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png
+  teaser: https://dl01fbzxdpfby.cloudfront.net/images/tableau/makepoint_makeline/tableau_makepoint_makeline.png
 excerpt:
   Il est de plus en plus simple de réaliser des cartes avec Tableau, et ces nouvelles fonctions permettent de nouveaux horizons
 
-og_image: https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png
+og_image: https://dl01fbzxdpfby.cloudfront.net/images/tableau/makepoint_makeline/tableau_makepoint_makeline.png
 
 comments: true
 share: true
@@ -202,6 +202,14 @@ Tableau propose, grâce à ces deux fonctions MakePoint et MakeLine de nouvelles
 Il existe également maintenant [d'autres fonctions spatiales](https://help.tableau.com/current/pro/desktop/fr-fr/functions_functions_spatial.htm#liste-des-fonctions-spatiales-dans-tableau), répondant à d'autres cas d'usage, comme Buffer (uniquement sur un ponctuel) ou Zone qui permet de calculer la superficie d'un polygone.
 
 Sans doute encore pas mal d'analyses cartographiques à créer !
+
+## Sources
+
+- Annonce de la release : https://www.tableau.com/about/blog/2019/6/geospatial-analysis-made-easy-two-new-spatial-functions-makepoint-and-makeline
+- Article Biztory : https://www.biztory.com/blog/spatial-functions-in-tableau
+- MakePoint par Tableau Tim : https://www.youtube.com/watch?v=tM0mMsbU-fg
+- MakeLine toujours par Tableau Tim : https://www.youtube.com/watch?v=fAxVy3TZC-o
+- How to create routes with the MAKEPOINT and MAKELINE functions par Andy Kriebel : https://www.youtube.com/watch?v=54Bao2IneKA
 
 ----
 
