@@ -8,6 +8,15 @@ header:
 excerpt:
   Partage de connaissance sur des outils et des données
 
+tableau_makepoint_makeline:
+  - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/tableau/makepoint_makeline/tableau_makepoint_makeline.png"
+    alt: "Tableau - MakePoint et MakeLine : Fonctionnement et cas d'usage"
+    title: "Tableau - MakePoint et MakeLine : Fonctionnement et cas d'usage"
+    excerpt: "Il est de plus en plus simple de réaliser des cartes avec Tableau, et ces nouvelles fonctions permettent de nouveaux horizons"
+    url: "/articles/tableau_makepoint_makeline"
+    btn_label: "Accéder"
+    btn_class: "btn--primary"
+
 fme_performance_attributemanager:
   - image_path: "https://dl01fbzxdpfby.cloudfront.net/images/fme/performance_attributemanager/fme_lizard_perf.png"
     alt: "FME : Test de performance comparative entre l'AttributeManager et certains transformers équivalents"
@@ -109,6 +118,8 @@ python_medium:
     btn_label: "Accéder"
     btn_class: "btn--primary"
 ---
+
+{% include feature_row id="tableau_makepoint_makeline" type="right" %}
 
 ## FME : AttributeManager Speedtest
 
