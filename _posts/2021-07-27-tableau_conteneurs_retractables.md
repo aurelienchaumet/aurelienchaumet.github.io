@@ -86,7 +86,7 @@ Pour ce faire, il suffit de glisser d'abord un conteneur horizontal. Puis d'y in
 
 Et voilà !! Maintenant, il n'y a plus qu'à effectuer la manipulation décrite en début d'article. A savoir sélectionner le graphique de droite, ouvrir ses options grâce à la petite flèche pointant vers le bas, "Ajouter un bouton Afficher/Masquer" et le tour est joué !
 
-Vous pouvez par la suite modifier l'apparence du bouton en mettant l'image que vous souhaitez, ajouter une légende ou même faire des conteneurs de boutons (ça pourra être pour un prichain article :smile:) !
+Vous pouvez par la suite modifier l'apparence du bouton en mettant l'image que vous souhaitez, ajouter une légende ou même faire des conteneurs de boutons (ça pourra être pour un prochain article :smile:) !
 
 ![dingue](https://media.giphy.com/media/12GP2pkws57gd2/giphy.gif "Dingue"){: .align-center}
 
